@@ -1,0 +1,129 @@
+/* FloodRoute Civic-Resilience Design System & Utilities */
+
+:root {
+  --bg-app: #F8FAFC;
+  --surface-panel: #FFFFFF;
+  --surface-subtle: #F1F5F9;
+  --border-light: #E2E8F0;
+  --navy-primary: #0F243E;
+  --navy-secondary: #1E3A5F;
+  --teal-accent: #0D9488;
+  --amber-accent: #D97706;
+  --red-accent: #DC2626;
+}
+
+/* Animations */
+@keyframes dash {
+  to {
+    stroke-dashoffset: -100;
+  }
+}
+
+.animate-dash {
+  animation: dash 8s linear infinite;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.99); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.15s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-slideDown {
+  animation: slideDown 0.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F1F5F9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
+
+/* Leaflet Custom Overrides */
+.leaflet-container {
+  font-family: 'Inter', -apple-system, sans-serif !important;
+  background: #111827 !important; /* Muted operational dark canvas */
+}
+
+/* Operational Dark Popup on Leaflet Map */
+.leaflet-popup-content-wrapper {
+  background: #0F172A !important;
+  color: #F8FAFC !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  border-radius: 12px !important;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5) !important;
+  padding: 2px !important;
+}
+
+.leaflet-popup-tip {
+  background: #0F172A !important;
+}
+
+.leaflet-popup-content {
+  margin: 10px 12px !important;
+  line-height: 1.4 !important;
+}
+
+/* Map vector fallback grid when offline */
+.tactical-map-grid {
+  background-color: #0b1120;
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+/* Card & Surface Tokens */
+.ui-card {
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px 0 rgba(15, 23, 42, 0.04);
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.ui-card-interactive:hover {
+  border-color: #CBD5E1;
+  box-shadow: 0 4px 12px -2px rgba(15, 23, 42, 0.06);
+}
+
+/* Table styling helper */
+.ui-table th {
+  background-color: #F8FAFC;
+  color: #64748B;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border-bottom: 1px solid #E2E8F0;
+}
+
+.ui-table td {
+  border-bottom: 1px solid #F1F5F9;
+  color: #1E293B;
+}
+
+.ui-table tr:hover td {
+  background-color: #F8FAFC;
+}

@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"tertiary-fixed":"#ffdad7","surface-container-lowest":"#0a0e13","on-primary":"#591d00","outline":"#a98a7e","on-tertiary-fixed-variant":"#930013","on-secondary":"#003824","on-tertiary-fixed":"#410004","on-secondary-fixed":"#002113","surface-container":"#1c2025","on-secondary-fixed-variant":"#005236","secondary-fixed-dim":"#4edea3","primary-fixed-dim":"#ffb598","tertiary-fixed-dim":"#ffb3ad","secondary":"#4edea3","outline-variant":"#594138","primary":"#ffb598","error":"#ffb4ab","on-primary-fixed-variant":"#7e2c00","surface-container-low":"#181c21","inverse-surface":"#e0e2ea","on-error-container":"#ffdad6","on-secondary-container":"#00311f","surface-tint":"#ffb598","on-tertiary-container":"#6a000b","on-primary-container":"#5b1d00","tertiary-container":"#ff6762","on-error":"#690005","on-surface-variant":"#e2bfb2","primary-fixed":"#ffdbce","on-surface":"#e0e2ea","surface-bright":"#36393f","surface-dim":"#101419","error-container":"#93000a","on-tertiary":"#68000a","tertiary":"#ffb3ad","on-primary-fixed":"#370e00","surface-variant":"#31353b","secondary-container":"#00a572","surface":"#101419","primary-container":"#ff6b22","on-background":"#e0e2ea","surface-container-highest":"#31353b","background":"#101419","secondary-fixed":"#6ffbbe","surface-container-high":"#262a30","inverse-primary":"#a53c00","inverse-on-surface":"#2d3136"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-lg":"1.5rem","gutter-mobile":"0.75rem","space-xl":"2rem","space-xs":"0.25rem","margin-mobile":"1rem","margin":"1.5rem","space-md":"1rem","gutter":"1rem","space-sm":"0.5rem"},"fontFamily":{"body-sm":["Inter"],"body-lg":["Inter"],"label-lg":["JetBrains Mono"],"headline-md":["Inter"],"headline-lg":["Inter"],"label-sm":["JetBrains Mono"],"body-md":["Inter"],"label-md":["JetBrains Mono"],"headline-xl-mobile":["Inter"],"headline-xl":["Inter"]},"fontSize":{"body-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"label-lg":["14px",{"lineHeight":"20px","fontWeight":"500"}],"headline-md":["20px",{"lineHeight":"28px","fontWeight":"600"}],"headline-lg":["24px",{"lineHeight":"32px","fontWeight":"600"}],"label-sm":["10px",{"lineHeight":"14px","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"label-md":["12px",{"lineHeight":"16px","fontWeight":"500"}],"headline-xl-mobile":["28px",{"lineHeight":"36px","fontWeight":"700"}],"headline-xl":["36px",{"lineHeight":"44px","fontWeight":"700"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface min-h-screen selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 w-full z-50 bg-surface-container-lowest/85 backdrop-blur-2xl shadow-[0_4px_24px_rgba(0,0,0,0.5)]"><div class="h-28 w-full px-margin flex flex-col justify-between py-space-xs"><div class="h-14 flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded-lg bg-primary-container/20 flex items-center justify-center text-primary-container"><span class="material-symbols-outlined text-[22px]">flood</span></div><div><span class="font-headline-md text-headline-md tracking-tight font-bold text-on-surface block leading-tight">FloodRoute</span><span class="font-label-sm text-label-sm text-outline uppercase tracking-wider block">Enterprise Relief Engine</span></div></div><div class="h-6 w-px bg-surface-container-highest"></div><div class="flex items-center gap-space-xs bg-surface-container-low px-space-sm py-space-xs rounded-lg"><span class="material-symbols-outlined text-outline text-[16px]">corporate_fare</span><span class="font-label-md text-label-md text-on-surface font-medium">Metro Flood Response Taskforce (DEMO)</span><span class="material-symbols-outlined text-outline text-[16px]">arrow_drop_down</span></div><div class="bg-surface-container-high px-space-sm py-space-xs rounded-full flex items-center gap-space-xs"><span class="w-1.5 h-1.5 rounded-full bg-secondary-fixed"></span><span class="font-label-sm text-label-sm text-secondary-fixed uppercase tracking-wider">Gulf Coast Sector 4</span></div></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-sm bg-surface-container-low px-space-md py-space-xs rounded-full"><span class="relative flex h-2.5 w-2.5"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span><span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-secondary"></span></span><span class="font-label-md text-label-md text-secondary font-medium">AI Routing Engine Active</span></div><div class="relative flex items-center justify-center w-10 h-10 rounded-full bg-surface-container-low hover:bg-surface-container hover:text-on-surface transition-colors cursor-pointer"><span class="material-symbols-outlined text-on-surface-variant text-[20px]">notifications</span><span class="absolute top-1 right-1 w-4 h-4 rounded-full bg-tertiary-container text-on-tertiary-container font-label-sm text-label-sm flex items-center justify-center font-bold">5</span></div><button class="flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-primary-container text-on-primary-container hover:bg-primary-fixed-dim hover:text-on-primary transition-all font-label-md text-label-md font-semibold" type="button"><span class="material-symbols-outlined text-[18px]">broadcast_on_personal</span><span>Emergency Broadcast</span></button><div class="flex items-center gap-space-sm bg-surface-container-low pl-space-xs pr-space-md py-space-xs rounded-full"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface font-medium leading-none">Dir. Sarah Chen</span><span class="font-label-sm text-label-sm text-outline leading-none mt-0.5">Logistics Lead</span></div></div></div></div><div class="h-12 flex items-center justify-between gap-space-md pt-space-xs"><nav class="flex items-center gap-space-xs bg-surface-container-low p-space-xs rounded-xl" data-active-classes="bg-surface-container-high text-on-surface font-semibold shadow-[inset_0_1px_0_rgba(255,255,255,0.1)]"><a class="px-space-md py-space-xs rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="command-center" href="#">Command Center</a><a class="px-space-md py-space-xs rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="incidents" href="#">Incidents</a><a class="px-space-md py-space-xs rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="live-network" href="#">Live Network</a><a class="px-space-md py-space-xs rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="fleet" href="#">Fleet</a><a class="px-space-md py-space-xs rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="relief-resources" href="#">Relief Resources</a><a class="px-space-md py-space-xs rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="simulation" href="#">Simulation</a><a class="px-space-md py-space-xs rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="analytics" href="#">Analytics</a><a class="px-space-md py-space-xs rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="settings" href="#">Settings</a></nav><div class="flex items-center gap-space-md flex-1 max-w-xl justify-end"><div class="flex items-center gap-space-sm bg-surface-container-lowest px-space-md py-space-xs rounded-xl flex-1 max-w-sm"><span class="material-symbols-outlined text-outline text-[18px]">search</span><input class="bg-transparent border-0 outline-none w-full font-body-sm text-body-sm text-on-surface placeholder:text-outline" placeholder="Quick search incident, unit, shelter..." type="text"/><span class="font-label-sm text-label-sm text-outline bg-surface-container-high px-space-xs rounded">⌘K</span></div><div class="flex items-center gap-space-sm bg-tertiary-container/15 px-space-md py-space-xs rounded-xl"><div class="w-2 h-2 rounded-full bg-tertiary-container animate-pulse"></div><span class="font-label-sm text-label-sm text-tertiary uppercase font-bold tracking-wider">SIM DATA ACTIVE</span><span class="material-symbols-outlined text-tertiary text-[16px] cursor-pointer hover:text-on-surface transition-colors">close</span></div></div></div></div></header><main class="w-full pt-28 bg-background min-h-screen"><div class="flex flex-col w-full">
+<div class="w-full px-margin py-space-lg flex flex-col gap-space-lg">
+<!-- Header Section with Operational Filters & Actions -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md bg-surface-container-low p-space-lg rounded-xl shadow-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-sm">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest bg-primary-container/20 px-space-xs py-0.5 rounded">OPS REPORT // SEC-4</span>
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">CIVIL DEFENSE MOBILITY TELEMETRY</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface font-bold tracking-tight">Operational Analytics &amp; Incident Performance</h1>
+<p class="font-body-md text-body-md text-outline">Real-time corridor survivability, resource velocity indices, and fleet saturation telemetry.</p>
+</div>
+<div class="flex flex-wrap items-center gap-space-sm">
+<!-- Date Range Filter -->
+<div class="flex items-center gap-space-xs bg-surface-container px-space-md py-space-sm rounded-lg shadow-sm">
+<span class="material-symbols-outlined text-outline text-[18px]">calendar_today</span>
+<span class="font-label-md text-label-md text-on-surface">Past 24 Hours - Tropical Storm Surge</span>
+<span class="material-symbols-outlined text-outline text-[16px]">expand_more</span>
+</div>
+<!-- Sector Selector -->
+<div class="flex items-center gap-space-xs bg-surface-container px-space-md py-space-sm rounded-lg shadow-sm">
+<span class="material-symbols-outlined text-secondary text-[18px]">my_location</span>
+<span class="font-label-md text-label-md text-on-surface">Gulf Coast Sector 4</span>
+<span class="material-symbols-outlined text-outline text-[16px]">expand_more</span>
+</div>
+<!-- Export Action -->
+<button class="flex items-center gap-space-xs bg-primary-container hover:bg-primary-fixed-dim text-on-primary-container hover:text-on-primary px-space-md py-space-sm rounded-lg font-label-md text-label-md font-semibold shadow-sm transition-all" id="exportBtn">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span>Export Operational Report (PDF/CSV)</span>
+</button>
+</div>
+</div>
+<!-- Top KPI Summary Cards -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- KPI 1 -->
+<div class="bg-surface-container p-space-md rounded-xl shadow-md flex flex-col justify-between gap-space-sm hover:bg-surface-container-high transition-colors">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Avg Dispatch &amp; Response</span>
+<span class="material-symbols-outlined text-secondary text-[20px]">timer</span>
+</div>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-xl text-headline-xl text-on-surface font-bold">3.8</span>
+<span class="font-label-lg text-label-lg text-on-surface">min</span>
+</div>
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-secondary bg-secondary/10 px-space-xs py-0.5 rounded w-fit">
+<span class="material-symbols-outlined text-[14px]">trending_down</span>
+<span>-44% vs manual baseline</span>
+</div>
+</div>
+<!-- KPI 2 -->
+<div class="bg-surface-container p-space-md rounded-xl shadow-md flex flex-col justify-between gap-space-sm hover:bg-surface-container-high transition-colors">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Evacuations &amp; Delivery</span>
+<span class="material-symbols-outlined text-primary text-[20px]">verified_user</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-lg text-headline-lg text-on-surface font-bold">1,840</span>
+<span class="font-body-sm text-body-sm text-outline">extricated</span>
+</div>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-md text-headline-md text-secondary font-bold">14,200</span>
+<span class="font-body-sm text-body-sm text-outline">rations deliv.</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-outline">Zero civilian fatalities recorded</span>
+</div>
+<!-- KPI 3 -->
+<div class="bg-surface-container p-space-md rounded-xl shadow-md flex flex-col justify-between gap-space-sm hover:bg-surface-container-high transition-colors">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Reroute Success Rate</span>
+<span class="material-symbols-outlined text-secondary text-[20px]">navigation</span>
+</div>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-xl text-headline-xl text-secondary font-bold">99.4%</span>
+</div>
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-on-surface bg-surface-container-highest px-space-xs py-0.5 rounded w-fit">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span>Zero vehicle strandings reported</span>
+</div>
+</div>
+<!-- KPI 4 -->
+<div class="bg-surface-container p-space-md rounded-xl shadow-md flex flex-col justify-between gap-space-sm hover:bg-surface-container-high transition-colors">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Fleet Utilization</span>
+<span class="material-symbols-outlined text-primary-container text-[20px]">local_shipping</span>
+</div>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-xl text-headline-xl text-on-surface font-bold">84%</span>
+<span class="font-label-lg text-label-lg text-outline">active</span>
+</div>
+<div class="flex items-center justify-between w-full">
+<span class="font-label-sm text-label-sm text-outline">27 / 32 Units Engaged</span>
+<span class="font-label-sm text-label-sm text-primary">5 Staged</span>
+</div>
+</div>
+</div>
+<!-- Main Analytics Bento Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-md">
+<!-- Section 1: Hourly Triage vs Fleet Saturation Bar & Timeline Chart (8 cols) -->
+<div class="lg:col-span-8 bg-surface-container p-space-lg rounded-xl shadow-md flex flex-col gap-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs">
+<div class="flex flex-col">
+<h2 class="font-headline-md text-headline-md text-on-surface font-semibold">Hourly Incident Triage vs Fleet Saturation</h2>
+<span class="font-label-sm text-label-sm text-outline">Correlation of 911 distress queue spikes against deployed motorized and high-water vehicles</span>
+</div>
+<div class="flex items-center gap-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="w-3 h-3 rounded-sm bg-tertiary-container"></span>
+<span class="font-label-sm text-label-sm text-outline">Calls (Volume)</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="w-3 h-3 rounded-sm bg-secondary"></span>
+<span class="font-label-sm text-label-sm text-outline">Fleet Capacity %</span>
+</div>
+</div>
+</div>
+<!-- SVG Timeline / Bar Visualization -->
+<div class="w-full h-64 bg-surface-container-low rounded-lg p-space-sm flex flex-col justify-between">
+<svg class="w-full h-full text-outline" preserveaspectratio="none" viewbox="0 0 600 220">
+<!-- Grid Lines -->
+<line stroke="currentColor" stroke-dasharray="4" stroke-opacity="0.1" x1="0" x2="600" y1="40" y2="40"></line>
+<line stroke="currentColor" stroke-dasharray="4" stroke-opacity="0.1" x1="0" x2="600" y1="90" y2="90"></line>
+<line stroke="currentColor" stroke-dasharray="4" stroke-opacity="0.1" x1="0" x2="600" y1="140" y2="140"></line>
+<line stroke="currentColor" stroke-opacity="0.2" x1="0" x2="600" y1="190" y2="190"></line>
+<!-- Histogram Bars: Incident Calls (Red/Tertiary) -->
+<!-- 00:00 -->
+<rect class="text-tertiary-container opacity-80 rx-1" fill="currentColor" height="30" width="16" x="25" y="160"></rect>
+<!-- 02:00 -->
+<rect class="text-tertiary-container opacity-80 rx-1" fill="currentColor" height="45" width="16" x="75" y="145"></rect>
+<!-- 04:00 (Surge initiation) -->
+<rect class="text-tertiary-container opacity-80 rx-1" fill="currentColor" height="80" width="16" x="125" y="110"></rect>
+<!-- 06:00 (Crest) -->
+<rect class="text-tertiary-container rx-1" fill="currentColor" height="135" width="16" x="175" y="55"></rect>
+<!-- 08:00 (Peak triage) -->
+<rect class="text-tertiary-container rx-1" fill="currentColor" height="155" width="16" x="225" y="35"></rect>
+<!-- 10:00 -->
+<rect class="text-tertiary-container opacity-90 rx-1" fill="currentColor" height="125" width="16" x="275" y="65"></rect>
+<!-- 12:00 -->
+<rect class="text-tertiary-container opacity-85 rx-1" fill="currentColor" height="100" width="16" x="325" y="90"></rect>
+<!-- 14:00 -->
+<rect class="text-tertiary-container opacity-80 rx-1" fill="currentColor" height="85" width="16" x="375" y="105"></rect>
+<!-- 16:00 -->
+<rect class="text-tertiary-container opacity-75 rx-1" fill="currentColor" height="70" width="16" x="425" y="120"></rect>
+<!-- 18:00 -->
+<rect class="text-tertiary-container opacity-70 rx-1" fill="currentColor" height="55" width="16" x="475" y="135"></rect>
+<!-- 20:00 -->
+<rect class="text-tertiary-container opacity-60 rx-1" fill="currentColor" height="40" width="16" x="525" y="150"></rect>
+<!-- 22:00 -->
+<rect class="text-tertiary-container opacity-50 rx-1" fill="currentColor" height="25" width="16" x="565" y="165"></rect>
+<!-- Area Path for Fleet Saturation (Green/Secondary) -->
+<path class="text-secondary opacity-15" d="M 33 175 L 83 160 L 133 125 L 183 70 L 233 45 L 283 50 L 333 75 L 383 80 L 433 90 L 483 110 L 533 130 L 573 145 L 573 190 L 33 190 Z" fill="currentColor"></path>
+<!-- Line Path -->
+<path class="text-secondary" d="M 33 175 L 83 160 L 133 125 L 183 70 L 233 45 L 283 50 L 333 75 L 383 80 L 433 90 L 483 110 L 533 130 L 573 145" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2.5"></path>
+<!-- Points on curve -->
+<circle class="text-secondary" cx="233" cy="45" fill="currentColor" r="4" stroke="currentColor" stroke-width="2"></circle>
+<circle class="text-secondary" cx="183" cy="70" fill="currentColor" r="3"></circle>
+<circle class="text-secondary" cx="283" cy="50" fill="currentColor" r="3"></circle>
+</svg>
+</div>
+<div class="grid grid-cols-6 text-center font-label-sm text-label-sm text-outline px-space-xs">
+<span>00:00</span>
+<span>04:00</span>
+<span>08:00 (PEAK)</span>
+<span>12:00</span>
+<span>16:00</span>
+<span>20:00</span>
+</div>
+<!-- Telemetry Breakdown Bar Bottom -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm pt-space-xs">
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">Peak Saturation Window</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">07:45 - 09:15 UTC</span>
+<span class="font-body-sm text-body-sm text-tertiary mt-1">94% Fleet Max Deployed</span>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">Avg Call Resolution</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">14.2 Minutes</span>
+<span class="font-body-sm text-body-sm text-secondary mt-1">6.8m under SLA threshold</span>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">Auto-Dispatched Load</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">81.6% of Incidents</span>
+<span class="font-body-sm text-body-sm text-primary mt-1">AI Engine Routing Lead</span>
+</div>
+</div>
+</div>
+<!-- Section 2: Corridor Survivability Breakdown (4 cols) -->
+<div class="lg:col-span-4 bg-surface-container p-space-lg rounded-xl shadow-md flex flex-col justify-between gap-space-md">
+<div class="flex flex-col">
+<div class="flex items-center justify-between">
+<h2 class="font-headline-md text-headline-md text-on-surface font-semibold">Corridor Survivability</h2>
+<span class="font-label-sm text-label-sm text-secondary bg-secondary/10 px-space-xs py-0.5 rounded">GIS RECON</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline mt-1">Arterial passability &amp; elevation routing split</span>
+</div>
+<!-- Donut & Ratio Graphic -->
+<div class="flex items-center justify-center gap-space-lg py-space-sm">
+<div class="relative w-36 h-36 flex items-center justify-center">
+<svg class="w-full h-full transform -rotate-90" viewbox="0 0 100 100">
+<!-- Background Circle -->
+<circle class="text-surface-container-high" cx="50" cy="50" fill="transparent" r="38" stroke="currentColor" stroke-width="12"></circle>
+<!-- Safe Elevated Viaducts (Secondary Green - 64%) -->
+<circle class="text-secondary" cx="50" cy="50" fill="transparent" r="38" stroke="currentColor" stroke-dasharray="238.7" stroke-dashoffset="85.9" stroke-width="12"></circle>
+<!-- Moderately Impassable Surface Arterials (Primary Orange - 24%) -->
+<circle class="text-primary-container" cx="50" cy="50" fill="transparent" r="38" stroke="currentColor" stroke-dasharray="238.7" stroke-dashoffset="181.4" stroke-width="12"></circle>
+<!-- Submerged / Critical (Tertiary Red - 12%) -->
+<circle class="text-tertiary-container" cx="50" cy="50" fill="transparent" r="38" stroke="currentColor" stroke-dasharray="238.7" stroke-dashoffset="210.0" stroke-width="12"></circle>
+</svg>
+<div class="absolute inset-0 flex flex-col items-center justify-center text-center">
+<span class="font-headline-lg text-headline-lg font-bold text-on-surface">64%</span>
+<span class="font-label-sm text-label-sm text-outline uppercase">Viaduct Passable</span>
+</div>
+</div>
+</div>
+<!-- Metric Details List -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between p-space-xs bg-surface-container-low rounded-lg">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<span class="font-body-sm text-body-sm text-on-surface">Elevated Viaduct Route (Safe)</span>
+</div>
+<span class="font-label-md text-label-md text-secondary font-bold">142 km (64%)</span>
+</div>
+<div class="flex items-center justify-between p-space-xs bg-surface-container-low rounded-lg">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container"></span>
+<span class="font-body-sm text-body-sm text-on-surface">Marginal Depth Arterials</span>
+</div>
+<span class="font-label-md text-label-md text-primary font-bold">53 km (24%)</span>
+</div>
+<div class="flex items-center justify-between p-space-xs bg-surface-container-low rounded-lg">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary-container"></span>
+<span class="font-body-sm text-body-sm text-on-surface">Submerged / Breached</span>
+</div>
+<span class="font-label-md text-label-md text-tertiary font-bold">26 km (12%)</span>
+</div>
+</div>
+<div class="bg-surface-container-high/40 p-space-sm rounded-lg flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[18px]">alt_route</span>
+<span class="font-label-sm text-label-sm text-outline">Viaduct Bypass diverted 880 emergency sorties away from submerged basin #3.</span>
+</div>
+</div>
+</div>
+<!-- Secondary Row: Relief Velocity + Degradation Curves -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-md">
+<!-- Section 3: Relief Resource Velocity (6 cols) -->
+<div class="lg:col-span-6 bg-surface-container p-space-lg rounded-xl shadow-md flex flex-col justify-between gap-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs">
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface font-semibold">Relief Resource Velocity</h2>
+<span class="font-label-sm text-label-sm text-outline">Hourly critical payload distribution volume (Water &amp; Medical kits)</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary bg-secondary/10 px-space-xs py-0.5 rounded font-mono">FLOW: 480 L/HR</span>
+</div>
+<!-- Velocity Multi-bar Chart -->
+<div class="w-full h-48 bg-surface-container-low rounded-lg p-space-md flex flex-col justify-end">
+<div class="h-full w-full flex items-end justify-between gap-space-xs pt-4">
+<!-- 04:00 -->
+<div class="flex-1 flex flex-col items-center gap-1 h-full justify-end">
+<div class="w-full max-w-[18px] bg-primary-container rounded-t" style="height: 25%"></div>
+<div class="w-full max-w-[18px] bg-secondary rounded-t -mt-1" style="height: 15%"></div>
+<span class="font-label-sm text-label-sm text-outline mt-1">04h</span>
+</div>
+<!-- 06:00 -->
+<div class="flex-1 flex flex-col items-center gap-1 h-full justify-end">
+<div class="w-full max-w-[18px] bg-primary-container rounded-t" style="height: 48%"></div>
+<div class="w-full max-w-[18px] bg-secondary rounded-t -mt-1" style="height: 30%"></div>
+<span class="font-label-sm text-label-sm text-outline mt-1">06h</span>
+</div>
+<!-- 08:00 -->
+<div class="flex-1 flex flex-col items-center gap-1 h-full justify-end">
+<div class="w-full max-w-[18px] bg-primary-container rounded-t" style="height: 75%"></div>
+<div class="w-full max-w-[18px] bg-secondary rounded-t -mt-1" style="height: 52%"></div>
+<span class="font-label-sm text-label-sm text-outline mt-1">08h</span>
+</div>
+<!-- 10:00 (Peak delivery) -->
+<div class="flex-1 flex flex-col items-center gap-1 h-full justify-end">
+<div class="w-full max-w-[18px] bg-primary-container rounded-t" style="height: 95%"></div>
+<div class="w-full max-w-[18px] bg-secondary rounded-t -mt-1" style="height: 78%"></div>
+<span class="font-label-sm text-label-sm text-outline mt-1">10h</span>
+</div>
+<!-- 12:00 -->
+<div class="flex-1 flex flex-col items-center gap-1 h-full justify-end">
+<div class="w-full max-w-[18px] bg-primary-container rounded-t" style="height: 82%"></div>
+<div class="w-full max-w-[18px] bg-secondary rounded-t -mt-1" style="height: 65%"></div>
+<span class="font-label-sm text-label-sm text-outline mt-1">12h</span>
+</div>
+<!-- 14:00 -->
+<div class="flex-1 flex flex-col items-center gap-1 h-full justify-end">
+<div class="w-full max-w-[18px] bg-primary-container rounded-t" style="height: 68%"></div>
+<div class="w-full max-w-[18px] bg-secondary rounded-t -mt-1" style="height: 44%"></div>
+<span class="font-label-sm text-label-sm text-outline mt-1">14h</span>
+</div>
+<!-- 16:00 -->
+<div class="flex-1 flex flex-col items-center gap-1 h-full justify-end">
+<div class="w-full max-w-[18px] bg-primary-container rounded-t" style="height: 54%"></div>
+<div class="w-full max-w-[18px] bg-secondary rounded-t -mt-1" style="height: 38%"></div>
+<span class="font-label-sm text-label-sm text-outline mt-1">16h</span>
+</div>
+<!-- 18:00 (Now) -->
+<div class="flex-1 flex flex-col items-center gap-1 h-full justify-end">
+<div class="w-full max-w-[18px] bg-primary-container rounded-t" style="height: 42%"></div>
+<div class="w-full max-w-[18px] bg-secondary rounded-t -mt-1" style="height: 28%"></div>
+<span class="font-label-sm text-label-sm text-outline mt-1">18h</span>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-space-md">
+<div class="flex items-center gap-space-sm bg-surface-container-low p-space-sm rounded-lg">
+<div class="w-8 h-8 rounded-lg bg-primary-container/20 flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[20px]">water_drop</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-md text-headline-md font-bold text-on-surface">18,450 L</span>
+<span class="font-label-sm text-label-sm text-outline">Potable Water Transferred</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm bg-surface-container-low p-space-sm rounded-lg">
+<div class="w-8 h-8 rounded-lg bg-secondary/20 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">medical_services</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-md text-headline-md font-bold text-on-surface">312 Units</span>
+<span class="font-label-sm text-label-sm text-outline">Trauma &amp; Hypothermia Kits</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Section 4: Road Degradation & Water Level Recovery Curves (6 cols) -->
+<div class="lg:col-span-6 bg-surface-container p-space-lg rounded-xl shadow-md flex flex-col justify-between gap-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs">
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface font-semibold">Road Degradation &amp; Water Crest</h2>
+<span class="font-label-sm text-label-sm text-outline">Telemetry sensor depths vs highway surface load integrity index</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary bg-primary-container/20 px-space-xs py-0.5 rounded font-mono">CREST RECEDING</span>
+</div>
+<!-- Dual Curve Line Graphic -->
+<div class="w-full h-48 bg-surface-container-low rounded-lg p-space-sm flex flex-col justify-between">
+<svg class="w-full h-full text-outline" preserveaspectratio="none" viewbox="0 0 500 180">
+<!-- Grid Lines -->
+<line stroke="currentColor" stroke-opacity="0.1" x1="0" x2="500" y1="45" y2="45"></line>
+<line stroke="currentColor" stroke-opacity="0.1" x1="0" x2="500" y1="90" y2="90"></line>
+<line stroke="currentColor" stroke-opacity="0.1" x1="0" x2="500" y1="135" y2="135"></line>
+<!-- Flood Depth Curve (Tertiary Red / High Crest) -->
+<path class="text-tertiary-container" d="M 0 160 C 100 150, 150 20, 240 25 C 330 30, 420 110, 500 135" fill="none" stroke="currentColor" stroke-width="2.5"></path>
+<!-- Road Structural Integrity Curve (Secondary Green drops then stabilizes) -->
+<path class="text-secondary" d="M 0 30 C 80 35, 160 140, 240 145 C 320 150, 400 115, 500 85" fill="none" stroke="currentColor" stroke-dasharray="4 2" stroke-width="2.5"></path>
+<!-- Markers -->
+<!-- Crest Peak -->
+<circle class="text-tertiary-container" cx="240" cy="25" fill="currentColor" r="4"></circle>
+<text class="text-tertiary font-label-sm" fill="currentColor" font-size="9" x="248" y="24">+2.84m PEAK CREST</text>
+<!-- Tarmac Softening Min -->
+<circle class="text-secondary" cx="240" cy="145" fill="currentColor" r="4"></circle>
+<text class="text-secondary font-label-sm" fill="currentColor" font-size="9" x="248" y="152">INTEGRITY TROUGH (58%)</text>
+</svg>
+</div>
+<div class="grid grid-cols-2 gap-space-md">
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">Max Recorded Water Depth</span>
+<div class="flex items-baseline gap-space-xs mt-0.5">
+<span class="font-headline-md text-headline-md text-tertiary font-bold">+2.84m</span>
+<span class="font-label-sm text-label-sm text-outline">at Basin 3 Viaduct Underpass</span>
+</div>
+<span class="font-body-sm text-body-sm text-secondary mt-1">Receding at 0.14m / hr</span>
+</div>
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">Road Structural Recovery</span>
+<div class="flex items-baseline gap-space-xs mt-0.5">
+<span class="font-headline-md text-headline-md text-secondary font-bold">78.2%</span>
+<span class="font-label-sm text-label-sm text-outline">Average Sector Index</span>
+</div>
+<span class="font-body-sm text-body-sm text-outline mt-1">Expected 100% load clearance by 06:00</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Active Field Incident Logs & Vehicle Performance Breakdown -->
+<div class="bg-surface-container p-space-lg rounded-xl shadow-md flex flex-col gap-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs">
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface font-semibold">Corridor-by-Corridor Routing Performance Logs</h2>
+<span class="font-label-sm text-label-sm text-outline">Verified vehicle sorties across dynamic flood routing nodes</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="font-label-sm text-label-sm text-outline">Showing 5 of 48 active sectors</span>
+<button class="bg-surface-container-high hover:bg-surface-bright text-on-surface px-space-sm py-space-xs rounded font-label-sm text-label-sm">Filter by Unit Type</button>
+</div>
+</div>
+<div class="w-full overflow-x-auto">
+<table class="w-full text-left">
+<thead class="bg-surface-container-low text-outline font-label-sm text-label-sm uppercase">
+<tr>
+<th class="py-space-sm px-space-md">Corridor ID</th>
+<th class="py-space-sm px-space-md">Elevation / Sector</th>
+<th class="py-space-sm px-space-md">Sorties Handled</th>
+<th class="py-space-sm px-space-md">Avg Transit Speed</th>
+<th class="py-space-sm px-space-md">Peak Water Level</th>
+<th class="py-space-sm px-space-md">Current Safety Status</th>
+<th class="py-space-sm px-space-md text-right">Reroute Efficiency</th>
+</tr>
+</thead>
+<tbody class="divide-y-0 font-body-sm text-body-sm text-on-surface">
+<!-- Row 1 -->
+<tr class="hover:bg-surface-container-high transition-colors">
+<td class="py-space-sm px-space-md font-label-md text-label-md font-bold text-on-surface">COR-09 Viaduct Alpha</td>
+<td class="py-space-sm px-space-md font-label-sm text-label-sm text-outline">Elevated (+14m) // Sec 4.1</td>
+<td class="py-space-sm px-space-md font-label-md text-label-md">412 Units</td>
+<td class="py-space-sm px-space-md">58.4 km/h</td>
+<td class="py-space-sm px-space-md font-label-sm text-label-sm text-secondary">0.00m (Dry)</td>
+<td class="py-space-sm px-space-md">
+<span class="inline-flex items-center gap-1.5 px-space-xs py-0.5 rounded font-label-sm text-label-sm text-secondary bg-secondary/15">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                  OPTIMAL - PASSABLE
+                </span>
+</td>
+<td class="py-space-sm px-space-md text-right font-label-md text-label-md text-secondary font-bold">100.0%</td>
+</tr>
+<!-- Row 2 -->
+<tr class="hover:bg-surface-container-high transition-colors">
+<td class="py-space-sm px-space-md font-label-md text-label-md font-bold text-on-surface">HWY-104 Canal Overpass</td>
+<td class="py-space-sm px-space-md font-label-sm text-label-sm text-outline">Bridgehead (+6m) // Sec 4.3</td>
+<td class="py-space-sm px-space-md font-label-md text-label-md">288 Units</td>
+<td class="py-space-sm px-space-md">42.1 km/h</td>
+<td class="py-space-sm px-space-md font-label-sm text-label-sm text-primary">+0.18m (Passable)</td>
+<td class="py-space-sm px-space-md">
+<span class="inline-flex items-center gap-1.5 px-space-xs py-0.5 rounded font-label-sm text-label-sm text-secondary bg-secondary/15">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                  PASSABLE (W/ CARE)
+                </span>
+</td>
+<td class="py-space-sm px-space-md text-right font-label-md text-label-md text-secondary font-bold">98.6%</td>
+</tr>
+<!-- Row 3 -->
+<tr class="hover:bg-surface-container-high transition-colors">
+<td class="py-space-sm px-space-md font-label-md text-label-md font-bold text-on-surface">Bayou Low-Water Bypass</td>
+<td class="py-space-sm px-space-md font-label-sm text-label-sm text-outline">Depression (+0.5m) // Sec 4.4</td>
+<td class="py-space-sm px-space-md font-label-md text-label-md">14 Units (High-clearance)</td>
+<td class="py-space-sm px-space-md">11.8 km/h</td>
+<td class="py-space-sm px-space-md font-label-sm text-label-sm text-tertiary">+1.15m (Risk)</td>
+<td class="py-space-sm px-space-md">
+<span class="inline-flex items-center gap-1.5 px-space-xs py-0.5 rounded font-label-sm text-label-sm text-primary bg-primary-container/20">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+                  RESTRICTED (HEAVY TRUCK ONLY)
+                </span>
+</td>
+<td class="py-space-sm px-space-md text-right font-label-md text-label-md text-primary font-bold">94.1%</td>
+</tr>
+<!-- Row 4 -->
+<tr class="hover:bg-surface-container-high transition-colors">
+<td class="py-space-sm px-space-md font-label-md text-label-md font-bold text-on-surface">Riverside Parkway West</td>
+<td class="py-space-sm px-space-md font-label-sm text-label-sm text-outline">Basin Floor (-1m) // Sec 4.2</td>
+<td class="py-space-sm px-space-md font-label-md text-label-md">0 Units (Barricaded)</td>
+<td class="py-space-sm px-space-md">0.0 km/h</td>
+<td class="py-space-sm px-space-md font-label-sm text-label-sm text-tertiary">+2.84m (Submerged)</td>
+<td class="py-space-sm px-space-md">
+<span class="inline-flex items-center gap-1.5 px-space-xs py-0.5 rounded font-label-sm text-label-sm text-tertiary bg-tertiary-container/20">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-container"></span>
+                  TOTAL CLOSURE // REDIRECTED
+                </span>
+</td>
+<td class="py-space-sm px-space-md text-right font-label-md text-label-md text-secondary font-bold">100.0% Diverted</td>
+</tr>
+<!-- Row 5 -->
+<tr class="hover:bg-surface-container-high transition-colors">
+<td class="py-space-sm px-space-md font-label-md text-label-md font-bold text-on-surface">Industrial Spur Link 8</td>
+<td class="py-space-sm px-space-md font-label-sm text-label-sm text-outline">Grade Level (+2m) // Sec 4.6</td>
+<td class="py-space-sm px-space-md font-label-md text-label-md">94 Units</td>
+<td class="py-space-sm px-space-md">34.6 km/h</td>
+<td class="py-space-sm px-space-md font-label-sm text-label-sm text-secondary">+0.05m</td>
+<td class="py-space-sm px-space-md">
+<span class="inline-flex items-center gap-1.5 px-space-xs py-0.5 rounded font-label-sm text-label-sm text-secondary bg-secondary/15">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                  OPEN FOR RELIEF CONVOYS
+                </span>
+</td>
+<td class="py-space-sm px-space-md text-right font-label-md text-label-md text-secondary font-bold">99.2%</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- Telemetry System Watermark & Disclaimer Banner -->
+<div class="bg-surface-container-low p-space-md rounded-xl flex flex-col sm:flex-row items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-2.5 h-2.5 rounded-full bg-tertiary animate-pulse"></div>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold tracking-wider uppercase">DEMO METRICS - SIMULATED DATA</span>
+<span class="font-body-sm text-body-sm text-outline">Hydrodynamic model output generated via Gulf Coast NOAA Sensor Mirror sandbox.</span>
+</div>
+<div class="flex items-center gap-space-md font-label-sm text-label-sm text-outline">
+<span>MODEL CONFIDENCE: 98.4%</span>
+<span>LATENCY: 140ms</span>
+<span>ENGINE: RELIEF-RT V2.4</span>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Simple micro-interaction for Export button notification feedback
+  const exportBtn = document.getElementById('exportBtn');
+  if (exportBtn) {
+    exportBtn.addEventListener('click', () => {
+      const originalText = exportBtn.innerHTML;
+      exportBtn.innerHTML = '<span class="material-symbols-outlined text-[18px] animate-spin">refresh</span><span>Compiling PDF Report...</span>';
+      exportBtn.classList.add('opacity-80');
+      setTimeout(() => {
+        exportBtn.innerHTML = '<span class="material-symbols-outlined text-[18px]">check_circle</span><span>Report Dispatched!</span>';
+        exportBtn.classList.remove('opacity-80');
+        setTimeout(() => {
+          exportBtn.innerHTML = originalText;
+        }, 2200);
+      }, 1200);
+    });
+  }
+</script></main><footer class="w-full bg-surface-container-lowest py-space-lg"><div class="w-full px-margin flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">FLOODROUTE ENTERPRISE DISPATCH HUD // BUILD 2.4.9-SEC</span><span class="h-3 w-px bg-surface-container-highest"></span><span class="font-label-sm text-label-sm text-secondary flex items-center gap-space-xs"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>TELEMETRY SYNCED</span></div><div class="flex items-center gap-space-lg"><a class="font-label-sm text-label-sm text-outline hover:text-on-surface transition-colors" href="#">Emergency Protocols</a><a class="font-label-sm text-label-sm text-outline hover:text-on-surface transition-colors" href="#">GIS Sensor Feeds</a><a class="font-label-sm text-label-sm text-outline hover:text-on-surface transition-colors" href="#">Relief Node Mesh</a><span class="font-label-sm text-label-sm text-outline">© 2025 Civil Defense Mobility Grid.</span></div></div></footer></body></html>

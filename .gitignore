@@ -1,0 +1,64 @@
+# ============================================================
+# FloodRoute — .gitignore
+# ============================================================
+
+# --- Environment / Secrets ---
+.env
+.env.local
+.env.*.local
+.env.development
+.env.production
+.env.staging
+# KEEP .env.example (safe template — no real values)
+
+# --- AWS Credentials (never commit) ---
+.aws/
+credentials
+~/.aws/
+*.pem
+*.key
+*.p12
+*.pfx
+
+# --- Node.js ---
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.pnpm-store/
+.npm/
+
+# --- Build Artifacts ---
+dist/
+build/
+.vite/
+*.tsbuildinfo
+
+# --- Cache & Temp ---
+.cache/
+.parcel-cache/
+.eslintcache
+*.tmp
+*.temp
+.DS_Store
+Thumbs.db
+
+# --- Logs ---
+logs/
+*.log
+*.log.*
+
+# --- IDE / Editor ---
+.idea/
+.vscode/settings.json
+*.swp
+*.swo
+*~
+
+# --- Python (screenshot scripts) ---
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/

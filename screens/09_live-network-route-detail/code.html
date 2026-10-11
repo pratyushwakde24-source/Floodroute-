@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"tertiary-fixed":"#ffdad7","surface-container-lowest":"#0a0e13","on-primary":"#591d00","outline":"#a98a7e","on-tertiary-fixed-variant":"#930013","on-secondary":"#003824","on-tertiary-fixed":"#410004","on-secondary-fixed":"#002113","surface-container":"#1c2025","on-secondary-fixed-variant":"#005236","secondary-fixed-dim":"#4edea3","primary-fixed-dim":"#ffb598","tertiary-fixed-dim":"#ffb3ad","secondary":"#4edea3","outline-variant":"#594138","primary":"#ffb598","error":"#ffb4ab","on-primary-fixed-variant":"#7e2c00","surface-container-low":"#181c21","inverse-surface":"#e0e2ea","on-error-container":"#ffdad6","on-secondary-container":"#00311f","surface-tint":"#ffb598","on-tertiary-container":"#6a000b","on-primary-container":"#5b1d00","tertiary-container":"#ff6762","on-error":"#690005","on-surface-variant":"#e2bfb2","primary-fixed":"#ffdbce","on-surface":"#e0e2ea","surface-bright":"#36393f","surface-dim":"#101419","error-container":"#93000a","on-tertiary":"#68000a","tertiary":"#ffb3ad","on-primary-fixed":"#370e00","surface-variant":"#31353b","secondary-container":"#00a572","surface":"#101419","primary-container":"#ff6b22","on-background":"#e0e2ea","surface-container-highest":"#31353b","background":"#101419","secondary-fixed":"#6ffbbe","surface-container-high":"#262a30","inverse-primary":"#a53c00","inverse-on-surface":"#2d3136"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-lg":"1.5rem","gutter-mobile":"0.75rem","space-xl":"2rem","space-xs":"0.25rem","margin-mobile":"1rem","margin":"1.5rem","space-md":"1rem","gutter":"1rem","space-sm":"0.5rem"},"fontFamily":{"body-sm":["Inter"],"body-lg":["Inter"],"label-lg":["JetBrains Mono"],"headline-md":["Inter"],"headline-lg":["Inter"],"label-sm":["JetBrains Mono"],"body-md":["Inter"],"label-md":["JetBrains Mono"],"headline-xl-mobile":["Inter"],"headline-xl":["Inter"]},"fontSize":{"body-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"label-lg":["14px",{"lineHeight":"20px","fontWeight":"500"}],"headline-md":["20px",{"lineHeight":"28px","fontWeight":"600"}],"headline-lg":["24px",{"lineHeight":"32px","fontWeight":"600"}],"label-sm":["10px",{"lineHeight":"14px","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"label-md":["12px",{"lineHeight":"16px","fontWeight":"500"}],"headline-xl-mobile":["28px",{"lineHeight":"36px","fontWeight":"700"}],"headline-xl":["36px",{"lineHeight":"44px","fontWeight":"700"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface min-h-screen selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 w-full z-50 bg-surface-container-lowest/85 backdrop-blur-2xl shadow-[0_4px_24px_rgba(0,0,0,0.5)]"><div class="h-28 w-full px-margin flex flex-col justify-between py-space-xs"><div class="h-14 flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded-lg bg-primary-container/20 flex items-center justify-center text-primary-container"><span class="material-symbols-outlined text-[22px]">flood</span></div><div><span class="font-headline-md text-headline-md tracking-tight font-bold text-on-surface block leading-tight">FloodRoute</span><span class="font-label-sm text-label-sm text-outline uppercase tracking-wider block">Enterprise Relief Engine</span></div></div><div class="h-6 w-px bg-surface-container-highest"></div><div class="flex items-center gap-space-xs bg-surface-container-low px-space-sm py-space-xs rounded-lg"><span class="material-symbols-outlined text-outline text-[16px]">corporate_fare</span><span class="font-label-md text-label-md text-on-surface font-medium">Metro Flood Response Taskforce (DEMO)</span><span class="material-symbols-outlined text-outline text-[16px]">arrow_drop_down</span></div><div class="bg-surface-container-high px-space-sm py-space-xs rounded-full flex items-center gap-space-xs"><span class="w-1.5 h-1.5 rounded-full bg-secondary-fixed"></span><span class="font-label-sm text-label-sm text-secondary-fixed uppercase tracking-wider">Gulf Coast Sector 4</span></div></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-sm bg-surface-container-low px-space-md py-space-xs rounded-full"><span class="relative flex h-2.5 w-2.5"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span><span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-secondary"></span></span><span class="font-label-md text-label-md text-secondary font-medium">AI Routing Engine Active</span></div><div class="relative flex items-center justify-center w-10 h-10 rounded-full bg-surface-container-low hover:bg-surface-container hover:text-on-surface transition-colors cursor-pointer"><span class="material-symbols-outlined text-on-surface-variant text-[20px]">notifications</span><span class="absolute top-1 right-1 w-4 h-4 rounded-full bg-tertiary-container text-on-tertiary-container font-label-sm text-label-sm flex items-center justify-center font-bold">5</span></div><button class="flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-primary-container text-on-primary-container hover:bg-primary-fixed-dim hover:text-on-primary transition-all font-label-md text-label-md font-semibold" type="button"><span class="material-symbols-outlined text-[18px]">broadcast_on_personal</span><span>Emergency Broadcast</span></button><div class="flex items-center gap-space-sm bg-surface-container-low pl-space-xs pr-space-md py-space-xs rounded-full"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface font-medium leading-none">Dir. Sarah Chen</span><span class="font-label-sm text-label-sm text-outline leading-none mt-0.5">Logistics Lead</span></div></div></div></div><div class="h-12 flex items-center justify-between gap-space-md pt-space-xs"><nav class="flex items-center gap-space-xs bg-surface-container-low p-space-xs rounded-xl" data-active-classes="bg-surface-container-high text-on-surface font-semibold shadow-[inset_0_1px_0_rgba(255,255,255,0.1)]"><a class="px-space-md py-space-xs rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="command-center" href="#">Command Center</a><a class="px-space-md py-space-xs rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="incidents" href="#">Incidents</a><a aria-current="page" class="px-space-md py-space-xs rounded-lg transition-all bg-surface-container-high text-on-surface font-semibold shadow-[inset_0_1px_0_rgba(255,255,255,0.1)]" data-path="live-network" href="#">Live Network</a><a class="px-space-md py-space-xs rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="fleet" href="#">Fleet</a><a class="px-space-md py-space-xs rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="relief-resources" href="#">Relief Resources</a><a class="px-space-md py-space-xs rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="simulation" href="#">Simulation</a><a class="px-space-md py-space-xs rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="analytics" href="#">Analytics</a><a class="px-space-md py-space-xs rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="settings" href="#">Settings</a></nav><div class="flex items-center gap-space-md flex-1 max-w-xl justify-end"><div class="flex items-center gap-space-sm bg-surface-container-lowest px-space-md py-space-xs rounded-xl flex-1 max-w-sm"><span class="material-symbols-outlined text-outline text-[18px]">search</span><input class="bg-transparent border-0 outline-none w-full font-body-sm text-body-sm text-on-surface placeholder:text-outline" placeholder="Quick search incident, unit, shelter..." type="text"/><span class="font-label-sm text-label-sm text-outline bg-surface-container-high px-space-xs rounded">⌘K</span></div><div class="flex items-center gap-space-sm bg-tertiary-container/15 px-space-md py-space-xs rounded-xl"><div class="w-2 h-2 rounded-full bg-tertiary-container animate-pulse"></div><span class="font-label-sm text-label-sm text-tertiary uppercase font-bold tracking-wider">SIM DATA ACTIVE</span><span class="material-symbols-outlined text-tertiary text-[16px] cursor-pointer hover:text-on-surface transition-colors">close</span></div></div></div></div></header><main class="w-full pt-28 bg-background min-h-screen"><div class="flex flex-col w-full relative select-none overflow-hidden">
+<!-- Interactive Diorama & Tactical Map Layer Container -->
+<div class="relative w-full h-[calc(100vh-7rem)] bg-surface-container-lowest overflow-hidden">
+<!-- Synthetic Diorama Map Canvas (Stylized Architectural Mesh + Wet Pavement GIS) -->
+<div class="absolute inset-0 w-full h-full bg-cover bg-center transition-transform duration-700 ease-out origin-center scale-100" data-alt="A cinematic miniature tilt-shift diorama of an ultra-modern smart metropolis center in a torrential rainstorm. Sleek wet-asphalt streets with glowing neon green guidance lanes and flooded lowlands shaded in deep translucent amber and red warning zones. High-tech emergency relief headquarters building with glowing warm amber glass windows, futuristic electric ambulances, emergency vans, and modern trams navigating bypass corridors under stormy dramatic sky. Deep slate charcoal, emerald luminescence, tactical rescue atmosphere." id="mapCanvas" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBDWqDVqsXpYGxswmYGsDYeOvfSxCSB3A12Q4ZKOni2d32ibvCIGM_4UNZuv6tz_QFBkTnqj64wgrFiw5jfB87vhhkZGHhZIO1L8p4VqOBZjJIPvTXKjgM_ByCWN1_xq1TJAkR4ljy0NfwGt9CZj94r-57lQ2om0DJogxrJZTboajmS5GZVXAqdnTIIBtu-IVlEXfD4hpuQ3G6qD7sw2eQNQHL6IjilJ3k_ddDsxlvuN6UMfCALp3eu8g')">
+<!-- Spatial Dark Gradient Scrim to integrate into dark shell & boost HUD legibility -->
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/40 to-surface-container-lowest/60 pointer-events-none"></div>
+<!-- Interactive SVG GIS Vector Overlay -->
+<svg class="absolute inset-0 w-full h-full pointer-events-none z-10" preserveaspectratio="none" viewbox="0 0 1920 1080">
+<defs>
+<!-- Gradient for Passable Safe Corridor -->
+<lineargradient id="safeRouteGrad" x1="0%" x2="100%" y1="0%" y2="100%">
+<stop offset="0%" stop-color="#4edea3" stop-opacity="0.9"></stop>
+<stop offset="100%" stop-color="#00a572" stop-opacity="0.7"></stop>
+</lineargradient>
+<!-- Pattern for Flooded Barricade -->
+<pattern height="16" id="hazardStripe" patterntransform="rotate(45 0 0)" patternunits="userSpaceOnUse" width="16">
+<line stroke="#ff6762" stroke-opacity="0.6" stroke-width="4" x1="0" x2="0" y1="0" y2="16"></line>
+<line stroke="transparent" stroke-width="4" x1="8" x2="8" y1="0" y2="16"></line>
+</pattern>
+<!-- Marker Arrow Heads -->
+<marker id="arrowGreen" markerheight="6" markerwidth="6" orient="auto-start-reverse" refx="5" refy="5" viewbox="0 0 10 10">
+<path d="M 0 1 L 8 5 L 0 9 z" fill="#4edea3"></path>
+</marker>
+</defs>
+<!-- Inundation Hazard Polygon: Sector 4 North Basin (0.8m Critical Crest) -->
+<polygon fill="#93000a" fill-opacity="0.32" points="420,440 680,430 750,560 510,610 390,530" stroke="#ff6762" stroke-dasharray="6,4" stroke-width="1.5"></polygon>
+<!-- Inundation Hazard Polygon: Riverbank Delta East (0.45m Rising) -->
+<polygon fill="#ff6762" fill-opacity="0.22" points="1120,620 1480,590 1560,780 1200,820" stroke="#ffb598" stroke-dasharray="4,4" stroke-width="1.5"></polygon>
+<!-- Submerged Blocked Arteries (Red dashed ribbons) -->
+<path d="M 430,450 L 610,480 L 730,550" fill="none" opacity="0.85" stroke="#ff6762" stroke-dasharray="8,6" stroke-linecap="round" stroke-width="5"></path>
+<path d="M 1150,640 L 1320,680 L 1490,750" fill="none" opacity="0.85" stroke="#ff6762" stroke-dasharray="8,6" stroke-linecap="round" stroke-width="5"></path>
+<!-- Active Safe Corridor 07 (Glowing Emerald Bypass with Animated Flow Pulse) -->
+<path class="drop-shadow-[0_0_12px_rgba(78,222,163,0.85)]" d="M 180,820 C 440,810 560,740 690,660 S 960,600 1140,490 S 1420,420 1710,390" fill="none" id="corridor07" marker-end="url(#arrowGreen)" stroke="#4edea3" stroke-linecap="round" stroke-width="5"></path>
+<!-- Auxiliary Safe Link (Corridor 02 South Link) -->
+<path d="M 280,910 C 500,880 730,830 920,810 S 1320,830 1620,860" fill="none" opacity="0.6" stroke="#00a572" stroke-dasharray="6,6" stroke-linecap="round" stroke-width="3"></path>
+</svg>
+<!-- Pin: Central Emergency Command Hub (Diorama Center Building) -->
+<div class="absolute top-[48%] left-[49%] -translate-x-1/2 -translate-y-1/2 z-20 group cursor-pointer" onclick="selectFacility('cmd')">
+<div class="relative flex items-center justify-center">
+<div class="absolute -inset-4 rounded-full bg-primary-container/20 animate-ping"></div>
+<div class="w-10 h-10 rounded-full bg-surface-container-lowest/90 backdrop-blur-md flex items-center justify-center shadow-xl hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary-container text-[20px]" style="font-variation-settings: 'FILL' 1;">emergency</span>
+</div>
+<div class="absolute left-1/2 -translate-x-1/2 bottom-full mb-2 bg-surface-container-lowest/95 backdrop-blur-md px-space-sm py-1 rounded-lg shadow-xl whitespace-nowrap flex items-center gap-space-xs pointer-events-none">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold tracking-wide">METRO COMMAND BASE</span>
+<span class="font-label-sm text-label-sm text-secondary bg-surface-container px-1 rounded">LVL 4 HQ</span>
+</div>
+</div>
+</div>
+<!-- Pin: Mercy General Hospital Hub -->
+<div class="absolute top-[36%] left-[73%] -translate-x-1/2 -translate-y-1/2 z-20 group cursor-pointer" onclick="selectFacility('hospital')">
+<div class="relative flex items-center justify-center">
+<div class="w-9 h-9 rounded-full bg-surface-container-lowest/90 backdrop-blur-md flex items-center justify-center shadow-xl hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-secondary text-[18px]">local_hospital</span>
+</div>
+<div class="absolute left-1/2 -translate-x-1/2 bottom-full mb-2 bg-surface-container-lowest/95 backdrop-blur-md px-space-sm py-1 rounded-lg shadow-xl whitespace-nowrap flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm text-on-surface">MERCY GENERAL (ACTIVE)</span>
+<span class="font-label-sm text-label-sm text-outline">BEDS: 92%</span>
+</div>
+</div>
+</div>
+<!-- Pin: Sector 4 Relief Shelter (Capacity 84%) -->
+<div class="absolute top-[68%] left-[24%] -translate-x-1/2 -translate-y-1/2 z-20 group cursor-pointer" onclick="selectFacility('shelter')">
+<div class="relative flex items-center justify-center">
+<div class="w-9 h-9 rounded-full bg-surface-container-lowest/90 backdrop-blur-md flex items-center justify-center shadow-xl hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-primary text-[18px]">shield</span>
+</div>
+<div class="absolute left-1/2 -translate-x-1/2 bottom-full mb-2 bg-surface-container-lowest/95 backdrop-blur-md px-space-sm py-1 rounded-lg shadow-xl whitespace-nowrap flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span class="font-label-sm text-label-sm text-on-surface">SHELTER #04 VIADUCT</span>
+<span class="font-label-sm text-label-sm text-primary-fixed bg-surface-container px-1 rounded">84% FULL</span>
+</div>
+</div>
+</div>
+<!-- Moving Fleet Beacons with Heading Arrows -->
+<!-- Vehicle 1: Ambulance 07 -->
+<div class="absolute top-[59%] left-[42%] -translate-x-1/2 -translate-y-1/2 z-25 cursor-pointer group transition-all duration-1000" id="unitAmb07" onclick="inspectVehicle('AMB-07')">
+<div class="flex items-center gap-space-xs bg-surface-container-lowest/90 backdrop-blur-md pl-1 pr-2 py-0.5 rounded-full shadow-lg">
+<div class="w-5 h-5 rounded-full bg-secondary flex items-center justify-center text-on-secondary">
+<span class="material-symbols-outlined text-[12px] rotate-45">navigation</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-bold">AMB-07</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">44 km/h</span>
+</div>
+</div>
+<!-- Vehicle 2: Relief Supply Truck 12 -->
+<div class="absolute top-[49%] left-[63%] -translate-x-1/2 -translate-y-1/2 z-25 cursor-pointer group transition-all duration-1000" id="unitTruck12" onclick="inspectVehicle('TRK-12')">
+<div class="flex items-center gap-space-xs bg-surface-container-lowest/90 backdrop-blur-md pl-1 pr-2 py-0.5 rounded-full shadow-lg">
+<div class="w-5 h-5 rounded-full bg-primary-container flex items-center justify-center text-on-primary-container">
+<span class="material-symbols-outlined text-[12px] rotate-12">local_shipping</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary-fixed font-bold">TRK-12</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">36 km/h</span>
+</div>
+</div>
+<!-- Vehicle 3: Amphibious Rescue Craft 03 -->
+<div class="absolute top-[52%] left-[28%] -translate-x-1/2 -translate-y-1/2 z-25 cursor-pointer group transition-all duration-1000" id="unitCraft03" onclick="inspectVehicle('RC-03')">
+<div class="flex items-center gap-space-xs bg-surface-container-lowest/90 backdrop-blur-md pl-1 pr-2 py-0.5 rounded-full shadow-lg">
+<div class="w-5 h-5 rounded-full bg-tertiary-container flex items-center justify-center text-on-tertiary-container">
+<span class="material-symbols-outlined text-[12px]">kayaking</span>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary font-bold">RESCUE-03</span>
+<span class="font-label-sm text-label-sm text-error">WATER DEPTH 0.82m</span>
+</div>
+</div>
+<!-- Water Depth Gauges on Water Polygons -->
+<div class="absolute top-[53%] left-[32%] z-20 pointer-events-none">
+<div class="bg-surface-container-lowest/95 backdrop-blur-md px-space-xs py-0.5 rounded flex items-center gap-space-xs shadow-md">
+<span class="material-symbols-outlined text-error text-[13px]">water</span>
+<span class="font-label-sm text-label-sm text-error font-bold tracking-tight">DEPTH 0.80m [CRITICAL]</span>
+</div>
+</div>
+<div class="absolute top-[67%] left-[69%] z-20 pointer-events-none">
+<div class="bg-surface-container-lowest/95 backdrop-blur-md px-space-xs py-0.5 rounded flex items-center gap-space-xs shadow-md">
+<span class="material-symbols-outlined text-primary text-[13px]">water_loss</span>
+<span class="font-label-sm text-label-sm text-primary font-bold tracking-tight">DEPTH 0.45m [RISING +3cm/h]</span>
+</div>
+</div>
+</div>
+<!-- FLOATING TOP-LEFT: Tactical Layer Filters HUD -->
+<div class="absolute top-space-md left-space-md z-30 max-w-sm w-full bg-surface-container-lowest/85 backdrop-blur-xl p-space-md rounded-xl shadow-2xl">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary-container text-[18px]">layers</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface font-bold">Tactical Map Layers</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary bg-surface-container px-space-xs rounded">4 FEEDS SYNC</span>
+</div>
+<div class="space-y-space-xs font-body-sm text-body-sm text-on-surface">
+<label class="flex items-center justify-between p-space-xs rounded-lg hover:bg-surface-container transition-colors cursor-pointer">
+<span class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary"></span>
+<span class="text-on-surface">Safe Passable Corridors</span>
+</span>
+<input checked="" class="accent-secondary h-4 w-4 rounded cursor-pointer" type="checkbox"/>
+</label>
+<label class="flex items-center justify-between p-space-xs rounded-lg hover:bg-surface-container transition-colors cursor-pointer">
+<span class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-error"></span>
+<span class="text-on-surface">Flooded / Blocked Arteries</span>
+</span>
+<input checked="" class="accent-error h-4 w-4 rounded cursor-pointer" type="checkbox"/>
+</label>
+<label class="flex items-center justify-between p-space-xs rounded-lg hover:bg-surface-container transition-colors cursor-pointer">
+<span class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-tertiary">water</span>
+<span class="text-on-surface-variant">Live Water Depth Gauges (USGS)</span>
+</span>
+<input checked="" class="accent-tertiary h-4 w-4 rounded cursor-pointer" type="checkbox"/>
+</label>
+<label class="flex items-center justify-between p-space-xs rounded-lg hover:bg-surface-container transition-colors cursor-pointer">
+<span class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-primary">airport_shuttle</span>
+<span class="text-on-surface">Emergency Fleet Telemetry</span>
+</span>
+<input checked="" class="accent-primary h-4 w-4 rounded cursor-pointer" type="checkbox"/>
+</label>
+<label class="flex items-center justify-between p-space-xs rounded-lg hover:bg-surface-container transition-colors cursor-pointer">
+<span class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-outline">corporate_fare</span>
+<span class="text-on-surface-variant">Shelters &amp; Field Hospitals</span>
+</span>
+<input checked="" class="accent-primary-container h-4 w-4 rounded cursor-pointer" type="checkbox"/>
+</label>
+</div>
+<div class="mt-space-sm pt-space-xs flex items-center justify-between text-outline font-label-sm text-label-sm">
+<span>GRID ACCURACY: 0.25m RTK</span>
+<span class="text-secondary">LATENCY: 42ms</span>
+</div>
+</div>
+<!-- FLOATING TOP-RIGHT: Tactical GIS Map Controls HUD -->
+<div class="absolute top-space-md right-space-md z-30 flex flex-col gap-space-xs items-end">
+<!-- Primary Action: Broadcast Re-route Alert -->
+<div class="flex items-center gap-space-xs bg-surface-container-lowest/85 backdrop-blur-xl p-1 rounded-full shadow-2xl mb-space-xs">
+<button class="w-9 h-9 rounded-full bg-surface-container hover:bg-surface-container-high flex items-center justify-center text-on-surface transition-all" id="btnRecenter" onclick="resetMapView()" title="Recenter Viewport">
+<span class="material-symbols-outlined text-[18px]">my_location</span>
+</button>
+<button class="w-9 h-9 rounded-full bg-surface-container hover:bg-surface-container-high flex items-center justify-center text-on-surface transition-all" id="btnTilt" onclick="toggleTilt()" title="Toggle 3D Diorama Perspective">
+<span class="material-symbols-outlined text-[18px]">view_in_ar</span>
+</button>
+<button class="w-9 h-9 rounded-full bg-surface-container hover:bg-surface-container-high flex items-center justify-center text-on-surface transition-all" onclick="zoomMap(1.15)" title="Zoom In">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+<button class="w-9 h-9 rounded-full bg-surface-container hover:bg-surface-container-high flex items-center justify-center text-on-surface transition-all" onclick="zoomMap(0.85)" title="Zoom Out">
+<span class="material-symbols-outlined text-[18px]">remove</span>
+</button>
+</div>
+<!-- Quick Operational Mode Switcher -->
+<div class="bg-surface-container-lowest/85 backdrop-blur-xl rounded-xl p-space-xs shadow-2xl flex flex-col gap-1 w-44">
+<div class="px-space-xs py-1 font-label-sm text-label-sm uppercase tracking-wider text-outline">Telemetry Mode</div>
+<button class="flex items-center justify-between px-space-sm py-1.5 rounded-lg bg-secondary-container/20 text-secondary font-label-sm text-label-sm font-semibold transition-all">
+<span class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px]">water</span>
+            Inundation AI
+          </span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+</button>
+<button class="flex items-center justify-between px-space-sm py-1.5 rounded-lg hover:bg-surface-container text-on-surface-variant font-label-sm text-label-sm transition-all">
+<span class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px]">traffic</span>
+            Fleet Density
+          </span>
+<span class="text-outline">18 units</span>
+</button>
+<button class="flex items-center justify-between px-space-sm py-1.5 rounded-lg hover:bg-surface-container text-on-surface-variant font-label-sm text-label-sm transition-all">
+<span class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px]">cloud_sync</span>
+            Radar Doppler
+          </span>
+<span class="text-tertiary">Active Storm</span>
+</button>
+</div>
+</div>
+<!-- FLOATING BOTTOM-LEFT: Route Corridor Inspection HUD -->
+<div class="absolute bottom-space-md left-space-md z-30 w-full max-w-lg bg-surface-container-lowest/90 backdrop-blur-2xl rounded-2xl p-space-md shadow-2xl transition-all" id="corridorHUD">
+<div class="flex items-start justify-between gap-space-md mb-space-sm">
+<div>
+<div class="flex items-center gap-space-xs mb-1">
+<span class="px-space-xs py-0.5 rounded bg-secondary/15 text-secondary font-label-sm text-label-sm font-bold uppercase tracking-wider flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span>
+              Optimal Primary Route
+            </span>
+<span class="font-label-sm text-label-sm text-outline">ID: CR-07-S</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface font-bold tracking-tight">Corridor 07 - South Viaduct Bypass</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Elevated arterial connector over submerged lowlands into Sector 4 Core.</p>
+</div>
+<div class="text-right">
+<span class="font-label-lg text-label-lg font-bold text-secondary block">100% CLEAR</span>
+<span class="font-label-sm text-label-sm text-outline uppercase">Zero Risk</span>
+</div>
+</div>
+<!-- Corridor Performance Telemetry Grid -->
+<div class="grid grid-cols-4 gap-space-xs mb-space-md">
+<div class="bg-surface-container-low p-space-xs rounded-xl flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">LENGTH</span>
+<span class="font-label-md text-label-md text-on-surface font-bold mt-0.5">8.4 km</span>
+<span class="font-label-sm text-label-sm text-secondary">+0 min detour</span>
+</div>
+<div class="bg-surface-container-low p-space-xs rounded-xl flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">AVG VELOCITY</span>
+<span class="font-label-md text-label-md text-on-surface font-bold mt-0.5">42 km/h</span>
+<span class="font-label-sm text-label-sm text-secondary">Free Flow</span>
+</div>
+<div class="bg-surface-container-low p-space-xs rounded-xl flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">WATER CREST</span>
+<span class="font-label-md text-label-md text-secondary font-bold mt-0.5">0.00 m</span>
+<span class="font-label-sm text-label-sm text-outline">Elevated +14m</span>
+</div>
+<div class="bg-surface-container-low p-space-xs rounded-xl flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">CONVOY UNITS</span>
+<span class="font-label-md text-label-md text-primary-container font-bold mt-0.5">4 Units</span>
+<span class="font-label-sm text-label-sm text-outline">In Transit</span>
+</div>
+</div>
+<!-- Live Corridor Convoy Vehicle Chips -->
+<div class="mb-space-md">
+<div class="font-label-sm text-label-sm uppercase tracking-wider text-outline mb-space-xs flex items-center justify-between">
+<span>Active Units on this Viaduct</span>
+<span class="text-secondary font-bold">100% Signal Lock</span>
+</div>
+<div class="flex items-center gap-space-xs flex-wrap">
+<div class="bg-surface-container-high px-space-sm py-1 rounded-lg flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">AMB-07 (Priority 1 Critical)</span>
+<span class="font-label-sm text-label-sm text-outline">ETA 4m</span>
+</div>
+<div class="bg-surface-container-high px-space-sm py-1 rounded-lg flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">TRK-12 (Medical Logistics)</span>
+<span class="font-label-sm text-label-sm text-outline">ETA 8m</span>
+</div>
+<div class="bg-surface-container-high px-space-sm py-1 rounded-lg flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-secondary-fixed"></span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">DEF-VAN-02</span>
+<span class="font-label-sm text-label-sm text-outline">ETA 11m</span>
+</div>
+</div>
+</div>
+<!-- Action Row -->
+<div class="flex items-center gap-space-sm">
+<button class="flex-1 py-2 px-space-md rounded-full bg-primary-container text-on-primary-container font-label-md text-label-md font-semibold hover:bg-primary-fixed-dim hover:text-on-primary transition-all flex items-center justify-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px]">lock_reset</span>
+<span>Re-Route Fleet to Corridor 07</span>
+</button>
+<button class="py-2 px-space-md rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-all flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px]">share_location</span>
+<span>Dispatch Pilot Unit</span>
+</button>
+</div>
+</div>
+<!-- FLOATING RIGHT-SIDE: Real-Time Telemetry Feed Ticker -->
+<div class="absolute bottom-space-md right-space-md z-30 w-full max-w-sm bg-surface-container-lowest/90 backdrop-blur-2xl rounded-2xl p-space-md shadow-2xl flex flex-col max-h-[460px]">
+<div class="flex items-center justify-between pb-space-xs mb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-tertiary-container opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-tertiary-container"></span>
+</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface font-bold">Live Sector Incidents</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline">Auto-refresh (1s)</span>
+</div>
+<!-- Scrollable Event Stream -->
+<div class="flex-1 overflow-y-auto space-y-space-xs pr-1" id="eventFeed">
+<!-- Feed Item 1: Peaked Water Level -->
+<div class="p-space-xs bg-surface-container-low rounded-xl hover:bg-surface-container transition-colors">
+<div class="flex items-center justify-between text-outline font-label-sm text-label-sm mb-1">
+<span class="text-tertiary font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">crisis_alert</span>
+              USGS #402 WATER PEAK
+            </span>
+<span>14:22:18</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface">Sensor #402 water level peaked at <span class="text-tertiary font-semibold">0.52m</span> on River Parkway. Access road auto-flagged impassable.</p>
+</div>
+<!-- Feed Item 2: Dynamic Rerouting Execution -->
+<div class="p-space-xs bg-surface-container-low rounded-xl hover:bg-surface-container transition-colors">
+<div class="flex items-center justify-between text-outline font-label-sm text-label-sm mb-1">
+<span class="text-secondary font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">alt_route</span>
+              AI ROUTE COMMITTED
+            </span>
+<span>14:20:45</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface"><span class="text-secondary font-semibold">Ambulance 07</span> rerouted onto Viaduct 07. Estimated emergency room arrival: 6 mins.</p>
+</div>
+<!-- Feed Item 3: Relief Logistics -->
+<div class="p-space-xs bg-surface-container-low rounded-xl hover:bg-surface-container transition-colors">
+<div class="flex items-center justify-between text-outline font-label-sm text-label-sm mb-1">
+<span class="text-primary-fixed font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">inventory_2</span>
+              DEPOT INVENTORY
+            </span>
+<span>14:18:02</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface">Sector 4 Relief Shelter confirmed delivery of <span class="text-on-surface font-semibold">500 MRE emergency rations</span> via TRK-04 convoy.</p>
+</div>
+<!-- Feed Item 4: Amphibious craft deployment -->
+<div class="p-space-xs bg-surface-container-low rounded-xl hover:bg-surface-container transition-colors">
+<div class="flex items-center justify-between text-outline font-label-sm text-label-sm mb-1">
+<span class="text-tertiary font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">kayaking</span>
+              SEARCH &amp; RESCUE
+            </span>
+<span>14:15:20</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface">Rescue Craft 03 deployed to submerged Basin 4C. Extrication of 3 stranded civilian vehicles in progress.</p>
+</div>
+</div>
+<!-- Quick Ticker Summary Footer -->
+<div class="mt-space-xs pt-space-xs flex items-center justify-between font-label-sm text-label-sm text-outline">
+<span class="flex items-center gap-1 text-secondary">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+          GRID ENGINES NOMINAL
+        </span>
+<button class="hover:text-on-surface text-outline underline cursor-pointer" onclick="clearTelemetry()">Archive Logs</button>
+</div>
+</div>
+</div>
+<!-- Interactive Client Behavior Scripts -->
+<script>
+    let currentScale = 1;
+    let isTilted = false;
+    const mapCanvas = document.getElementById('mapCanvas');
+
+    function zoomMap(factor) {
+      currentScale = Math.min(Math.max(currentScale * factor, 0.8), 2.2);
+      applyMapTransform();
+    }
+
+    function toggleTilt() {
+      isTilted = !isTilted;
+      const tiltBtn = document.getElementById('btnTilt');
+      if (isTilted) {
+        tiltBtn.classList.add('bg-primary-container', 'text-on-primary-container');
+        tiltBtn.classList.remove('bg-surface-container', 'text-on-surface');
+      } else {
+        tiltBtn.classList.remove('bg-primary-container', 'text-on-primary-container');
+        tiltBtn.classList.add('bg-surface-container', 'text-on-surface');
+      }
+      applyMapTransform();
+    }
+
+    function resetMapView() {
+      currentScale = 1;
+      isTilted = false;
+      const tiltBtn = document.getElementById('btnTilt');
+      tiltBtn.classList.remove('bg-primary-container', 'text-on-primary-container');
+      tiltBtn.classList.add('bg-surface-container', 'text-on-surface');
+      applyMapTransform();
+    }
+
+    function applyMapTransform() {
+      if (isTilted) {
+        mapCanvas.style.transform = `perspective(1000px) rotateX(24deg) scale(${currentScale * 1.05}) translateY(-20px)`;
+      } else {
+        mapCanvas.style.transform = `perspective(0px) rotateX(0deg) scale(${currentScale}) translateY(0px)`;
+      }
+    }
+
+    function selectFacility(type) {
+      const hud = document.getElementById('corridorHUD');
+      if (type === 'cmd') {
+        hud.querySelector('h2').textContent = "Metro Command HQ Center";
+        hud.querySelector('p').textContent = "Central Command Bunker, 38 dispatchers active, uninterrupted auxiliary microgrid online.";
+      } else if (type === 'hospital') {
+        hud.querySelector('h2').textContent = "Mercy General Hospital Sector 4";
+        hud.querySelector('p').textContent = "Trauma Bay 1-4 Operational. Helicopter pad active. Emergency power at 99%.";
+      } else if (type === 'shelter') {
+        hud.querySelector('h2').textContent = "Sector 4 Relief Viaduct Shelter";
+        hud.querySelector('p').textContent = "Indoor capacity: 420/500 evacuated citizens. Water filtration unit functioning.";
+      }
+    }
+
+    function inspectVehicle(id) {
+      const hud = document.getElementById('corridorHUD');
+      hud.querySelector('h2').textContent = `Target Unit: ${id}`;
+      hud.querySelector('p').textContent = `Tracking live GPS telemetry, engine diagnostics, and safe-channel vector routing.`;
+    }
+
+    function clearTelemetry() {
+      const feed = document.getElementById('eventFeed');
+      feed.innerHTML = `
+        <div class="p-space-xs bg-surface-container-low rounded-xl">
+          <div class="flex items-center justify-between text-outline font-label-sm text-label-sm mb-1">
+            <span class="text-secondary font-bold">SYSTEM SYNC</span>
+            <span>Just now</span>
+          </div>
+          <p class="font-body-sm text-body-sm text-on-surface">Telemetry archives rotated. Listening for real-time sensor interrupts...</p>
+        </div>
+      `;
+    }
+
+    // Micro-motion beacon drift simulation
+    setInterval(() => {
+      const amb = document.getElementById('unitAmb07');
+      const trk = document.getElementById('unitTruck12');
+      if (amb && trk) {
+        const randX1 = (Math.random() - 0.5) * 1.5;
+        const randY1 = (Math.random() - 0.5) * 1.5;
+        amb.style.transform = `translate(calc(-50% + ${randX1}px), calc(-50% + ${randY1}px))`;
+      }
+    }, 1800);
+  </script>
+</div></main><footer class="w-full bg-surface-container-lowest py-space-lg"><div class="w-full px-margin flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">FLOODROUTE ENTERPRISE DISPATCH HUD // BUILD 2.4.9-SEC</span><span class="h-3 w-px bg-surface-container-highest"></span><span class="font-label-sm text-label-sm text-secondary flex items-center gap-space-xs"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>TELEMETRY SYNCED</span></div><div class="flex items-center gap-space-lg"><a class="font-label-sm text-label-sm text-outline hover:text-on-surface transition-colors" href="#">Emergency Protocols</a><a class="font-label-sm text-label-sm text-outline hover:text-on-surface transition-colors" href="#">GIS Sensor Feeds</a><a class="font-label-sm text-label-sm text-outline hover:text-on-surface transition-colors" href="#">Relief Node Mesh</a><span class="font-label-sm text-label-sm text-outline">© 2025 Civil Defense Mobility Grid.</span></div></div></footer></body></html>

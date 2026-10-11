@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>FloodRoute Enterprise Relief</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@500;600&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-variant": "#31353b", "on-primary-fixed-variant": "#7e2c00", "on-tertiary-container": "#6a000b", "on-background": "#e0e2ea", "on-surface": "#e0e2ea", "tertiary-container": "#ff6762", "inverse-primary": "#a53c00", "surface-bright": "#36393f", "background": "#101419", "surface-dim": "#101419", "error": "#ffb4ab", "surface-container-low": "#181c21", "surface-container-highest": "#31353b", "primary-container": "#ff6b22", "on-error": "#690005", "surface": "#101419", "on-primary-fixed": "#370e00", "secondary": "#4edea3", "on-secondary-fixed-variant": "#005236", "secondary-fixed-dim": "#4edea3", "tertiary-fixed-dim": "#ffb3ad", "on-tertiary-fixed-variant": "#930013", "on-secondary": "#003824", "on-secondary-fixed": "#002113", "on-tertiary": "#68000a", "surface-tint": "#ffb598", "inverse-surface": "#e0e2ea", "tertiary": "#ffb3ad", "on-primary": "#591d00", "inverse-on-surface": "#2d3136", "on-tertiary-fixed": "#410004", "secondary-fixed": "#6ffbbe", "error-container": "#93000a", "surface-container": "#1c2025", "secondary-container": "#00a572", "primary-fixed-dim": "#ffb598", "surface-container-high": "#262a30", "tertiary-fixed": "#ffdad7", "surface-container-lowest": "#0a0e13", "outline": "#a98a7e", "primary-fixed": "#ffdbce", "outline-variant": "#594138", "on-primary-container": "#5b1d00", "primary": "#ffb598", "on-error-container": "#ffdad6", "on-secondary-container": "#00311f", "on-surface-variant": "#e2bfb2" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "gutter-mobile": "0.75rem", "space-xs": "0.25rem", "space-xl": "2rem", "space-lg": "1.5rem", "space-md": "1rem", "margin-mobile": "1rem", "gutter": "1rem", "space-sm": "0.5rem", "margin": "1.5rem" }, "fontFamily": { "body-sm": [ "Inter" ], "body-lg": [ "Inter" ], "headline-xl-mobile": [ "Inter" ], "headline-lg": [ "Inter" ], "body-md": [ "Inter" ], "headline-xl": [ "Inter" ], "label-md": [ "JetBrains Mono" ], "label-sm": [ "JetBrains Mono" ], "label-lg": [ "JetBrains Mono" ], "headline-md": [ "Inter" ] }, "fontSize": { "body-sm": [ "12px", { "lineHeight": "16px", "fontWeight": "400" } ], "body-lg": [ "16px", { "lineHeight": "24px", "fontWeight": "400" } ], "headline-xl-mobile": [ "28px", { "lineHeight": "36px", "fontWeight": "700" } ], "headline-lg": [ "24px", { "lineHeight": "32px", "fontWeight": "600" } ], "body-md": [ "14px", { "lineHeight": "20px", "fontWeight": "400" } ], "headline-xl": [ "36px", { "lineHeight": "44px", "fontWeight": "700" } ], "label-md": [ "12px", { "lineHeight": "16px", "fontWeight": "500" } ], "label-sm": [ "10px", { "lineHeight": "14px", "fontWeight": "600" } ], "label-lg": [ "14px", { "lineHeight": "20px", "fontWeight": "500" } ], "headline-md": [ "20px", { "lineHeight": "28px", "fontWeight": "600" } ] } } } };</script></head><body class="bg-surface text-on-surface font-body-md text-body-md selection:bg-primary selection:text-on-primary min-h-screen flex flex-col"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.4)]"><div class="h-28 w-full px-margin flex flex-col justify-between py-space-xs"><div class="flex items-center justify-between gap-space-md h-12"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-sm"><span class="font-headline-md text-headline-md tracking-tight text-on-surface">FloodRoute</span><span class="px-space-xs py-0.5 rounded bg-primary-container text-on-primary-container font-label-sm text-label-sm uppercase tracking-wider font-semibold">RELIEF OPS</span></div><div class="hidden xl:flex items-center gap-space-xs px-space-sm py-1 rounded-lg bg-surface-container-high/80 text-on-surface"><span class="material-symbols-outlined text-secondary text-sm">shield</span><span class="font-label-sm text-label-sm tracking-wide text-on-surface truncate max-w-[280px]">Metro Flood Response Taskforce Gulf Coast Sector 4</span><span class="material-symbols-outlined text-on-surface-variant text-sm">unfold_more</span></div></div><div class="flex-1 max-w-xl mx-space-md hidden md:block"><div class="relative flex items-center w-full"><span class="material-symbols-outlined absolute left-3 text-on-surface-variant text-base">search</span><input class="w-full bg-surface-container-low rounded-lg pl-9 pr-12 py-1.5 font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-variant/60 focus:outline-none focus:ring-1 focus:ring-primary" placeholder="Query tactical routes, active breach zones, fleet nodes... (⌘K)" type="text"/><kbd class="absolute right-2.5 px-1.5 py-0.5 rounded bg-surface-variant font-label-sm text-label-sm text-on-surface-variant">⌘K</kbd></div></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-surface-container-low"><span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span><span class="font-label-sm text-label-sm text-secondary uppercase font-semibold">SIM DATA ACTIVE</span></div><button class="relative p-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors"><span class="material-symbols-outlined text-xl">notifications</span><span class="absolute top-1 right-1 w-2 h-2 rounded-full bg-primary-container"></span></button><div class="flex items-center gap-space-sm pl-space-xs"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="hidden lg:flex flex-col text-left leading-none"><span class="font-body-sm text-body-sm font-semibold text-on-surface">Dir. Sarah Chen</span><span class="font-label-sm text-label-sm text-on-surface-variant">Incident Commander</span></div></div></div></div><nav class="flex items-center gap-space-xs overflow-x-auto h-11" data-active-classes="bg-surface-container-high text-on-surface font-semibold"><a class="px-3 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors whitespace-nowrap font-body-sm text-body-sm" data-path="command-center" href="#">Command Center</a><a class="px-3 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors whitespace-nowrap font-body-sm text-body-sm" data-path="incidents" href="#">Incidents</a><a class="px-3 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors whitespace-nowrap font-body-sm text-body-sm" data-path="live-network" href="#">Live Network</a><a class="px-3 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors whitespace-nowrap font-body-sm text-body-sm" data-path="fleet" href="#">Fleet</a><a class="px-3 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors whitespace-nowrap font-body-sm text-body-sm" data-path="relief-resources" href="#">Relief Resources</a><a class="px-3 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors whitespace-nowrap font-body-sm text-body-sm" data-path="simulation" href="#">Simulation</a><a class="px-3 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors whitespace-nowrap font-body-sm text-body-sm" data-path="analytics" href="#">Analytics</a><a class="px-3 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors whitespace-nowrap font-body-sm text-body-sm" data-path="integrations" href="#">Integrations</a><a class="px-3 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors whitespace-nowrap font-body-sm text-body-sm" data-path="team" href="#">Team</a><a aria-current="page" class="px-3 py-1.5 rounded-lg transition-colors whitespace-nowrap bg-surface-container-high text-on-surface font-semibold" data-path="audit-log" href="#">Audit Log</a><a class="px-3 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors whitespace-nowrap font-body-sm text-body-sm" data-path="settings" href="#">Settings</a></nav></div></header><main class="w-full pt-28 pb-10 px-margin flex-1 bg-surface"><div class="flex flex-col w-full">
+<div class="flex flex-col gap-space-lg w-full">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md bg-surface-container-low p-space-md rounded-xl">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-sm flex-wrap">
+<span class="px-space-xs py-0.5 rounded bg-primary text-on-primary font-label-sm text-label-sm uppercase tracking-wider font-semibold">SEC-OPS LEVEL 4</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">SIMULATION ENVIRONMENT</span>
+<span class="flex items-center gap-1 font-label-sm text-label-sm text-secondary">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span>
+            ECDSA-SHA256 SYNC VERIFIED
+          </span>
+</div>
+<div class="flex items-baseline gap-space-sm">
+<span class="font-headline-lg text-headline-lg font-bold text-on-surface">Tactical Dispatch Stream &amp; Compliance Ledger</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">BLOCK #8,914,204</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm self-start md:self-auto">
+<div class="flex items-center gap-space-xs bg-surface-container-high px-space-sm py-1.5 rounded-lg text-on-surface font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-sm text-secondary">verified_user</span>
+<span>Ledger Tamper Seal: VALID</span>
+</div>
+<div class="relative inline-block text-left" id="exportDropdownContainer">
+<button class="flex items-center gap-space-xs px-space-md py-1.5 rounded-full bg-primary-container text-on-primary-container font-label-sm text-label-sm uppercase tracking-wider font-semibold shadow-md hover:bg-primary transition-colors" id="exportBtn" onclick="toggleExportMenu()">
+<span class="material-symbols-outlined text-base">download</span>
+<span>Export Audit Trail</span>
+<span class="material-symbols-outlined text-xs">expand_more</span>
+</button>
+<div class="hidden absolute right-0 mt-2 w-48 rounded-xl bg-surface-container-highest shadow-xl z-30 p-1 flex flex-col gap-0.5 font-label-sm text-label-sm" id="exportMenu">
+<button class="flex items-center gap-2 px-3 py-2 text-left rounded-lg text-on-surface hover:bg-surface-container transition-colors" onclick="triggerExport('JSON')">
+<span class="material-symbols-outlined text-sm text-primary">data_object</span>
+<span>Export Raw JSON (Signed)</span>
+</button>
+<button class="flex items-center gap-2 px-3 py-2 text-left rounded-lg text-on-surface hover:bg-surface-container transition-colors" onclick="triggerExport('CSV')">
+<span class="material-symbols-outlined text-sm text-secondary">table_view</span>
+<span>Export Compliant CSV</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-md items-start w-full">
+<div class="xl:col-span-4 flex flex-col gap-space-md bg-surface-container-low p-space-md rounded-xl">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-xl">notifications_active</span>
+<span class="font-headline-md text-headline-md text-on-surface">Urgent Stream</span>
+<span class="ml-1 px-2 py-0.5 rounded-full bg-primary-container text-on-primary-container font-label-sm text-label-sm font-semibold" id="unreadBadgeCount">4 New</span>
+</div>
+<button class="flex items-center gap-1 font-label-sm text-label-sm text-primary hover:text-primary-fixed transition-colors" onclick="markAllNotificationsRead()">
+<span class="material-symbols-outlined text-sm">done_all</span>
+<span>Mark all read</span>
+</button>
+</div>
+<div class="flex items-center gap-1 overflow-x-auto pb-1" id="filterPills">
+<button class="feed-filter-btn px-2.5 py-1 rounded-full font-label-sm text-label-sm whitespace-nowrap bg-surface-container-highest text-on-surface font-semibold shadow-sm transition-colors" onclick="filterFeed('all', this)">
+            All (7)
+          </button>
+<button class="feed-filter-btn px-2.5 py-1 rounded-full font-label-sm text-label-sm whitespace-nowrap bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" onclick="filterFeed('critical', this)">
+            Critical
+          </button>
+<button class="feed-filter-btn px-2.5 py-1 rounded-full font-label-sm text-label-sm whitespace-nowrap bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" onclick="filterFeed('override', this)">
+            Overrides
+          </button>
+<button class="feed-filter-btn px-2.5 py-1 rounded-full font-label-sm text-label-sm whitespace-nowrap bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" onclick="filterFeed('hydro', this)">
+            Hydro Sensors
+          </button>
+<button class="feed-filter-btn px-2.5 py-1 rounded-full font-label-sm text-label-sm whitespace-nowrap bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" onclick="filterFeed('audit', this)">
+            System
+          </button>
+</div>
+<div class="flex flex-col gap-space-sm overflow-y-auto max-h-[720px] pr-1" id="notificationsList">
+<div class="notification-card unread group relative flex flex-col gap-space-xs p-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors cursor-pointer" data-category="critical" onclick="toggleReadStatus(this)">
+<div class="flex items-start justify-between gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-tertiary-container animate-pulse status-dot"></span>
+<span class="font-label-sm text-label-sm font-semibold uppercase px-1.5 py-0.5 rounded bg-tertiary-container/20 text-tertiary-container">CRITICAL BREACH</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">19:41:12 UTC</span>
+</div>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md font-semibold text-on-surface">Sector 4 Levee Barrier Desynchronized</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5 line-clamp-2">Sluice Gate 04-B acoustic sensors register floodcrest +2.41m overtopping baseline. Automatic evacuations locked.</p>
+</div>
+<div class="flex items-center justify-between mt-1 pt-1 bg-surface-container-low/50 px-2 py-1 rounded">
+<span class="font-label-sm text-label-sm text-primary font-mono">REC: #INC-8491</span>
+<span class="font-label-sm text-label-sm text-secondary flex items-center gap-1">
+<span class="material-symbols-outlined text-xs">navigation</span> RT-VECTOR #4
+              </span>
+</div>
+</div>
+<div class="notification-card unread group relative flex flex-col gap-space-xs p-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors cursor-pointer" data-category="override" onclick="toggleReadStatus(this)">
+<div class="flex items-start justify-between gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-primary-container status-dot"></span>
+<span class="font-label-sm text-label-sm font-semibold uppercase px-1.5 py-0.5 rounded bg-primary-container/20 text-primary">DISPATCH OVERRIDE</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">19:38:04 UTC</span>
+</div>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md font-semibold text-on-surface">Amphibious Convoy Re-routed</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5 line-clamp-2">Operator manual bypass of Highway 9 bridge. High water velocity corridor rerouted through Highland Overpass.</p>
+</div>
+<div class="flex items-center justify-between mt-1 pt-1 bg-surface-container-low/50 px-2 py-1 rounded">
+<span class="font-label-sm text-label-sm text-primary font-mono">REC: TRK-12</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Auth: CMDR-CHEN</span>
+</div>
+</div>
+<div class="notification-card unread group relative flex flex-col gap-space-xs p-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors cursor-pointer" data-category="hydro" onclick="toggleReadStatus(this)">
+<div class="flex items-start justify-between gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-secondary-container status-dot"></span>
+<span class="font-label-sm text-label-sm font-semibold uppercase px-1.5 py-0.5 rounded bg-secondary-container/20 text-secondary">HYDRO SENSOR WARNING</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">19:35:50 UTC</span>
+</div>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md font-semibold text-on-surface">Telemetry Surge: Station HYD-88</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5 line-clamp-2">Flow velocity peaked at 4.2m/s. Culvert pressure rated critical. Safe passage duration decreased by 18 mins.</p>
+</div>
+<div class="flex items-center justify-between mt-1 pt-1 bg-surface-container-low/50 px-2 py-1 rounded">
+<span class="font-label-sm text-label-sm text-primary font-mono">REC: COR-07</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Level: +1.84m CREST</span>
+</div>
+</div>
+<div class="notification-card unread group relative flex flex-col gap-space-xs p-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors cursor-pointer" data-category="audit" onclick="toggleReadStatus(this)">
+<div class="flex items-start justify-between gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-outline status-dot"></span>
+<span class="font-label-sm text-label-sm font-semibold uppercase px-1.5 py-0.5 rounded bg-surface-variant text-on-surface">SYSTEM AUDIT</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">19:30:19 UTC</span>
+</div>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md font-semibold text-on-surface">Role Escalation Granted (Tactical-4)</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5 line-clamp-2">Field Lieutenant Vance granted emergency route alteration privileges via dual-key biometric validation.</p>
+</div>
+<div class="flex items-center justify-between mt-1 pt-1 bg-surface-container-low/50 px-2 py-1 rounded">
+<span class="font-label-sm text-label-sm text-primary font-mono">REC: USR-094</span>
+<span class="font-label-sm text-label-sm text-secondary font-mono">TOKEN #90041</span>
+</div>
+</div>
+<div class="notification-card group relative flex flex-col gap-space-xs p-space-sm rounded-lg bg-surface-container/60 hover:bg-surface-container-high transition-colors cursor-pointer" data-category="critical" onclick="toggleReadStatus(this)">
+<div class="flex items-start justify-between gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-surface-variant status-dot"></span>
+<span class="font-label-sm text-label-sm font-semibold uppercase px-1.5 py-0.5 rounded bg-tertiary-container/10 text-tertiary">SUBMERGED STRAND</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">19:22:11 UTC</span>
+</div>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md font-semibold text-on-surface">Rescue Unit ResQ-03 Grid Stalled</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5 line-clamp-2">Depth indicator registered 1.2m at Underpass Alpha. Airboat dispatch recommended.</p>
+</div>
+<div class="flex items-center justify-between mt-1 pt-1 bg-surface-container-low/50 px-2 py-1 rounded">
+<span class="font-label-sm text-label-sm text-primary font-mono">REC: #INC-8488</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Cleared to Unit 07</span>
+</div>
+</div>
+<div class="notification-card group relative flex flex-col gap-space-xs p-space-sm rounded-lg bg-surface-container/60 hover:bg-surface-container-high transition-colors cursor-pointer" data-category="hydro" onclick="toggleReadStatus(this)">
+<div class="flex items-start justify-between gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-surface-variant status-dot"></span>
+<span class="font-label-sm text-label-sm font-semibold uppercase px-1.5 py-0.5 rounded bg-secondary-container/10 text-secondary">HYDRO METRICS NORMAL</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">19:15:02 UTC</span>
+</div>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md font-semibold text-on-surface">Retention Basin West Nominal Drain</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5 line-clamp-2">Pumps #1 through #4 operating at 92% efficiency. Spillway run-off safely within tolerance.</p>
+</div>
+<div class="flex items-center justify-between mt-1 pt-1 bg-surface-container-low/50 px-2 py-1 rounded">
+<span class="font-label-sm text-label-sm text-primary font-mono">REC: BASIN-W</span>
+<span class="font-label-sm text-label-sm text-secondary">Discharge 140 m³/s</span>
+</div>
+</div>
+<div class="notification-card group relative flex flex-col gap-space-xs p-space-sm rounded-lg bg-surface-container/60 hover:bg-surface-container-high transition-colors cursor-pointer" data-category="audit" onclick="toggleReadStatus(this)">
+<div class="flex items-start justify-between gap-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-surface-variant status-dot"></span>
+<span class="font-label-sm text-label-sm font-semibold uppercase px-1.5 py-0.5 rounded bg-surface-variant text-on-surface">SYS NODE HANDSHAKE</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">19:04:44 UTC</span>
+</div>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md font-semibold text-on-surface">GIS Sat-Link Swarm Re-calibrated</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5 line-clamp-2">Latency stabilized at 14ms across Sector 4 edge relays. Integrity hash committed to block #8914199.</p>
+</div>
+<div class="flex items-center justify-between mt-1 pt-1 bg-surface-container-low/50 px-2 py-1 rounded">
+<span class="font-label-sm text-label-sm text-primary font-mono">REC: CLUSTER-04</span>
+<span class="font-label-sm text-label-sm text-secondary">OK 12/12</span>
+</div>
+</div>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-sm">wifi_tethering</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">WebSocket Subscribed:</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-mono">wss://telemetry.floodroute.gov:9443</span>
+</div>
+</div>
+<div class="xl:col-span-8 flex flex-col gap-space-md bg-surface-container-low p-space-md rounded-xl">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-xl">account_tree</span>
+<span class="font-headline-md text-headline-md text-on-surface">Immutable Compliance Ledger</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm font-mono">WORM STORAGE ACTIVE</span>
+</div>
+<div class="flex items-center gap-space-sm flex-1 max-w-md">
+<div class="relative w-full">
+<span class="material-symbols-outlined absolute left-3 top-2 text-on-surface-variant text-base">filter_alt</span>
+<input class="w-full bg-surface rounded-lg pl-9 pr-8 py-1.5 font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-variant/50 focus:outline-none focus:ring-1 focus:ring-primary" id="ledgerSearchInput" oninput="handleLedgerSearch()" placeholder="Search Record (e.g. #INC-8491) or Operator Callsign..." type="text"/>
+<button class="hidden absolute right-2.5 top-2 text-on-surface-variant hover:text-on-surface" id="clearSearchBtn" onclick="clearSearch()">
+<span class="material-symbols-outlined text-sm">close</span>
+</button>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-sm">
+<div class="p-space-sm rounded-lg bg-surface-container flex flex-col gap-0.5">
+<span class="font-label-sm text-label-sm text-on-surface-variant">TOTAL BLOCKS</span>
+<span class="font-headline-md text-headline-md font-bold text-on-surface font-mono">148,290</span>
+<span class="font-label-sm text-label-sm text-secondary">+19 this hour</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container flex flex-col gap-0.5">
+<span class="font-label-sm text-label-sm text-on-surface-variant">DISPATCH OVERRIDES</span>
+<span class="font-headline-md text-headline-md font-bold text-primary font-mono">14</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">100% Biometric Auth</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container flex flex-col gap-0.5">
+<span class="font-label-sm text-label-sm text-on-surface-variant">ACTIVE OPERATORS</span>
+<span class="font-headline-md text-headline-md font-bold text-on-surface font-mono">8 UNITS</span>
+<span class="font-label-sm text-label-sm text-secondary">Zero role anomalies</span>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container flex flex-col gap-0.5">
+<span class="font-label-sm text-label-sm text-on-surface-variant">MERKLE ROOT HASH</span>
+<span class="font-headline-md text-headline-md font-bold text-on-surface font-mono truncate">0x7F4A...B91E</span>
+<span class="font-label-sm text-label-sm text-secondary flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Verified Valid
+            </span>
+</div>
+</div>
+<div class="overflow-x-auto w-full rounded-lg bg-surface-container">
+<table class="w-full text-left" id="ledgerTable">
+<thead class="bg-surface-container-high text-on-surface font-label-sm text-label-sm tracking-wider uppercase">
+<tr>
+<th class="py-2.5 px-3">Timestamp (UTC)</th>
+<th class="py-2.5 px-3">Actor / Callsign</th>
+<th class="py-2.5 px-3">Category</th>
+<th class="py-2.5 px-3">Record Ref</th>
+<th class="py-2.5 px-3">Cryptographic SHA-256 Hash</th>
+<th class="py-2.5 px-3 text-right">Integrity</th>
+</tr>
+</thead>
+<tbody class="font-body-sm text-body-sm divide-y-0" id="ledgerTableBody">
+<tr class="ledger-row hover:bg-surface-container-highest/60 transition-colors cursor-pointer" onclick="openHashInspector('8f1e94b29cb8e49d2110c73e1648a8039d91fb81a4e21dc3729e92b192837482', 'Route Override', '#INC-8491', 'Dir. Sarah Chen', 'CMDR-CHEN-01', '19:40:12 UTC', 'Manual corridor redirection around ruptured sluice gate 04-B.')">
+<td class="py-3 px-3 font-mono text-on-surface-variant whitespace-nowrap">
+                  19:40:12.841
+                </td>
+<td class="py-3 px-3">
+<div class="flex items-center gap-space-xs">
+<div class="w-6 h-6 rounded-full bg-primary flex items-center justify-center font-bold text-on-primary text-xs">
+                      SC
+                    </div>
+<div class="flex flex-col">
+<span class="font-semibold text-on-surface actor-name">Dir. Sarah Chen</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono actor-callsign">CMDR-CHEN-01</span>
+</div>
+</div>
+</td>
+<td class="py-3 px-3">
+<span class="px-2 py-0.5 rounded bg-primary-container/20 text-primary font-label-sm text-label-sm font-semibold whitespace-nowrap">
+                    Route Override
+                  </span>
+</td>
+<td class="py-3 px-3 font-mono text-primary font-semibold record-id whitespace-nowrap">
+                  #INC-8491
+                </td>
+<td class="py-3 px-3 font-mono text-on-surface-variant">
+<div class="flex items-center gap-1 group/hash">
+<span class="truncate max-w-[130px] font-label-sm text-label-sm">8f1e94b29cb8e49d2110c73e1648a8039d91fb81a4e21dc3729e92b192837482</span>
+<button class="text-on-surface-variant hover:text-on-surface opacity-60 group-hover/hash:opacity-100 transition-opacity" onclick="copyHash(event, '8f1e94b29cb8e49d2110c73e1648a8039d91fb81a4e21dc3729e92b192837482')">
+<span class="material-symbols-outlined text-xs">content_copy</span>
+</button>
+</div>
+</td>
+<td class="py-3 px-3 text-right">
+<span class="inline-flex items-center gap-1 px-1.5 py-0.5 rounded bg-secondary-container/20 text-secondary font-label-sm text-label-sm font-mono font-semibold">
+<span class="material-symbols-outlined text-[14px]">verified</span> SEALED
+                  </span>
+</td>
+</tr>
+<tr class="ledger-row hover:bg-surface-container-highest/60 transition-colors cursor-pointer" onclick="openHashInspector('4d7c00199e8b3948e9182a3c748201a4e52d89b37c09e81b67f1a3029148bc44', 'Vehicle Reassignment', 'TRK-12', 'Capt. Marcus Ray', 'RESQ-LEAD-03', '19:37:28 UTC', 'Reassigned Oshkosh Amphibian TRK-12 to flood zone quadrant 9.')">
+<td class="py-3 px-3 font-mono text-on-surface-variant whitespace-nowrap">
+                  19:37:28.119
+                </td>
+<td class="py-3 px-3">
+<div class="flex items-center gap-space-xs">
+<div class="w-6 h-6 rounded-full bg-secondary-container flex items-center justify-center font-bold text-on-secondary text-xs">
+                      MR
+                    </div>
+<div class="flex flex-col">
+<span class="font-semibold text-on-surface actor-name">Capt. Marcus Ray</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono actor-callsign">RESQ-LEAD-03</span>
+</div>
+</div>
+</td>
+<td class="py-3 px-3">
+<span class="px-2 py-0.5 rounded bg-secondary-container/20 text-secondary font-label-sm text-label-sm font-semibold whitespace-nowrap">
+                    Vehicle Reassign
+                  </span>
+</td>
+<td class="py-3 px-3 font-mono text-secondary font-semibold record-id whitespace-nowrap">
+                  TRK-12
+                </td>
+<td class="py-3 px-3 font-mono text-on-surface-variant">
+<div class="flex items-center gap-1 group/hash">
+<span class="truncate max-w-[130px] font-label-sm text-label-sm">4d7c00199e8b3948e9182a3c748201a4e52d89b37c09e81b67f1a3029148bc44</span>
+<button class="text-on-surface-variant hover:text-on-surface opacity-60 group-hover/hash:opacity-100 transition-opacity" onclick="copyHash(event, '4d7c00199e8b3948e9182a3c748201a4e52d89b37c09e81b67f1a3029148bc44')">
+<span class="material-symbols-outlined text-xs">content_copy</span>
+</button>
+</div>
+</td>
+<td class="py-3 px-3 text-right">
+<span class="inline-flex items-center gap-1 px-1.5 py-0.5 rounded bg-secondary-container/20 text-secondary font-label-sm text-label-sm font-mono font-semibold">
+<span class="material-symbols-outlined text-[14px]">verified</span> SEALED
+                  </span>
+</td>
+</tr>
+<tr class="ledger-row hover:bg-surface-container-highest/60 transition-colors cursor-pointer" onclick="openHashInspector('ca284e910291b8a7f01c84918237e40a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e', 'Telemetry Ingest Handshake', 'COR-07', 'System Daemon', 'CORE-DAEMON-SYS', '19:35:10 UTC', 'Hydrographic sensor swarm handshake authorized with CRC32 valid checksum.')">
+<td class="py-3 px-3 font-mono text-on-surface-variant whitespace-nowrap">
+                  19:35:10.002
+                </td>
+<td class="py-3 px-3">
+<div class="flex items-center gap-space-xs">
+<div class="w-6 h-6 rounded-full bg-surface-variant flex items-center justify-center font-bold text-on-surface text-xs">
+                      SYS
+                    </div>
+<div class="flex flex-col">
+<span class="font-semibold text-on-surface actor-name">System Ingest</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono actor-callsign">INGEST-NODE-A4</span>
+</div>
+</div>
+</td>
+<td class="py-3 px-3">
+<span class="px-2 py-0.5 rounded bg-surface-variant text-on-surface font-label-sm text-label-sm font-semibold whitespace-nowrap">
+                    Telemetry Handshake
+                  </span>
+</td>
+<td class="py-3 px-3 font-mono text-on-surface font-semibold record-id whitespace-nowrap">
+                  COR-07
+                </td>
+<td class="py-3 px-3 font-mono text-on-surface-variant">
+<div class="flex items-center gap-1 group/hash">
+<span class="truncate max-w-[130px] font-label-sm text-label-sm">ca284e910291b8a7f01c84918237e40a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e</span>
+<button class="text-on-surface-variant hover:text-on-surface opacity-60 group-hover/hash:opacity-100 transition-opacity" onclick="copyHash(event, 'ca284e910291b8a7f01c84918237e40a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e')">
+<span class="material-symbols-outlined text-xs">content_copy</span>
+</button>
+</div>
+</td>
+<td class="py-3 px-3 text-right">
+<span class="inline-flex items-center gap-1 px-1.5 py-0.5 rounded bg-secondary-container/20 text-secondary font-label-sm text-label-sm font-mono font-semibold">
+<span class="material-symbols-outlined text-[14px]">verified</span> SEALED
+                  </span>
+</td>
+</tr>
+<tr class="ledger-row hover:bg-surface-container-highest/60 transition-colors cursor-pointer" onclick="openHashInspector('993b4a2e10c78a94b5e2840d1738c829e01a4b5c6d7e8f9a0b1c2d3e4f5a6b7c', 'Role Escalation', 'USR-094', 'Security Officer Thorne', 'SEC-ENFORCE-9', '19:29:55 UTC', 'Escalated operator clearance to Level 4 for Sector 4 flood crest response.')">
+<td class="py-3 px-3 font-mono text-on-surface-variant whitespace-nowrap">
+                  19:29:55.620
+                </td>
+<td class="py-3 px-3">
+<div class="flex items-center gap-space-xs">
+<div class="w-6 h-6 rounded-full bg-outline-variant flex items-center justify-center font-bold text-on-surface text-xs">
+                      JT
+                    </div>
+<div class="flex flex-col">
+<span class="font-semibold text-on-surface actor-name">Officer Thorne</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono actor-callsign">SEC-ENFORCE-9</span>
+</div>
+</div>
+</td>
+<td class="py-3 px-3">
+<span class="px-2 py-0.5 rounded bg-tertiary-container/20 text-tertiary font-label-sm text-label-sm font-semibold whitespace-nowrap">
+                    Role Escalation
+                  </span>
+</td>
+<td class="py-3 px-3 font-mono text-tertiary font-semibold record-id whitespace-nowrap">
+                  USR-094
+                </td>
+<td class="py-3 px-3 font-mono text-on-surface-variant">
+<div class="flex items-center gap-1 group/hash">
+<span class="truncate max-w-[130px] font-label-sm text-label-sm">993b4a2e10c78a94b5e2840d1738c829e01a4b5c6d7e8f9a0b1c2d3e4f5a6b7c</span>
+<button class="text-on-surface-variant hover:text-on-surface opacity-60 group-hover/hash:opacity-100 transition-opacity" onclick="copyHash(event, '993b4a2e10c78a94b5e2840d1738c829e01a4b5c6d7e8f9a0b1c2d3e4f5a6b7c')">
+<span class="material-symbols-outlined text-xs">content_copy</span>
+</button>
+</div>
+</td>
+<td class="py-3 px-3 text-right">
+<span class="inline-flex items-center gap-1 px-1.5 py-0.5 rounded bg-secondary-container/20 text-secondary font-label-sm text-label-sm font-mono font-semibold">
+<span class="material-symbols-outlined text-[14px]">verified</span> SEALED
+                  </span>
+</td>
+</tr>
+<tr class="ledger-row hover:bg-surface-container-highest/60 transition-colors cursor-pointer" onclick="openHashInspector('1109a8bc47e9281a4b3c7281048b29c84e72a8190c4827b4e9182049182bc472', 'Route Override', '#INC-8488', 'Dir. Sarah Chen', 'CMDR-CHEN-01', '19:21:05 UTC', 'Marked Underpass Alpha as IMPASSABLE. Geo-fenced perimeter activated.')">
+<td class="py-3 px-3 font-mono text-on-surface-variant whitespace-nowrap">
+                  19:21:05.412
+                </td>
+<td class="py-3 px-3">
+<div class="flex items-center gap-space-xs">
+<div class="w-6 h-6 rounded-full bg-primary flex items-center justify-center font-bold text-on-primary text-xs">
+                      SC
+                    </div>
+<div class="flex flex-col">
+<span class="font-semibold text-on-surface actor-name">Dir. Sarah Chen</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono actor-callsign">CMDR-CHEN-01</span>
+</div>
+</div>
+</td>
+<td class="py-3 px-3">
+<span class="px-2 py-0.5 rounded bg-primary-container/20 text-primary font-label-sm text-label-sm font-semibold whitespace-nowrap">
+                    Route Override
+                  </span>
+</td>
+<td class="py-3 px-3 font-mono text-primary font-semibold record-id whitespace-nowrap">
+                  #INC-8488
+                </td>
+<td class="py-3 px-3 font-mono text-on-surface-variant">
+<div class="flex items-center gap-1 group/hash">
+<span class="truncate max-w-[130px] font-label-sm text-label-sm">1109a8bc47e9281a4b3c7281048b29c84e72a8190c4827b4e9182049182bc472</span>
+<button class="text-on-surface-variant hover:text-on-surface opacity-60 group-hover/hash:opacity-100 transition-opacity" onclick="copyHash(event, '1109a8bc47e9281a4b3c7281048b29c84e72a8190c4827b4e9182049182bc472')">
+<span class="material-symbols-outlined text-xs">content_copy</span>
+</button>
+</div>
+</td>
+<td class="py-3 px-3 text-right">
+<span class="inline-flex items-center gap-1 px-1.5 py-0.5 rounded bg-secondary-container/20 text-secondary font-label-sm text-label-sm font-mono font-semibold">
+<span class="material-symbols-outlined text-[14px]">verified</span> SEALED
+                  </span>
+</td>
+</tr>
+<tr class="ledger-row hover:bg-surface-container-highest/60 transition-colors cursor-pointer" onclick="openHashInspector('77a1098b47289104820c78a491823049182bc472a8190c4827b4e9182049182c', 'Vehicle Reassignment', 'TRK-09', 'Coord. Elena Frost', 'DISP-FROST-02', '19:14:18 UTC', 'Re-vectored mobile pumping rig TRK-09 to Industrial District pump sump.')">
+<td class="py-3 px-3 font-mono text-on-surface-variant whitespace-nowrap">
+                  19:14:18.990
+                </td>
+<td class="py-3 px-3">
+<div class="flex items-center gap-space-xs">
+<div class="w-6 h-6 rounded-full bg-secondary flex items-center justify-center font-bold text-on-secondary text-xs">
+                      EF
+                    </div>
+<div class="flex flex-col">
+<span class="font-semibold text-on-surface actor-name">Elena Frost</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono actor-callsign">DISP-FROST-02</span>
+</div>
+</div>
+</td>
+<td class="py-3 px-3">
+<span class="px-2 py-0.5 rounded bg-secondary-container/20 text-secondary font-label-sm text-label-sm font-semibold whitespace-nowrap">
+                    Vehicle Reassign
+                  </span>
+</td>
+<td class="py-3 px-3 font-mono text-secondary font-semibold record-id whitespace-nowrap">
+                  TRK-09
+                </td>
+<td class="py-3 px-3 font-mono text-on-surface-variant">
+<div class="flex items-center gap-1 group/hash">
+<span class="truncate max-w-[130px] font-label-sm text-label-sm">77a1098b47289104820c78a491823049182bc472a8190c4827b4e9182049182c</span>
+<button class="text-on-surface-variant hover:text-on-surface opacity-60 group-hover/hash:opacity-100 transition-opacity" onclick="copyHash(event, '77a1098b47289104820c78a491823049182bc472a8190c4827b4e9182049182c')">
+<span class="material-symbols-outlined text-xs">content_copy</span>
+</button>
+</div>
+</td>
+<td class="py-3 px-3 text-right">
+<span class="inline-flex items-center gap-1 px-1.5 py-0.5 rounded bg-secondary-container/20 text-secondary font-label-sm text-label-sm font-mono font-semibold">
+<span class="material-symbols-outlined text-[14px]">verified</span> SEALED
+                  </span>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="hidden p-space-lg text-center flex flex-col items-center justify-center gap-space-xs text-on-surface-variant" id="noResultsState">
+<span class="material-symbols-outlined text-3xl">search_off</span>
+<span class="font-body-md text-body-md">No matching audit events for query.</span>
+<span class="font-label-sm text-label-sm">Try querying '#INC-8491', 'TRK-12', 'Chen', or 'Thorne'.</span>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row items-center justify-between gap-space-sm font-label-sm text-label-sm text-on-surface-variant pt-space-xs">
+<div class="flex items-center gap-space-sm">
+<span>Showing 6 of 148,290 blocks</span>
+<span class="text-outline">|</span>
+<span>Cryptographic Chain: Synced</span>
+</div>
+<div class="flex items-center gap-1">
+<button class="px-2 py-1 rounded bg-surface-container hover:bg-surface-container-high text-on-surface transition-colors" disabled="">Prev</button>
+<span class="px-2 py-1 rounded bg-surface-container-highest text-on-surface font-semibold">1</span>
+<button class="px-2 py-1 rounded bg-surface-container hover:bg-surface-container-high text-on-surface transition-colors">2</button>
+<button class="px-2 py-1 rounded bg-surface-container hover:bg-surface-container-high text-on-surface transition-colors">3</button>
+<span class="px-1 text-on-surface-variant">...</span>
+<button class="px-2 py-1 rounded bg-surface-container hover:bg-surface-container-high text-on-surface transition-colors">Next</button>
+</div>
+</div>
+</div>
+</div>
+<div class="fixed inset-0 z-50 bg-surface-dim/80 backdrop-blur-md hidden flex items-center justify-center p-space-md" id="hashInspectorModal">
+<div class="bg-surface-container-high max-w-xl w-full rounded-xl p-space-lg shadow-2xl flex flex-col gap-space-md">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="p-2 rounded-lg bg-secondary-container/20 text-secondary">
+<span class="material-symbols-outlined text-2xl">verified</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-md text-headline-md font-bold text-on-surface">Cryptographic Verification Proof</span>
+<span class="font-label-sm text-label-sm text-secondary">CHAIN-OF-CUSTODY INTEGRITY COMPLIANT</span>
+</div>
+</div>
+<button class="p-1 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-variant transition-colors" onclick="closeHashInspector()">
+<span class="material-symbols-outlined text-xl">close</span>
+</button>
+</div>
+<div class="flex flex-col gap-space-sm bg-surface-container-lowest p-space-md rounded-lg font-mono text-label-sm">
+<div class="flex flex-col gap-1">
+<span class="text-on-surface-variant uppercase">Full SHA-256 Digest:</span>
+<span class="text-primary font-bold break-all select-all" id="modalHashFull"></span>
+</div>
+<div class="h-px bg-surface-variant my-1"></div>
+<div class="grid grid-cols-2 gap-space-sm">
+<div>
+<span class="text-on-surface-variant block uppercase">Record Reference:</span>
+<span class="text-on-surface font-bold" id="modalRecordId"></span>
+</div>
+<div>
+<span class="text-on-surface-variant block uppercase">Action Category:</span>
+<span class="text-on-surface font-bold" id="modalCategory"></span>
+</div>
+<div>
+<span class="text-on-surface-variant block uppercase">Authorizing Actor:</span>
+<span class="text-on-surface font-bold" id="modalActor"></span>
+</div>
+<div>
+<span class="text-on-surface-variant block uppercase">Event Timestamp:</span>
+<span class="text-on-surface font-bold" id="modalTimestamp"></span>
+</div>
+</div>
+<div class="h-px bg-surface-variant my-1"></div>
+<div>
+<span class="text-on-surface-variant block uppercase mb-1">Payload Summary &amp; Biometric Token:</span>
+<p class="text-on-surface font-sans text-body-sm text-on-surface-variant leading-relaxed" id="modalPayload"></p>
+</div>
+</div>
+<div class="flex items-center justify-between pt-1">
+<div class="flex items-center gap-1.5 font-label-sm text-label-sm text-secondary">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span>Merkle Branch Signature Valid</span>
+</div>
+<button class="px-space-md py-1.5 rounded-full bg-surface-container-highest text-on-surface font-label-sm text-label-sm font-semibold hover:bg-surface-variant transition-colors" onclick="closeHashInspector()">
+            Dismiss Inspector
+          </button>
+</div>
+</div>
+</div>
+<div class="fixed bottom-14 right-6 z-50 transform translate-y-10 opacity-0 pointer-events-none transition-all duration-300 flex items-center gap-space-sm px-space-md py-2.5 rounded-lg bg-surface-container-highest text-on-surface shadow-xl font-label-sm text-label-sm" id="toastNotification">
+<span class="material-symbols-outlined text-secondary text-base">check_circle</span>
+<span id="toastMessage">Hash copied to clipboard</span>
+</div>
+</div>
+</div>
+<script>
+  function markAllNotificationsRead() {
+    const unreadCards = document.querySelectorAll('.notification-card.unread');
+    unreadCards.forEach(card => {
+      card.classList.remove('unread');
+      card.classList.add('bg-surface-container/60');
+      card.classList.remove('bg-surface-container');
+      const dot = card.querySelector('.status-dot');
+      if (dot) {
+        dot.className = 'w-2 h-2 rounded-full bg-surface-variant status-dot';
+      }
+    });
+    const badge = document.getElementById('unreadBadgeCount');
+    if (badge) {
+      badge.textContent = '0 New';
+      badge.className = 'ml-1 px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm font-semibold';
+    }
+    showToast('All notifications marked as read.');
+  }
+
+  function toggleReadStatus(card) {
+    if (card.classList.contains('unread')) {
+      card.classList.remove('unread');
+      card.classList.add('bg-surface-container/60');
+      card.classList.remove('bg-surface-container');
+      const dot = card.querySelector('.status-dot');
+      if (dot) {
+        dot.className = 'w-2 h-2 rounded-full bg-surface-variant status-dot';
+      }
+      recalculateUnreadCount();
+    }
+  }
+
+  function recalculateUnreadCount() {
+    const remaining = document.querySelectorAll('.notification-card.unread').length;
+    const badge = document.getElementById('unreadBadgeCount');
+    if (badge) {
+      if (remaining === 0) {
+        badge.textContent = '0 New';
+        badge.className = 'ml-1 px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm font-semibold';
+      } else {
+        badge.textContent = remaining + ' New';
+      }
+    }
+  }
+
+  function filterFeed(type, buttonEl) {
+    const buttons = document.querySelectorAll('.feed-filter-btn');
+    buttons.forEach(btn => {
+      btn.className = 'feed-filter-btn px-2.5 py-1 rounded-full font-label-sm text-label-sm whitespace-nowrap bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors';
+    });
+    buttonEl.className = 'feed-filter-btn px-2.5 py-1 rounded-full font-label-sm text-label-sm whitespace-nowrap bg-surface-container-highest text-on-surface font-semibold shadow-sm transition-colors';
+
+    const cards = document.querySelectorAll('.notification-card');
+    cards.forEach(card => {
+      const cat = card.getAttribute('data-category');
+      if (type === 'all' || cat === type) {
+        card.classList.remove('hidden');
+      } else {
+        card.classList.add('hidden');
+      }
+    });
+  }
+
+  function toggleExportMenu() {
+    const menu = document.getElementById('exportMenu');
+    menu.classList.toggle('hidden');
+  }
+
+  window.addEventListener('click', function(e) {
+    const container = document.getElementById('exportDropdownContainer');
+    if (container && !container.contains(e.target)) {
+      const menu = document.getElementById('exportMenu');
+      if (menu && !menu.classList.contains('hidden')) {
+        menu.classList.add('hidden');
+      }
+    }
+  });
+
+  function triggerExport(format) {
+    toggleExportMenu();
+    showToast(`Audit log dataset exported as ${format} (ECDSA Signed).`);
+  }
+
+  function handleLedgerSearch() {
+    const query = document.getElementById('ledgerSearchInput').value.toLowerCase().trim();
+    const rows = document.querySelectorAll('.ledger-row');
+    const clearBtn = document.getElementById('clearSearchBtn');
+    let visibleCount = 0;
+
+    if (query.length > 0) {
+      clearBtn.classList.remove('hidden');
+    } else {
+      clearBtn.classList.add('hidden');
+    }
+
+    rows.forEach(row => {
+      const text = row.textContent.toLowerCase();
+      if (text.includes(query)) {
+        row.classList.remove('hidden');
+        visibleCount++;
+      } else {
+        row.classList.add('hidden');
+      }
+    });
+
+    const noResults = document.getElementById('noResultsState');
+    if (visibleCount === 0) {
+      noResults.classList.remove('hidden');
+    } else {
+      noResults.classList.add('hidden');
+    }
+  }
+
+  function clearSearch() {
+    const input = document.getElementById('ledgerSearchInput');
+    input.value = '';
+    handleLedgerSearch();
+    input.focus();
+  }
+
+  function copyHash(event, hash) {
+    event.stopPropagation();
+    navigator.clipboard.writeText(hash).then(() => {
+      showToast('SHA-256 Digest copied to clipboard');
+    }).catch(() => {
+      showToast('Copied: ' + hash.substring(0, 16) + '...');
+    });
+  }
+
+  function openHashInspector(hash, category, recordId, actor, callsign, timestamp, payload) {
+    document.getElementById('modalHashFull').textContent = hash;
+    document.getElementById('modalCategory').textContent = category;
+    document.getElementById('modalRecordId').textContent = recordId;
+    document.getElementById('modalActor').textContent = `${actor} (${callsign})`;
+    document.getElementById('modalTimestamp').textContent = timestamp;
+    document.getElementById('modalPayload').textContent = payload;
+    
+    const modal = document.getElementById('hashInspectorModal');
+    modal.classList.remove('hidden');
+  }
+
+  function closeHashInspector() {
+    const modal = document.getElementById('hashInspectorModal');
+    modal.classList.add('hidden');
+  }
+
+  function showToast(message) {
+    const toast = document.getElementById('toastNotification');
+    const msg = document.getElementById('toastMessage');
+    msg.textContent = message;
+    toast.classList.remove('opacity-0', 'translate-y-10', 'pointer-events-none');
+    toast.classList.add('opacity-100', 'translate-y-0');
+    setTimeout(() => {
+      toast.classList.add('opacity-0', 'translate-y-10', 'pointer-events-none');
+      toast.classList.remove('opacity-100', 'translate-y-0');
+    }, 2800);
+  }
+</script></main><footer class="fixed bottom-0 left-0 right-0 z-40 bg-surface-container-lowest/95 backdrop-blur-md shadow-[0_-1px_6px_rgba(0,0,0,0.5)]"><div class="h-9 w-full px-margin flex items-center justify-between font-label-sm text-label-sm"><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-xs"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span><span class="text-on-surface-variant uppercase tracking-wider">Core Kernel:</span><span class="text-secondary font-semibold">v4.18.2-rt</span></div><div class="flex items-center gap-space-xs"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span><span class="text-on-surface-variant uppercase tracking-wider">Geo-routing Engine:</span><span class="text-on-surface font-semibold">GIS-SYNC ONLINE (14ms)</span></div><div class="hidden md:flex items-center gap-space-xs"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span><span class="text-on-surface-variant uppercase tracking-wider">Cluster Status:</span><span class="text-secondary font-semibold">12/12 NODES NOMINAL</span></div></div><div class="flex items-center gap-space-md text-on-surface-variant"><span class="font-label-sm text-label-sm uppercase tracking-wider hidden sm:inline">SEC-LEVEL 4 AUTHORIZED</span><span class="text-outline">|</span><span class="font-label-sm text-label-sm text-on-surface-variant">UTC 19:42:08</span></div></div></footer></body></html>

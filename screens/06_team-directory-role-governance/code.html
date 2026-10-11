@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>FloodRoute Enterprise Relief</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@500;600&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-variant": "#31353b", "on-primary-fixed-variant": "#7e2c00", "on-tertiary-container": "#6a000b", "on-background": "#e0e2ea", "on-surface": "#e0e2ea", "tertiary-container": "#ff6762", "inverse-primary": "#a53c00", "surface-bright": "#36393f", "background": "#101419", "surface-dim": "#101419", "error": "#ffb4ab", "surface-container-low": "#181c21", "surface-container-highest": "#31353b", "primary-container": "#ff6b22", "on-error": "#690005", "surface": "#101419", "on-primary-fixed": "#370e00", "secondary": "#4edea3", "on-secondary-fixed-variant": "#005236", "secondary-fixed-dim": "#4edea3", "tertiary-fixed-dim": "#ffb3ad", "on-tertiary-fixed-variant": "#930013", "on-secondary": "#003824", "on-secondary-fixed": "#002113", "on-tertiary": "#68000a", "surface-tint": "#ffb598", "inverse-surface": "#e0e2ea", "tertiary": "#ffb3ad", "on-primary": "#591d00", "inverse-on-surface": "#2d3136", "on-tertiary-fixed": "#410004", "secondary-fixed": "#6ffbbe", "error-container": "#93000a", "surface-container": "#1c2025", "secondary-container": "#00a572", "primary-fixed-dim": "#ffb598", "surface-container-high": "#262a30", "tertiary-fixed": "#ffdad7", "surface-container-lowest": "#0a0e13", "outline": "#a98a7e", "primary-fixed": "#ffdbce", "outline-variant": "#594138", "on-primary-container": "#5b1d00", "primary": "#ffb598", "on-error-container": "#ffdad6", "on-secondary-container": "#00311f", "on-surface-variant": "#e2bfb2" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "gutter-mobile": "0.75rem", "space-xs": "0.25rem", "space-xl": "2rem", "space-lg": "1.5rem", "space-md": "1rem", "margin-mobile": "1rem", "gutter": "1rem", "space-sm": "0.5rem", "margin": "1.5rem" }, "fontFamily": { "body-sm": [ "Inter" ], "body-lg": [ "Inter" ], "headline-xl-mobile": [ "Inter" ], "headline-lg": [ "Inter" ], "body-md": [ "Inter" ], "headline-xl": [ "Inter" ], "label-md": [ "JetBrains Mono" ], "label-sm": [ "JetBrains Mono" ], "label-lg": [ "JetBrains Mono" ], "headline-md": [ "Inter" ] }, "fontSize": { "body-sm": [ "12px", { "lineHeight": "16px", "fontWeight": "400" } ], "body-lg": [ "16px", { "lineHeight": "24px", "fontWeight": "400" } ], "headline-xl-mobile": [ "28px", { "lineHeight": "36px", "fontWeight": "700" } ], "headline-lg": [ "24px", { "lineHeight": "32px", "fontWeight": "600" } ], "body-md": [ "14px", { "lineHeight": "20px", "fontWeight": "400" } ], "headline-xl": [ "36px", { "lineHeight": "44px", "fontWeight": "700" } ], "label-md": [ "12px", { "lineHeight": "16px", "fontWeight": "500" } ], "label-sm": [ "10px", { "lineHeight": "14px", "fontWeight": "600" } ], "label-lg": [ "14px", { "lineHeight": "20px", "fontWeight": "500" } ], "headline-md": [ "20px", { "lineHeight": "28px", "fontWeight": "600" } ] } } } };</script></head><body class="bg-surface text-on-surface font-body-md text-body-md selection:bg-primary selection:text-on-primary min-h-screen flex flex-col"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.4)]"><div class="h-28 w-full px-margin flex flex-col justify-between py-space-xs"><div class="flex items-center justify-between gap-space-md h-12"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-sm"><span class="font-headline-md text-headline-md tracking-tight text-on-surface">FloodRoute</span><span class="px-space-xs py-0.5 rounded bg-primary-container text-on-primary-container font-label-sm text-label-sm uppercase tracking-wider font-semibold">RELIEF OPS</span></div><div class="hidden xl:flex items-center gap-space-xs px-space-sm py-1 rounded-lg bg-surface-container-high/80 text-on-surface"><span class="material-symbols-outlined text-secondary text-sm">shield</span><span class="font-label-sm text-label-sm tracking-wide text-on-surface truncate max-w-[280px]">Metro Flood Response Taskforce Gulf Coast Sector 4</span><span class="material-symbols-outlined text-on-surface-variant text-sm">unfold_more</span></div></div><div class="flex-1 max-w-xl mx-space-md hidden md:block"><div class="relative flex items-center w-full"><span class="material-symbols-outlined absolute left-3 text-on-surface-variant text-base">search</span><input class="w-full bg-surface-container-low rounded-lg pl-9 pr-12 py-1.5 font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-variant/60 focus:outline-none focus:ring-1 focus:ring-primary" placeholder="Query tactical routes, active breach zones, fleet nodes... (⌘K)" type="text"/><kbd class="absolute right-2.5 px-1.5 py-0.5 rounded bg-surface-variant font-label-sm text-label-sm text-on-surface-variant">⌘K</kbd></div></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-surface-container-low"><span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span><span class="font-label-sm text-label-sm text-secondary uppercase font-semibold">SIM DATA ACTIVE</span></div><button class="relative p-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors"><span class="material-symbols-outlined text-xl">notifications</span><span class="absolute top-1 right-1 w-2 h-2 rounded-full bg-primary-container"></span></button><div class="flex items-center gap-space-sm pl-space-xs"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="hidden lg:flex flex-col text-left leading-none"><span class="font-body-sm text-body-sm font-semibold text-on-surface">Dir. Sarah Chen</span><span class="font-label-sm text-label-sm text-on-surface-variant">Incident Commander</span></div></div></div></div><nav class="flex items-center gap-space-xs overflow-x-auto h-11" data-active-classes="bg-surface-container-high text-on-surface font-semibold"><a class="px-3 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors whitespace-nowrap font-body-sm text-body-sm" data-path="command-center" href="#">Command Center</a><a class="px-3 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors whitespace-nowrap font-body-sm text-body-sm" data-path="incidents" href="#">Incidents</a><a class="px-3 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors whitespace-nowrap font-body-sm text-body-sm" data-path="live-network" href="#">Live Network</a><a class="px-3 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors whitespace-nowrap font-body-sm text-body-sm" data-path="fleet" href="#">Fleet</a><a class="px-3 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors whitespace-nowrap font-body-sm text-body-sm" data-path="relief-resources" href="#">Relief Resources</a><a class="px-3 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors whitespace-nowrap font-body-sm text-body-sm" data-path="simulation" href="#">Simulation</a><a class="px-3 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors whitespace-nowrap font-body-sm text-body-sm" data-path="analytics" href="#">Analytics</a><a class="px-3 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors whitespace-nowrap font-body-sm text-body-sm" data-path="integrations" href="#">Integrations</a><a aria-current="page" class="px-3 py-1.5 rounded-lg transition-colors whitespace-nowrap bg-surface-container-high text-on-surface font-semibold" data-path="team" href="#">Team</a><a class="px-3 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors whitespace-nowrap font-body-sm text-body-sm" data-path="audit-log" href="#">Audit Log</a><a class="px-3 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors whitespace-nowrap font-body-sm text-body-sm" data-path="settings" href="#">Settings</a></nav></div></header><main class="w-full pt-28 pb-10 px-margin flex-1 bg-surface"><div class="flex flex-col w-full">
+<!-- Dynamic Notification Bar / Simulation Pill -->
+<div class="mb-space-lg flex flex-col md:flex-row md:items-center justify-between gap-space-md p-space-md rounded-xl bg-surface-container-high/60 backdrop-blur-md shadow-lg">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-lg bg-primary-container/20 flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-2xl" style="font-variation-settings: 'FILL' 1;">badge</span>
+</div>
+<div>
+<div class="flex items-center gap-space-sm">
+<span class="font-headline-md text-headline-md text-on-surface tracking-tight">Identity &amp; Access Governance</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-secondary font-label-sm text-label-sm uppercase tracking-wider">SIMULATED ENVIRONMENT</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Manage credential tiers, dynamic field clearances, and rapid dispatch seat allocations across Taskforce Gulf Coast Sector 4.</p>
+</div>
+</div>
+<div class="flex items-center gap-space-sm self-end md:self-auto">
+<button class="px-3 py-2 rounded-lg bg-surface-container text-on-surface font-body-sm text-body-sm hover:bg-surface-bright transition-all flex items-center gap-1.5 shadow-sm" onclick="toggleAuditDrawer()">
+<span class="material-symbols-outlined text-base text-secondary">verified_user</span>
+<span>RBAC Policy Sync</span>
+</button>
+<button class="px-4 py-2 rounded-full bg-primary-container text-on-primary-container font-body-md text-body-md font-semibold hover:brightness-110 active:scale-95 transition-all shadow-[0_0_16px_rgba(255,107,34,0.35)] flex items-center gap-2" onclick="openInviteModal()">
+<span class="material-symbols-outlined text-lg">person_add</span>
+<span>Invite Member</span>
+</button>
+</div>
+</div>
+<!-- Telemetry Row: Seats, Security Posture & Real-time Nodes -->
+<div class="grid grid-cols-1 md:grid-cols-4 gap-space-md mb-space-xl">
+<!-- Seat Counter Metric -->
+<div class="relative overflow-hidden p-space-md rounded-xl bg-surface-container-low shadow-md flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant tracking-wider">Active Tactical Seats</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container/30 text-secondary font-label-sm text-label-sm font-semibold">Tier 1 Provisioned</span>
+</div>
+<div class="my-space-sm flex items-baseline gap-space-xs">
+<span class="font-headline-xl text-headline-xl text-on-surface font-bold tracking-tight">18</span>
+<span class="font-headline-md text-headline-md text-on-surface-variant font-medium">/ 25</span>
+<span class="ml-auto font-label-md text-label-md text-secondary">72% Allocated</span>
+</div>
+<div class="w-full bg-surface-container-highest rounded-full h-1.5 overflow-hidden">
+<div class="bg-primary-container h-full rounded-full transition-all duration-700" style="width: 72%;"></div>
+</div>
+<div class="mt-space-sm flex justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>7 Seats Available</span>
+<span class="text-primary-container hover:underline cursor-pointer">Request Expansion →</span>
+</div>
+</div>
+<!-- Active Clearances Breakdown -->
+<div class="p-space-md rounded-xl bg-surface-container-low shadow-md flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant tracking-wider">MFA Compliance</span>
+<span class="material-symbols-outlined text-secondary text-base">lock</span>
+</div>
+<div class="my-space-sm flex items-center gap-space-md">
+<span class="font-headline-xl text-headline-xl text-on-surface font-bold">100%</span>
+<div class="flex flex-col text-on-surface-variant font-body-sm text-body-sm leading-tight">
+<span class="text-secondary font-semibold">Hardware-Enforced</span>
+<span>FIPS 140-2 Level 3</span>
+</div>
+</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+        Zero-trust biometric posture nominal
+      </div>
+</div>
+<!-- Incident Command Broadcast Nodes -->
+<div class="p-space-md rounded-xl bg-surface-container-low shadow-md flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant tracking-wider">Tactical Dispatchers</span>
+<span class="material-symbols-outlined text-primary text-base">hub</span>
+</div>
+<div class="my-space-sm flex items-baseline gap-space-xs">
+<span class="font-headline-xl text-headline-xl text-on-surface font-bold">6</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant ml-2">Active in Sector 4</span>
+</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant flex items-center justify-between">
+<span>Channel: GULF-NET-09</span>
+<span class="text-secondary">4 Pending Routes</span>
+</div>
+</div>
+<!-- Active Field Handhelds -->
+<div class="p-space-md rounded-xl bg-surface-container-low shadow-md flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant tracking-wider">Mobile HUD Nodes</span>
+<span class="material-symbols-outlined text-secondary text-base">radar</span>
+</div>
+<div class="my-space-sm flex items-baseline gap-space-xs">
+<span class="font-headline-xl text-headline-xl text-on-surface font-bold">8</span>
+<span class="font-body-sm text-body-sm text-secondary font-semibold ml-2">Pinging telemetry</span>
+</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant flex items-center justify-between">
+<span>Low-latency SatCom</span>
+<span class="text-on-surface font-label-sm text-label-sm">22ms avg</span>
+</div>
+</div>
+</div>
+<!-- Role Capabilities Matrix Cards (Accordion / Quick Inspect) -->
+<div class="mb-space-xl">
+<div class="flex items-center justify-between mb-space-md">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-semibold tracking-tight">Access Control Specifications</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Hierarchical clearance matrices governing mission-critical command dispatch and telemetry feeds.</p>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest hidden sm:inline">5 OPERATIONAL TIERS</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-md">
+<!-- Role: Org Admin -->
+<div class="p-space-md rounded-xl bg-surface-container hover:bg-surface-container-high transition-colors flex flex-col justify-between shadow-sm">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="px-2 py-0.5 rounded font-label-sm text-label-sm uppercase bg-primary-container/20 text-primary-container font-semibold">Tier 0</span>
+<span class="material-symbols-outlined text-primary-container text-lg">admin_panel_settings</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-semibold mb-1">Organization Admin</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">Full cluster write authority, master encryption keys, and emergency public sirens.</p>
+<div class="space-y-1.5 font-label-sm text-label-sm text-on-surface-variant">
+<div class="flex items-center gap-1.5 text-on-surface">
+<span class="material-symbols-outlined text-secondary text-sm">check_circle</span>
+<span>Emergency EAS Broadcast</span>
+</div>
+<div class="flex items-center gap-1.5 text-on-surface">
+<span class="material-symbols-outlined text-secondary text-sm">check_circle</span>
+<span>Node Cluster Root Re-key</span>
+</div>
+<div class="flex items-center gap-1.5 text-on-surface">
+<span class="material-symbols-outlined text-secondary text-sm">check_circle</span>
+<span>Billing &amp; License Provisioning</span>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm bg-surface-container-lowest/40 rounded p-2 text-center font-label-sm text-label-sm text-primary">
+          3 Members Assigned
+        </div>
+</div>
+<!-- Role: Dispatcher -->
+<div class="p-space-md rounded-xl bg-surface-container hover:bg-surface-container-high transition-colors flex flex-col justify-between shadow-sm">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="px-2 py-0.5 rounded font-label-sm text-label-sm uppercase bg-secondary-container/20 text-secondary font-semibold">Tier 1</span>
+<span class="material-symbols-outlined text-secondary text-lg">alt_route</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-semibold mb-1">Dispatcher</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">Tactical route clearances, fleet vector reallocation, and hazard corridor lockouts.</p>
+<div class="space-y-1.5 font-label-sm text-label-sm text-on-surface-variant">
+<div class="flex items-center gap-1.5 text-on-surface">
+<span class="material-symbols-outlined text-secondary text-sm">check_circle</span>
+<span>Route Approval Vectoring</span>
+</div>
+<div class="flex items-center gap-1.5 text-on-surface">
+<span class="material-symbols-outlined text-secondary text-sm">check_circle</span>
+<span>Corridor Invalidation</span>
+</div>
+<div class="flex items-center gap-1.5 text-on-surface">
+<span class="material-symbols-outlined text-secondary text-sm">check_circle</span>
+<span>Rescue Squad Tasking</span>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm bg-surface-container-lowest/40 rounded p-2 text-center font-label-sm text-label-sm text-secondary">
+          6 Members Assigned
+        </div>
+</div>
+<!-- Role: Field Responder -->
+<div class="p-space-md rounded-xl bg-surface-container hover:bg-surface-container-high transition-colors flex flex-col justify-between shadow-sm">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="px-2 py-0.5 rounded font-label-sm text-label-sm uppercase bg-surface-bright text-on-surface font-semibold">Tier 2</span>
+<span class="material-symbols-outlined text-primary text-lg">directions_boat</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-semibold mb-1">Field Responder</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">Ruggedized mobile interface, live telemetry telemetry beacons, waypoint confirmations.</p>
+<div class="space-y-1.5 font-label-sm text-label-sm text-on-surface-variant">
+<div class="flex items-center gap-1.5 text-on-surface">
+<span class="material-symbols-outlined text-secondary text-sm">check_circle</span>
+<span>Real-time GPS/LiDAR Sync</span>
+</div>
+<div class="flex items-center gap-1.5 text-on-surface">
+<span class="material-symbols-outlined text-secondary text-sm">check_circle</span>
+<span>Water Depth Point Stamping</span>
+</div>
+<div class="flex items-center gap-1.5 text-on-surface">
+<span class="material-symbols-outlined text-secondary text-sm">check_circle</span>
+<span>Distress SOS Trigger</span>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm bg-surface-container-lowest/40 rounded p-2 text-center font-label-sm text-label-sm text-on-surface">
+          8 Members Assigned
+        </div>
+</div>
+<!-- Role: Analyst / Read-only -->
+<div class="p-space-md rounded-xl bg-surface-container hover:bg-surface-container-high transition-colors flex flex-col justify-between shadow-sm">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="px-2 py-0.5 rounded font-label-sm text-label-sm uppercase bg-surface-variant text-on-surface-variant font-semibold">Tier 3</span>
+<span class="material-symbols-outlined text-on-surface-variant text-lg">insights</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-semibold mb-1">Analyst / Read</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">Hydrological forecasting projections, historical audit records, sensor telemetry.</p>
+<div class="space-y-1.5 font-label-sm text-label-sm text-on-surface-variant">
+<div class="flex items-center gap-1.5 text-on-surface">
+<span class="material-symbols-outlined text-secondary text-sm">check_circle</span>
+<span>Precipitation Runoff Models</span>
+</div>
+<div class="flex items-center gap-1.5 text-on-surface">
+<span class="material-symbols-outlined text-secondary text-sm">check_circle</span>
+<span>Post-Disaster Audit Export</span>
+</div>
+<div class="flex items-center gap-1.5 text-on-surface">
+<span class="material-symbols-outlined text-on-surface-variant text-sm">block</span>
+<span class="text-on-surface-variant">No Dispatch Action Access</span>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm bg-surface-container-lowest/40 rounded p-2 text-center font-label-sm text-label-sm text-on-surface-variant">
+          1 Member Assigned
+        </div>
+</div>
+<!-- Role: Public User -->
+<div class="p-space-md rounded-xl bg-surface-container hover:bg-surface-container-high transition-colors flex flex-col justify-between shadow-sm">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="px-2 py-0.5 rounded font-label-sm text-label-sm uppercase bg-surface-variant/40 text-on-surface-variant font-semibold">External</span>
+<span class="material-symbols-outlined text-on-surface-variant text-lg">public</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-semibold mb-1">Public Access</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">Civil evacuation shelter directories and extraction appeal submission portal.</p>
+<div class="space-y-1.5 font-label-sm text-label-sm text-on-surface-variant">
+<div class="flex items-center gap-1.5 text-on-surface">
+<span class="material-symbols-outlined text-secondary text-sm">check_circle</span>
+<span>Public Shelter Availability</span>
+</div>
+<div class="flex items-center gap-1.5 text-on-surface">
+<span class="material-symbols-outlined text-secondary text-sm">check_circle</span>
+<span>SOS Extraction Request Intake</span>
+</div>
+<div class="flex items-center gap-1.5 text-on-surface">
+<span class="material-symbols-outlined text-on-surface-variant text-sm">block</span>
+<span class="text-on-surface-variant">Sanitized Public Views</span>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm bg-surface-container-lowest/40 rounded p-2 text-center font-label-sm text-label-sm text-on-surface-variant">
+          Open Self-Service Portal
+        </div>
+</div>
+</div>
+</div>
+<!-- Member Directory Operations Table -->
+<div class="rounded-xl bg-surface-container-low shadow-xl overflow-hidden mb-space-xl">
+<!-- Filters & Table Header Controls -->
+<div class="p-space-md bg-surface-container flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-space-md">
+<!-- Search Input -->
+<div class="relative flex-1 max-w-md">
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-on-surface-variant text-lg">search</span>
+<input class="w-full bg-surface-container-lowest text-on-surface font-body-sm text-body-sm pl-9 pr-4 py-2 rounded-lg focus:outline-none focus:ring-1 focus:ring-primary" id="memberSearchInput" oninput="handleSearch(this.value)" placeholder="Filter by name, operational callsign, or email..." type="text"/>
+</div>
+<!-- Action & View Filter Controls -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<div class="flex items-center gap-1 bg-surface-container-lowest p-1 rounded-lg">
+<button class="px-2.5 py-1 rounded text-xs font-label-sm bg-surface-variant text-on-surface" id="filter-all" onclick="filterByRole('ALL')">All (18)</button>
+<button class="px-2.5 py-1 rounded text-xs font-label-sm text-on-surface-variant hover:text-on-surface" id="filter-admin" onclick="filterByRole('ADMIN')">Admin (3)</button>
+<button class="px-2.5 py-1 rounded text-xs font-label-sm text-on-surface-variant hover:text-on-surface" id="filter-disp" onclick="filterByRole('DISPATCHER')">Dispatcher (6)</button>
+<button class="px-2.5 py-1 rounded text-xs font-label-sm text-on-surface-variant hover:text-on-surface" id="filter-resp" onclick="filterByRole('RESPONDER')">Responder (8)</button>
+<button class="px-2.5 py-1 rounded text-xs font-label-sm text-on-surface-variant hover:text-on-surface" id="filter-analyst" onclick="filterByRole('ANALYST')">Analyst (1)</button>
+</div>
+<select class="bg-surface-container-lowest text-on-surface font-body-sm text-body-sm px-3 py-2 rounded-lg focus:outline-none" id="statusFilter" onchange="handleStatusFilter(this.value)">
+<option value="ALL">All Invitation States</option>
+<option value="ACTIVE">Active Duty</option>
+<option value="INVITED">Invite Pending</option>
+<option value="DEACTIVATED">Deactivated</option>
+</select>
+<button class="p-2 rounded-lg bg-surface-container-lowest text-on-surface-variant hover:text-on-surface hover:bg-surface-variant transition-colors" onclick="exportAuditManifest()" title="Export Manifest as JSON">
+<span class="material-symbols-outlined text-lg">download</span>
+</button>
+</div>
+</div>
+<!-- Table Container -->
+<div class="overflow-x-auto">
+<table class="w-full text-left" id="directoryTable">
+<thead>
+<tr class="bg-surface-container-highest/40 font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">
+<th class="py-3 px-space-md">Operator Identity</th>
+<th class="py-3 px-space-md">Operational Role</th>
+<th class="py-3 px-space-md">Workspace Clearances</th>
+<th class="py-3 px-space-md">Invitation Status</th>
+<th class="py-3 px-space-md">Last Active Vector</th>
+<th class="py-3 px-space-md text-right">Actions</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container-highest/20 font-body-sm text-body-sm text-on-surface" id="memberTableBody">
+<!-- Row 1: Sarah Chen -->
+<tr class="hover:bg-surface-container-high/40 transition-colors member-row" data-query="sarah chen command apex-01 s.chen@metrorelief.gov" data-role="ADMIN" data-status="ACTIVE">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="relative w-9 h-9 rounded-full bg-primary flex items-center justify-center font-bold text-on-primary">
+<span>SC</span>
+<span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-secondary"></span>
+</div>
+<div>
+<div class="font-semibold text-on-surface flex items-center gap-1.5">
+                    Dir. Sarah Chen
+                    <span class="font-label-sm text-label-sm text-primary font-normal">APEX-01</span>
+</div>
+<div class="text-on-surface-variant font-label-sm text-label-sm">s.chen@metrorelief.gov</div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="px-2 py-0.5 rounded-full bg-primary-container/20 text-primary-container font-label-sm text-label-sm font-semibold">
+                Org Admin
+              </span>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-wrap gap-1">
+<span class="px-1.5 py-0.5 rounded bg-surface-container font-label-sm text-label-sm">Global Commander</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container font-label-sm text-label-sm">Gulf Sector 4</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded bg-secondary-container/20 text-secondary font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Active Duty
+              </span>
+</td>
+<td class="py-3.5 px-space-md font-label-sm text-label-sm text-on-surface-variant">
+<span>Now (Command Center)</span>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded hover:bg-surface-variant text-on-surface-variant hover:text-on-surface transition-colors" onclick="openEditModal('Sarah Chen', 'Org Admin', 's.chen@metrorelief.gov', 'Global Commander, Gulf Sector 4')" title="Edit Role">
+<span class="material-symbols-outlined text-base">tune</span>
+</button>
+<button class="p-1.5 rounded hover:bg-surface-variant text-on-surface-variant hover:text-error transition-colors" onclick="promptAction('Deactivate Dir. Sarah Chen?')" title="Deactivate">
+<span class="material-symbols-outlined text-base">person_off</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2: Marcus Vance -->
+<tr class="hover:bg-surface-container-high/40 transition-colors member-row" data-query="marcus vance dispatch route-lead m.vance@metrorelief.gov" data-role="DISPATCHER" data-status="ACTIVE">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="relative w-9 h-9 rounded-full bg-secondary-container flex items-center justify-center font-bold text-on-secondary-container">
+<span>MV</span>
+<span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-secondary"></span>
+</div>
+<div>
+<div class="font-semibold text-on-surface flex items-center gap-1.5">
+                    Marcus Vance
+                    <span class="font-label-sm text-label-sm text-secondary font-normal">VECTOR-4</span>
+</div>
+<div class="text-on-surface-variant font-label-sm text-label-sm">m.vance@metrorelief.gov</div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="px-2 py-0.5 rounded-full bg-secondary-container/20 text-secondary font-label-sm text-label-sm font-semibold">
+                Dispatcher
+              </span>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-wrap gap-1">
+<span class="px-1.5 py-0.5 rounded bg-surface-container font-label-sm text-label-sm">High-water Evac Corridors</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded bg-secondary-container/20 text-secondary font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Active Duty
+              </span>
+</td>
+<td class="py-3.5 px-space-md font-label-sm text-label-sm text-on-surface-variant">
+<span>3m ago (Routing Desk 2)</span>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded hover:bg-surface-variant text-on-surface-variant hover:text-on-surface transition-colors" onclick="openEditModal('Marcus Vance', 'Dispatcher', 'm.vance@metrorelief.gov', 'High-water Evac Corridors')" title="Edit Role">
+<span class="material-symbols-outlined text-base">tune</span>
+</button>
+<button class="p-1.5 rounded hover:bg-surface-variant text-on-surface-variant hover:text-error transition-colors" onclick="promptAction('Deactivate Marcus Vance?')" title="Deactivate">
+<span class="material-symbols-outlined text-base">person_off</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 3: Elena Rostova (Field) -->
+<tr class="hover:bg-surface-container-high/40 transition-colors member-row" data-query="elena rostova field boat-alpha e.rostova@coastguard.aux" data-role="RESPONDER" data-status="ACTIVE">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="relative w-9 h-9 rounded-full bg-surface-bright flex items-center justify-center font-bold text-on-surface">
+<span>ER</span>
+<span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-secondary"></span>
+</div>
+<div>
+<div class="font-semibold text-on-surface flex items-center gap-1.5">
+                    Elena Rostova
+                    <span class="font-label-sm text-label-sm text-on-surface-variant font-normal">RESCUE-09</span>
+</div>
+<div class="text-on-surface-variant font-label-sm text-label-sm">e.rostova@coastguard.aux</div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="px-2 py-0.5 rounded-full bg-surface-bright text-on-surface font-label-sm text-label-sm font-semibold">
+                Field Responder
+              </span>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-wrap gap-1">
+<span class="px-1.5 py-0.5 rounded bg-surface-container font-label-sm text-label-sm">Boat Unit Delta</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container font-label-sm text-label-sm">Bayou Reach</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded bg-secondary-container/20 text-secondary font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Active Duty
+              </span>
+</td>
+<td class="py-3.5 px-space-md font-label-sm text-label-sm text-on-surface-variant">
+<span>12s ago (Toughbook HUD)</span>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded hover:bg-surface-variant text-on-surface-variant hover:text-on-surface transition-colors" onclick="openEditModal('Elena Rostova', 'Field Responder', 'e.rostova@coastguard.aux', 'Boat Unit Delta, Bayou Reach')" title="Edit Role">
+<span class="material-symbols-outlined text-base">tune</span>
+</button>
+<button class="p-1.5 rounded hover:bg-surface-variant text-on-surface-variant hover:text-error transition-colors" onclick="promptAction('Deactivate Elena Rostova?')" title="Deactivate">
+<span class="material-symbols-outlined text-base">person_off</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 4: Dr. Aris Thorne (Analyst / Invited) -->
+<tr class="hover:bg-surface-container-high/40 transition-colors member-row" data-query="aris thorne analyst hydro a.thorne@noaa-liaison.org" data-role="ANALYST" data-status="INVITED">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="relative w-9 h-9 rounded-full bg-surface-variant flex items-center justify-center font-bold text-on-surface-variant">
+<span>AT</span>
+<span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-primary-container"></span>
+</div>
+<div>
+<div class="font-semibold text-on-surface flex items-center gap-1.5">
+                    Dr. Aris Thorne
+                    <span class="font-label-sm text-label-sm text-on-surface-variant font-normal">HYDRO-EXT</span>
+</div>
+<div class="text-on-surface-variant font-label-sm text-label-sm">a.thorne@noaa-liaison.org</div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="px-2 py-0.5 rounded-full bg-surface-variant text-on-surface-variant font-label-sm text-label-sm font-semibold">
+                Analyst / Read
+              </span>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-wrap gap-1">
+<span class="px-1.5 py-0.5 rounded bg-surface-container font-label-sm text-label-sm">SLOSH Hydro-Models</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded bg-primary-container/15 text-primary font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container animate-ping"></span> Invited (Expires 48h)
+              </span>
+</td>
+<td class="py-3.5 px-space-md font-label-sm text-label-sm text-on-surface-variant">
+<span>Never (Token Pending)</span>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="px-2 py-1 rounded bg-surface-container text-xs font-label-sm text-secondary hover:bg-surface-variant transition-colors" onclick="resendInvite('a.thorne@noaa-liaison.org')" title="Resend Invite">
+                  Resend Invite
+                </button>
+<button class="p-1.5 rounded hover:bg-surface-variant text-on-surface-variant hover:text-on-surface transition-colors" onclick="openEditModal('Dr. Aris Thorne', 'Analyst / Read', 'a.thorne@noaa-liaison.org', 'SLOSH Hydro-Models')">
+<span class="material-symbols-outlined text-base">tune</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 5: Mateo Ruiz (Field) -->
+<tr class="hover:bg-surface-container-high/40 transition-colors member-row" data-query="mateo ruiz field drone m.ruiz@fire-rescue.org" data-role="RESPONDER" data-status="ACTIVE">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="relative w-9 h-9 rounded-full bg-surface-bright flex items-center justify-center font-bold text-on-surface">
+<span>MR</span>
+<span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-secondary"></span>
+</div>
+<div>
+<div class="font-semibold text-on-surface flex items-center gap-1.5">
+                    Mateo Ruiz
+                    <span class="font-label-sm text-label-sm text-on-surface-variant font-normal">UAV-PILOT-2</span>
+</div>
+<div class="text-on-surface-variant font-label-sm text-label-sm">m.ruiz@fire-rescue.org</div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="px-2 py-0.5 rounded-full bg-surface-bright text-on-surface font-label-sm text-label-sm font-semibold">
+                Field Responder
+              </span>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-wrap gap-1">
+<span class="px-1.5 py-0.5 rounded bg-surface-container font-label-sm text-label-sm">Thermal Recon Aerials</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded bg-secondary-container/20 text-secondary font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Active Duty
+              </span>
+</td>
+<td class="py-3.5 px-space-md font-label-sm text-label-sm text-on-surface-variant">
+<span>8m ago (Drone Console)</span>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="p-1.5 rounded hover:bg-surface-variant text-on-surface-variant hover:text-on-surface transition-colors" onclick="openEditModal('Mateo Ruiz', 'Field Responder', 'm.ruiz@fire-rescue.org', 'Thermal Recon Aerials')" title="Edit Role">
+<span class="material-symbols-outlined text-base">tune</span>
+</button>
+<button class="p-1.5 rounded hover:bg-surface-variant text-on-surface-variant hover:text-error transition-colors" onclick="promptAction('Deactivate Mateo Ruiz?')" title="Deactivate">
+<span class="material-symbols-outlined text-base">person_off</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 6: Chloe Dupuis (Dispatcher / Invited) -->
+<tr class="hover:bg-surface-container-high/40 transition-colors member-row" data-query="chloe dupuis dispatch relief c.dupuis@metrorelief.gov" data-role="DISPATCHER" data-status="INVITED">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="relative w-9 h-9 rounded-full bg-secondary-container/40 flex items-center justify-center font-bold text-secondary">
+<span>CD</span>
+<span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-primary-container"></span>
+</div>
+<div>
+<div class="font-semibold text-on-surface flex items-center gap-1.5">
+                    Chloe Dupuis
+                    <span class="font-label-sm text-label-sm text-on-surface-variant font-normal">EVAC-SECTOR-2</span>
+</div>
+<div class="text-on-surface-variant font-label-sm text-label-sm">c.dupuis@metrorelief.gov</div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="px-2 py-0.5 rounded-full bg-secondary-container/20 text-secondary font-label-sm text-label-sm font-semibold">
+                Dispatcher
+              </span>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex flex-wrap gap-1">
+<span class="px-1.5 py-0.5 rounded bg-surface-container font-label-sm text-label-sm">North Canal Levee</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded bg-primary-container/15 text-primary font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container animate-ping"></span> Invited (Expires 12h)
+              </span>
+</td>
+<td class="py-3.5 px-space-md font-label-sm text-label-sm text-on-surface-variant">
+<span>Invited 36h ago</span>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="px-2 py-1 rounded bg-surface-container text-xs font-label-sm text-secondary hover:bg-surface-variant transition-colors" onclick="resendInvite('c.dupuis@metrorelief.gov')" title="Resend Invite">
+                  Resend Invite
+                </button>
+<button class="p-1.5 rounded hover:bg-surface-variant text-on-surface-variant hover:text-on-surface transition-colors" onclick="openEditModal('Chloe Dupuis', 'Dispatcher', 'c.dupuis@metrorelief.gov', 'North Canal Levee')">
+<span class="material-symbols-outlined text-base">tune</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 7: Liam O'Connor (Deactivated) -->
+<tr class="hover:bg-surface-container-high/40 transition-colors member-row opacity-60" data-query="liam o'connor l.oconnor@metrorelief.gov" data-role="RESPONDER" data-status="DEACTIVATED">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="relative w-9 h-9 rounded-full bg-surface-container-highest flex items-center justify-center font-bold text-on-surface-variant">
+<span>LO</span>
+</div>
+<div>
+<div class="font-semibold text-on-surface flex items-center gap-1.5">
+                    Liam O'Connor
+                    <span class="font-label-sm text-label-sm text-on-surface-variant font-normal">SUSPENDED</span>
+</div>
+<div class="text-on-surface-variant font-label-sm text-label-sm">l.oconnor@metrorelief.gov</div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">
+                Field Responder
+              </span>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="text-on-surface-variant font-label-sm text-label-sm">Revoked by APEX-01</span>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded bg-error-container/20 text-error font-label-sm text-label-sm font-semibold">
+                Deactivated
+              </span>
+</td>
+<td class="py-3.5 px-space-md font-label-sm text-label-sm text-on-surface-variant">
+<span>Oct 24 (Incident 109)</span>
+</td>
+<td class="py-3.5 px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="px-2 py-1 rounded bg-surface-container text-xs font-label-sm text-on-surface hover:bg-surface-variant transition-colors" onclick="promptAction('Reactivate Liam O\'Connor?')" title="Reactivate Account">
+                  Reactivate
+                </button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Pagination / Summary Bar -->
+<div class="p-space-md bg-surface-container flex flex-col sm:flex-row items-center justify-between gap-space-sm font-label-sm text-label-sm text-on-surface-variant">
+<div>Showing <span class="text-on-surface font-semibold" id="displayedCount">7</span> of <span class="text-on-surface font-semibold">18</span> registered operators</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-2.5 py-1 rounded bg-surface-container-lowest text-on-surface-variant opacity-50 cursor-not-allowed">Previous</button>
+<button class="px-2.5 py-1 rounded bg-surface-variant text-on-surface font-semibold">1</button>
+<button class="px-2.5 py-1 rounded bg-surface-container-lowest text-on-surface-variant hover:text-on-surface">2</button>
+<button class="px-2.5 py-1 rounded bg-surface-container-lowest text-on-surface-variant hover:text-on-surface">3</button>
+<button class="px-2.5 py-1 rounded bg-surface-container-lowest text-on-surface-variant hover:text-on-surface">Next</button>
+</div>
+</div>
+</div>
+<!-- Operational Context Grid: Multi-Agency Federation -->
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-space-lg mb-space-xl">
+<div class="p-space-md rounded-xl bg-surface-container-low shadow-md">
+<div class="flex items-center gap-space-sm mb-space-sm">
+<span class="material-symbols-outlined text-secondary">domain_verification</span>
+<h4 class="font-headline-md text-headline-md text-on-surface font-semibold">Federal &amp; State Bridging</h4>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">Federated identity trust anchored with FEMA Region VI and State Guard dispatch networks. Security clearance level 4 mapping active.</p>
+<div class="p-space-sm rounded bg-surface-container font-label-sm text-label-sm text-secondary flex items-center justify-between">
+<span>SAML 2.0 / Okta OIDC</span>
+<span class="font-semibold">SYNCHRONIZED</span>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-low shadow-md">
+<div class="flex items-center gap-space-sm mb-space-sm">
+<span class="material-symbols-outlined text-primary-container">emergency_share</span>
+<h4 class="font-headline-md text-headline-md text-on-surface font-semibold">Emergency Escalations</h4>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">In case of major levee compromise, incident commanders can enact "Disaster Triage" overriding field permissions in 1 click.</p>
+<button class="w-full py-2 rounded bg-tertiary-container text-on-tertiary-container font-body-sm text-body-sm font-semibold hover:brightness-110 transition-all text-center" onclick="alert('DISASTER PROTOCOL ACTIVE: All field responder nodes elevated to ad-hoc routing approval state.')">
+        Test Emergency Elevation Alert
+      </button>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-low shadow-md">
+<div class="flex items-center gap-space-sm mb-space-sm">
+<span class="material-symbols-outlined text-secondary">history_edu</span>
+<h4 class="font-headline-md text-headline-md text-on-surface font-semibold">Access Audit Trail</h4>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">All permission delegations, token regenerations, and corridor overrides are cryptographically timestamped.</p>
+<div class="space-y-1 font-label-sm text-label-sm text-on-surface-variant">
+<div class="truncate">19:40:12 — Dir. Chen re-keyed Sector 4 Beacon</div>
+<div class="truncate">19:35:48 — Marcus Vance approved Corridor Alpha-8</div>
+</div>
+</div>
+</div>
+<!-- MODAL: Invite Member -->
+<div class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-surface-container-lowest/80 backdrop-blur-md hidden" id="inviteModal">
+<div class="w-full max-w-lg rounded-xl bg-surface-container-high shadow-2xl p-space-lg relative animate-in fade-in zoom-in-95 duration-150">
+<div class="flex items-center justify-between mb-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded bg-primary-container/20 flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-lg">person_add</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-semibold">Provision Operational Member</h3>
+</div>
+<button class="text-on-surface-variant hover:text-on-surface" onclick="closeInviteModal()">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<form class="space-y-space-md" id="inviteForm" onsubmit="handleSendInvite(event)">
+<div>
+<label class="block font-label-sm text-label-sm uppercase text-on-surface-variant mb-1">Official Name or Callsign</label>
+<input class="w-full bg-surface-container-lowest text-on-surface font-body-sm text-body-sm px-3 py-2 rounded-lg focus:outline-none focus:ring-1 focus:ring-primary" id="inviteName" placeholder="e.g. Lt. Jennifer Morales" required="" type="text"/>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm uppercase text-on-surface-variant mb-1">Civil / Agency Email Address</label>
+<input class="w-full bg-surface-container-lowest text-on-surface font-body-sm text-body-sm px-3 py-2 rounded-lg focus:outline-none focus:ring-1 focus:ring-primary" id="inviteEmail" placeholder="e.g. j.morales@usace.army.mil" required="" type="email"/>
+</div>
+<div class="grid grid-cols-2 gap-space-md">
+<div>
+<label class="block font-label-sm text-label-sm uppercase text-on-surface-variant mb-1">Operational Role</label>
+<select class="w-full bg-surface-container-lowest text-on-surface font-body-sm text-body-sm px-3 py-2 rounded-lg focus:outline-none focus:ring-1 focus:ring-primary" id="inviteRoleSelect">
+<option value="ADMIN">Organization Admin</option>
+<option selected="" value="DISPATCHER">Dispatcher</option>
+<option value="RESPONDER">Field Responder</option>
+<option value="ANALYST">Analyst / Read-only</option>
+</select>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm uppercase text-on-surface-variant mb-1">Assigned Fleet Sector</label>
+<select class="w-full bg-surface-container-lowest text-on-surface font-body-sm text-body-sm px-3 py-2 rounded-lg focus:outline-none focus:ring-1 focus:ring-primary">
+<option>Gulf Coast Sector 4</option>
+<option>Bayou Basin Rapid Response</option>
+<option>North Canal Levee Taskforce</option>
+<option>Unified State Command</option>
+</select>
+</div>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm uppercase text-on-surface-variant mb-1">Workspace Authorization Tag</label>
+<input class="w-full bg-surface-container-lowest text-on-surface font-body-sm text-body-sm px-3 py-2 rounded-lg focus:outline-none focus:ring-1 focus:ring-primary" placeholder="e.g. Boat-Cluster-Bravo, FloodGate-West" type="text"/>
+</div>
+<div class="p-space-sm rounded bg-surface-container font-label-sm text-label-sm text-on-surface-variant flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-base">info</span>
+<span>Invitations issue an air-gapped cryptographic link expiring in 48 hours.</span>
+</div>
+<div class="flex items-center justify-end gap-space-sm pt-space-sm">
+<button class="px-4 py-2 rounded-lg bg-surface-container text-on-surface font-body-sm text-body-sm hover:bg-surface-variant transition-colors" onclick="closeInviteModal()" type="button">
+            Cancel
+          </button>
+<button class="px-4 py-2 rounded-full bg-primary-container text-on-primary-container font-body-md text-body-md font-semibold hover:brightness-110 shadow-md" type="submit">
+            Issue Credentials
+          </button>
+</div>
+</form>
+</div>
+</div>
+<!-- MODAL: Edit Role & Workspace Permissions -->
+<div class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-surface-container-lowest/80 backdrop-blur-md hidden" id="editRoleModal">
+<div class="w-full max-w-lg rounded-xl bg-surface-container-high shadow-2xl p-space-lg relative animate-in fade-in zoom-in-95 duration-150">
+<div class="flex items-center justify-between mb-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded bg-secondary-container/20 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-lg">tune</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface font-semibold">Adjust Member Clearance</h3>
+</div>
+<button class="text-on-surface-variant hover:text-on-surface" onclick="closeEditModal()">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<div class="space-y-space-md">
+<div class="bg-surface-container-lowest p-space-sm rounded-lg flex items-center justify-between">
+<div>
+<div class="font-semibold text-on-surface" id="editTargetName">Operator Name</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant" id="editTargetEmail">operator@agency.gov</div>
+</div>
+<span class="px-2 py-0.5 rounded text-xs font-label-sm uppercase bg-surface-variant text-on-surface" id="currentRoleBadge">ROLE</span>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm uppercase text-on-surface-variant mb-1">Promote / Demote Clearance</label>
+<select class="w-full bg-surface-container-lowest text-on-surface font-body-sm text-body-sm px-3 py-2 rounded-lg focus:outline-none focus:ring-1 focus:ring-primary" id="editRoleSelector">
+<option value="Org Admin">Organization Admin (Full Cluster Write)</option>
+<option value="Dispatcher">Dispatcher (Route Clearances)</option>
+<option value="Field Responder">Field Responder (HUD Telemetry)</option>
+<option value="Analyst / Read">Analyst / Read-only</option>
+<option value="Public Access">Public Restricted</option>
+</select>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm uppercase text-on-surface-variant mb-1">Assigned Corridors &amp; Workspaces</label>
+<textarea class="w-full bg-surface-container-lowest text-on-surface font-body-sm text-body-sm p-3 rounded-lg focus:outline-none focus:ring-1 focus:ring-primary" id="editWorkspaces" rows="2"></textarea>
+</div>
+<div class="space-y-2 pt-2">
+<label class="block font-label-sm text-label-sm uppercase text-on-surface-variant">Autonomous Clearances</label>
+<label class="flex items-center gap-2 font-body-sm text-body-sm text-on-surface cursor-pointer">
+<input checked="" class="rounded bg-surface-container-lowest text-primary focus:ring-primary" type="checkbox"/>
+<span>Permit Route Breach Invalidation</span>
+</label>
+<label class="flex items-center gap-2 font-body-sm text-body-sm text-on-surface cursor-pointer">
+<input checked="" class="rounded bg-surface-container-lowest text-primary focus:ring-primary" type="checkbox"/>
+<span>Permit Direct Radio Voice Bridging</span>
+</label>
+</div>
+<div class="flex items-center justify-end gap-space-sm pt-space-md">
+<button class="px-4 py-2 rounded-lg bg-surface-container text-on-surface font-body-sm text-body-sm hover:bg-surface-variant transition-colors" onclick="closeEditModal()" type="button">
+            Discard
+          </button>
+<button class="px-4 py-2 rounded-full bg-secondary-container text-on-secondary-container font-body-md text-body-md font-semibold hover:brightness-110 shadow-md" onclick="saveRoleChanges()" type="button">
+            Save Permissions
+          </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Notification Toast Container -->
+<div class="fixed bottom-12 right-6 z-50 transform translate-y-16 opacity-0 transition-all duration-300 pointer-events-none flex items-center gap-2 bg-surface-container-highest px-4 py-3 rounded-xl shadow-2xl text-on-surface font-body-sm text-body-sm" id="toastNotification">
+<span class="material-symbols-outlined text-secondary" id="toastIcon">check_circle</span>
+<span id="toastMessage">Role successfully updated.</span>
+</div>
+</div>
+<script>
+  // Filter and Search Micro-interactions
+  let currentRoleFilter = 'ALL';
+  let currentStatusFilter = 'ALL';
+
+  function handleSearch(query) {
+    const term = query.toLowerCase().trim();
+    const rows = document.querySelectorAll('.member-row');
+    let visibleCount = 0;
+
+    rows.forEach(row => {
+      const rowQuery = row.getAttribute('data-query') || '';
+      const rowRole = row.getAttribute('data-role');
+      const rowStatus = row.getAttribute('data-status');
+
+      const matchesText = rowQuery.includes(term);
+      const matchesRole = (currentRoleFilter === 'ALL' || rowRole === currentRoleFilter);
+      const matchesStatus = (currentStatusFilter === 'ALL' || rowStatus === currentStatusFilter);
+
+      if (matchesText && matchesRole && matchesStatus) {
+        row.style.display = '';
+        visibleCount++;
+      } else {
+        row.style.display = 'none';
+      }
+    });
+
+    document.getElementById('displayedCount').textContent = visibleCount;
+  }
+
+  function filterByRole(role) {
+    currentRoleFilter = role;
+    
+    // Update active pill styling
+    const pillIds = ['filter-all', 'filter-admin', 'filter-disp', 'filter-resp', 'filter-analyst'];
+    pillIds.forEach(id => {
+      const btn = document.getElementById(id);
+      if (btn) {
+        btn.classList.remove('bg-surface-variant', 'text-on-surface');
+        btn.classList.add('text-on-surface-variant');
+      }
+    });
+
+    const activeMap = {
+      'ALL': 'filter-all',
+      'ADMIN': 'filter-admin',
+      'DISPATCHER': 'filter-disp',
+      'RESPONDER': 'filter-resp',
+      'ANALYST': 'filter-analyst'
+    };
+    
+    const activeBtn = document.getElementById(activeMap[role]);
+    if (activeBtn) {
+      activeBtn.classList.add('bg-surface-variant', 'text-on-surface');
+      activeBtn.classList.remove('text-on-surface-variant');
+    }
+
+    const currentSearch = document.getElementById('memberSearchInput').value;
+    handleSearch(currentSearch);
+  }
+
+  function handleStatusFilter(status) {
+    currentStatusFilter = status;
+    const currentSearch = document.getElementById('memberSearchInput').value;
+    handleSearch(currentSearch);
+  }
+
+  // Modal Controllers
+  function openInviteModal() {
+    document.getElementById('inviteModal').classList.remove('hidden');
+  }
+
+  function closeInviteModal() {
+    document.getElementById('inviteModal').classList.add('hidden');
+  }
+
+  function handleSendInvite(e) {
+    e.preventDefault();
+    const name = document.getElementById('inviteName').value;
+    const email = document.getElementById('inviteEmail').value;
+    closeInviteModal();
+    showToast(`Invitation token dispatched to ${email} for ${name}`);
+    document.getElementById('inviteForm').reset();
+  }
+
+  function openEditModal(name, role, email, workspaces) {
+    document.getElementById('editTargetName').textContent = name;
+    document.getElementById('editTargetEmail').textContent = email;
+    document.getElementById('currentRoleBadge').textContent = role;
+    document.getElementById('editRoleSelector').value = role;
+    document.getElementById('editWorkspaces').value = workspaces;
+    document.getElementById('editRoleModal').classList.remove('hidden');
+  }
+
+  function closeEditModal() {
+    document.getElementById('editRoleModal').classList.add('hidden');
+  }
+
+  function saveRoleChanges() {
+    const role = document.getElementById('editRoleSelector').value;
+    const name = document.getElementById('editTargetName').textContent;
+    closeEditModal();
+    showToast(`Updated clearance policies for ${name} (${role})`);
+  }
+
+  function resendInvite(email) {
+    showToast(`Security invitation re-issued to ${email}`);
+  }
+
+  function promptAction(msg) {
+    if (confirm(msg)) {
+      showToast('State change logged to GIS-RBAC audit ledger.');
+    }
+  }
+
+  function exportAuditManifest() {
+    showToast('Manifest exported: floodroute-sec4-rbac-manifest.json');
+  }
+
+  function toggleAuditDrawer() {
+    showToast('RBAC policy synchronization: 18 active identities authenticated.');
+  }
+
+  function showToast(msg) {
+    const toast = document.getElementById('toastNotification');
+    const toastText = document.getElementById('toastMessage');
+    toastText.textContent = msg;
+    toast.classList.remove('translate-y-16', 'opacity-0', 'pointer-events-none');
+    toast.classList.add('translate-y-0', 'opacity-100');
+
+    setTimeout(() => {
+      toast.classList.add('translate-y-16', 'opacity-0', 'pointer-events-none');
+      toast.classList.remove('translate-y-0', 'opacity-100');
+    }, 3500);
+  }
+</script></main><footer class="fixed bottom-0 left-0 right-0 z-40 bg-surface-container-lowest/95 backdrop-blur-md shadow-[0_-1px_6px_rgba(0,0,0,0.5)]"><div class="h-9 w-full px-margin flex items-center justify-between font-label-sm text-label-sm"><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-xs"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span><span class="text-on-surface-variant uppercase tracking-wider">Core Kernel:</span><span class="text-secondary font-semibold">v4.18.2-rt</span></div><div class="flex items-center gap-space-xs"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span><span class="text-on-surface-variant uppercase tracking-wider">Geo-routing Engine:</span><span class="text-on-surface font-semibold">GIS-SYNC ONLINE (14ms)</span></div><div class="hidden md:flex items-center gap-space-xs"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span><span class="text-on-surface-variant uppercase tracking-wider">Cluster Status:</span><span class="text-secondary font-semibold">12/12 NODES NOMINAL</span></div></div><div class="flex items-center gap-space-md text-on-surface-variant"><span class="font-label-sm text-label-sm uppercase tracking-wider hidden sm:inline">SEC-LEVEL 4 AUTHORIZED</span><span class="text-outline">|</span><span class="font-label-sm text-label-sm text-on-surface-variant">UTC 19:42:08</span></div></div></footer></body></html>

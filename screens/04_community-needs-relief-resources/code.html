@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"tertiary-fixed":"#ffdad7","surface-container-lowest":"#0a0e13","on-primary":"#591d00","outline":"#a98a7e","on-tertiary-fixed-variant":"#930013","on-secondary":"#003824","on-tertiary-fixed":"#410004","on-secondary-fixed":"#002113","surface-container":"#1c2025","on-secondary-fixed-variant":"#005236","secondary-fixed-dim":"#4edea3","primary-fixed-dim":"#ffb598","tertiary-fixed-dim":"#ffb3ad","secondary":"#4edea3","outline-variant":"#594138","primary":"#ffb598","error":"#ffb4ab","on-primary-fixed-variant":"#7e2c00","surface-container-low":"#181c21","inverse-surface":"#e0e2ea","on-error-container":"#ffdad6","on-secondary-container":"#00311f","surface-tint":"#ffb598","on-tertiary-container":"#6a000b","on-primary-container":"#5b1d00","tertiary-container":"#ff6762","on-error":"#690005","on-surface-variant":"#e2bfb2","primary-fixed":"#ffdbce","on-surface":"#e0e2ea","surface-bright":"#36393f","surface-dim":"#101419","error-container":"#93000a","on-tertiary":"#68000a","tertiary":"#ffb3ad","on-primary-fixed":"#370e00","surface-variant":"#31353b","secondary-container":"#00a572","surface":"#101419","primary-container":"#ff6b22","on-background":"#e0e2ea","surface-container-highest":"#31353b","background":"#101419","secondary-fixed":"#6ffbbe","surface-container-high":"#262a30","inverse-primary":"#a53c00","inverse-on-surface":"#2d3136"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-lg":"1.5rem","gutter-mobile":"0.75rem","space-xl":"2rem","space-xs":"0.25rem","margin-mobile":"1rem","margin":"1.5rem","space-md":"1rem","gutter":"1rem","space-sm":"0.5rem"},"fontFamily":{"body-sm":["Inter"],"body-lg":["Inter"],"label-lg":["JetBrains Mono"],"headline-md":["Inter"],"headline-lg":["Inter"],"label-sm":["JetBrains Mono"],"body-md":["Inter"],"label-md":["JetBrains Mono"],"headline-xl-mobile":["Inter"],"headline-xl":["Inter"]},"fontSize":{"body-sm":["12px",{"lineHeight":"16px","fontWeight":"400"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"label-lg":["14px",{"lineHeight":"20px","fontWeight":"500"}],"headline-md":["20px",{"lineHeight":"28px","fontWeight":"600"}],"headline-lg":["24px",{"lineHeight":"32px","fontWeight":"600"}],"label-sm":["10px",{"lineHeight":"14px","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"label-md":["12px",{"lineHeight":"16px","fontWeight":"500"}],"headline-xl-mobile":["28px",{"lineHeight":"36px","fontWeight":"700"}],"headline-xl":["36px",{"lineHeight":"44px","fontWeight":"700"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface min-h-screen selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 w-full z-50 bg-surface-container-lowest/85 backdrop-blur-2xl shadow-[0_4px_24px_rgba(0,0,0,0.5)]"><div class="h-28 w-full px-margin flex flex-col justify-between py-space-xs"><div class="h-14 flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded-lg bg-primary-container/20 flex items-center justify-center text-primary-container"><span class="material-symbols-outlined text-[22px]">flood</span></div><div><span class="font-headline-md text-headline-md tracking-tight font-bold text-on-surface block leading-tight">FloodRoute</span><span class="font-label-sm text-label-sm text-outline uppercase tracking-wider block">Enterprise Relief Engine</span></div></div><div class="h-6 w-px bg-surface-container-highest"></div><div class="flex items-center gap-space-xs bg-surface-container-low px-space-sm py-space-xs rounded-lg"><span class="material-symbols-outlined text-outline text-[16px]">corporate_fare</span><span class="font-label-md text-label-md text-on-surface font-medium">Metro Flood Response Taskforce (DEMO)</span><span class="material-symbols-outlined text-outline text-[16px]">arrow_drop_down</span></div><div class="bg-surface-container-high px-space-sm py-space-xs rounded-full flex items-center gap-space-xs"><span class="w-1.5 h-1.5 rounded-full bg-secondary-fixed"></span><span class="font-label-sm text-label-sm text-secondary-fixed uppercase tracking-wider">Gulf Coast Sector 4</span></div></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-sm bg-surface-container-low px-space-md py-space-xs rounded-full"><span class="relative flex h-2.5 w-2.5"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary opacity-75"></span><span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-secondary"></span></span><span class="font-label-md text-label-md text-secondary font-medium">AI Routing Engine Active</span></div><div class="relative flex items-center justify-center w-10 h-10 rounded-full bg-surface-container-low hover:bg-surface-container hover:text-on-surface transition-colors cursor-pointer"><span class="material-symbols-outlined text-on-surface-variant text-[20px]">notifications</span><span class="absolute top-1 right-1 w-4 h-4 rounded-full bg-tertiary-container text-on-tertiary-container font-label-sm text-label-sm flex items-center justify-center font-bold">5</span></div><button class="flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-primary-container text-on-primary-container hover:bg-primary-fixed-dim hover:text-on-primary transition-all font-label-md text-label-md font-semibold" type="button"><span class="material-symbols-outlined text-[18px]">broadcast_on_personal</span><span>Emergency Broadcast</span></button><div class="flex items-center gap-space-sm bg-surface-container-low pl-space-xs pr-space-md py-space-xs rounded-full"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface font-medium leading-none">Dir. Sarah Chen</span><span class="font-label-sm text-label-sm text-outline leading-none mt-0.5">Logistics Lead</span></div></div></div></div><div class="h-12 flex items-center justify-between gap-space-md pt-space-xs"><nav class="flex items-center gap-space-xs bg-surface-container-low p-space-xs rounded-xl" data-active-classes="bg-surface-container-high text-on-surface font-semibold shadow-[inset_0_1px_0_rgba(255,255,255,0.1)]"><a class="px-space-md py-space-xs rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="command-center" href="#">Command Center</a><a class="px-space-md py-space-xs rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="incidents" href="#">Incidents</a><a class="px-space-md py-space-xs rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="live-network" href="#">Live Network</a><a class="px-space-md py-space-xs rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="fleet" href="#">Fleet</a><a class="px-space-md py-space-xs rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="relief-resources" href="#">Relief Resources</a><a class="px-space-md py-space-xs rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="simulation" href="#">Simulation</a><a class="px-space-md py-space-xs rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="analytics" href="#">Analytics</a><a class="px-space-md py-space-xs rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="settings" href="#">Settings</a></nav><div class="flex items-center gap-space-md flex-1 max-w-xl justify-end"><div class="flex items-center gap-space-sm bg-surface-container-lowest px-space-md py-space-xs rounded-xl flex-1 max-w-sm"><span class="material-symbols-outlined text-outline text-[18px]">search</span><input class="bg-transparent border-0 outline-none w-full font-body-sm text-body-sm text-on-surface placeholder:text-outline" placeholder="Quick search incident, unit, shelter..." type="text"/><span class="font-label-sm text-label-sm text-outline bg-surface-container-high px-space-xs rounded">⌘K</span></div><div class="flex items-center gap-space-sm bg-tertiary-container/15 px-space-md py-space-xs rounded-xl"><div class="w-2 h-2 rounded-full bg-tertiary-container animate-pulse"></div><span class="font-label-sm text-label-sm text-tertiary uppercase font-bold tracking-wider">SIM DATA ACTIVE</span><span class="material-symbols-outlined text-tertiary text-[16px] cursor-pointer hover:text-on-surface transition-colors">close</span></div></div></div></div></header><main class="w-full pt-28 bg-background min-h-screen"><div class="flex flex-col w-full">
+<div class="px-margin py-space-md flex flex-col gap-space-lg max-w-[1920px] mx-auto w-full">
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-sm">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container animate-ping"></span>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest">Tactical Logistics Hub // Real-time Triage</span>
+<span class="bg-surface-container-high text-outline px-space-xs py-0.5 rounded font-label-sm text-label-sm uppercase">Simulated Feed</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight">Community Needs &amp; Relief Resources</h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">
+          Automated algorithmic matching connecting submerged district community appeals with active staging depots, high-clearance logistics assets, and viable dry corridors.
+        </p>
+</div>
+<div class="flex items-center gap-space-sm self-start lg:self-auto bg-surface-container-low p-space-xs rounded-xl">
+<div class="flex items-center gap-space-xs px-space-sm py-space-xs bg-surface-container rounded-lg">
+<span class="material-symbols-outlined text-secondary text-[18px]">hub</span>
+<span class="font-label-md text-label-md text-on-surface">6 Active Depots</span>
+</div>
+<div class="flex items-center gap-space-xs px-space-sm py-space-xs bg-surface-container rounded-lg">
+<span class="material-symbols-outlined text-primary-container text-[18px]">local_shipping</span>
+<span class="font-label-md text-label-md text-on-surface">24 In-Transit Couriers</span>
+</div>
+<button class="flex items-center gap-space-xs px-space-md py-space-xs rounded-lg bg-surface-container-high hover:bg-surface-bright text-on-surface transition-all font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px]">sync</span>
+<span>Refresh Quotas</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col justify-between shadow-md relative overflow-hidden group">
+<div class="absolute -right-6 -bottom-6 w-24 h-24 rounded-full bg-tertiary-container/10 group-hover:scale-125 transition-transform duration-500 pointer-events-none"></div>
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-tertiary uppercase tracking-wider font-semibold">Total Unmet Requests</span>
+<span class="font-label-sm text-label-sm text-outline">CRITICAL TRIAGE QUEUE</span>
+</div>
+<div class="w-9 h-9 rounded-lg bg-tertiary-container/20 flex items-center justify-center text-tertiary-container">
+<span class="material-symbols-outlined text-[20px]">priority_high</span>
+</div>
+</div>
+<div class="mt-space-md flex items-baseline gap-space-sm">
+<span class="font-headline-xl text-headline-xl font-bold text-on-surface">1,420</span>
+<span class="font-label-sm text-label-sm text-tertiary flex items-center">
+<span class="material-symbols-outlined text-[14px]">trending_up</span> +88/hr
+          </span>
+</div>
+<div class="mt-space-xs flex items-center justify-between font-label-sm text-label-sm text-outline">
+<span>Priority 1: 342</span>
+<span>Priority 2: 678</span>
+<span class="text-secondary-fixed">Simulated</span>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col justify-between shadow-md relative overflow-hidden group">
+<div class="absolute -right-6 -bottom-6 w-24 h-24 rounded-full bg-secondary-container/10 group-hover:scale-125 transition-transform duration-500 pointer-events-none"></div>
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider font-semibold">Potable Water Allocated</span>
+<span class="font-label-sm text-label-sm text-outline">24H CYCLE DISPATCH</span>
+</div>
+<div class="w-9 h-9 rounded-lg bg-secondary-container/20 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">water_drop</span>
+</div>
+</div>
+<div class="mt-space-md flex items-baseline gap-space-sm">
+<span class="font-headline-xl text-headline-xl font-bold text-on-surface">42,000<span class="text-headline-md font-normal text-on-surface-variant">L</span></span>
+<span class="font-label-sm text-label-sm text-secondary flex items-center">
+<span class="material-symbols-outlined text-[14px]">check_circle</span> 84% Target
+          </span>
+</div>
+<div class="mt-space-xs flex items-center justify-between font-label-sm text-label-sm text-outline">
+<span>Purification units: 14</span>
+<span>Buffer: 9,200L</span>
+<span class="text-secondary-fixed">Simulated</span>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col justify-between shadow-md relative overflow-hidden group">
+<div class="absolute -right-6 -bottom-6 w-24 h-24 rounded-full bg-primary-container/10 group-hover:scale-125 transition-transform duration-500 pointer-events-none"></div>
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-wider font-semibold">Field Shelters at Capacity</span>
+<span class="font-label-sm text-label-sm text-outline">OCCUPANCY LOAD</span>
+</div>
+<div class="w-9 h-9 rounded-lg bg-primary-container/20 flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[20px]">night_shelter</span>
+</div>
+</div>
+<div class="mt-space-md flex items-baseline gap-space-sm">
+<span class="font-headline-xl text-headline-xl font-bold text-on-surface">6 <span class="text-headline-md font-normal text-outline">of 9</span></span>
+<span class="font-label-sm text-label-sm text-primary flex items-center">
+<span class="material-symbols-outlined text-[14px]">warning</span> 92% Agg.
+          </span>
+</div>
+<div class="mt-space-xs flex items-center justify-between font-label-sm text-label-sm text-outline">
+<span>St. Jude: 100%</span>
+<span>Civic Ctr: 98%</span>
+<span class="text-secondary-fixed">Simulated</span>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col justify-between shadow-md relative overflow-hidden group">
+<div class="absolute -right-6 -bottom-6 w-24 h-24 rounded-full bg-tertiary-container/10 group-hover:scale-125 transition-transform duration-500 pointer-events-none"></div>
+<div class="flex items-start justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-tertiary uppercase tracking-wider font-semibold">Medical Supply Deficit</span>
+<span class="font-label-sm text-label-sm text-outline">TRAUMA &amp; INSULIN/O2</span>
+</div>
+<div class="w-9 h-9 rounded-lg bg-tertiary-container/20 flex items-center justify-center text-tertiary-container">
+<span class="material-symbols-outlined text-[20px]">medical_services</span>
+</div>
+</div>
+<div class="mt-space-md flex items-baseline gap-space-sm">
+<span class="font-headline-xl text-headline-xl font-bold text-on-surface">12%</span>
+<span class="font-label-sm text-label-sm text-tertiary flex items-center">
+<span class="material-symbols-outlined text-[14px]">arrow_downward</span> -4% Recovery
+          </span>
+</div>
+<div class="mt-space-xs flex items-center justify-between font-label-sm text-label-sm text-outline">
+<span>O2 Bottles: -16</span>
+<span>Insulin units: -80</span>
+<span class="text-secondary-fixed">Simulated</span>
+</div>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-space-xs bg-surface-container-lowest p-space-xs rounded-xl shadow-inner">
+<button class="filter-pill active px-space-md py-space-xs rounded-lg font-label-md text-label-md font-semibold bg-surface-container-high text-on-surface shadow-sm transition-all" data-filter="all">
+        All Demands <span class="ml-1 px-1.5 py-0.5 rounded-full bg-surface-container text-outline text-[10px]">1,420</span>
+</button>
+<button class="filter-pill px-space-md py-space-xs rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-filter="water">
+        Potable Water <span class="ml-1 px-1.5 py-0.5 rounded-full bg-surface-container text-outline text-[10px]">412</span>
+</button>
+<button class="filter-pill px-space-md py-space-xs rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-filter="rations">
+        Ready-to-Eat Rations <span class="ml-1 px-1.5 py-0.5 rounded-full bg-surface-container text-outline text-[10px]">508</span>
+</button>
+<button class="filter-pill px-space-md py-space-xs rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-filter="medical">
+        Emergency Medical <span class="ml-1 px-1.5 py-0.5 rounded-full bg-surface-container text-outline text-[10px]">231</span>
+</button>
+<button class="filter-pill px-space-md py-space-xs rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-filter="rescue">
+        Amphibious Rescue <span class="ml-1 px-1.5 py-0.5 rounded-full bg-surface-container text-outline text-[10px]">189</span>
+</button>
+<button class="filter-pill px-space-md py-space-xs rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-all" data-filter="shelter">
+        Emergency Shelter <span class="ml-1 px-1.5 py-0.5 rounded-full bg-surface-container text-outline text-[10px]">80</span>
+</button>
+</div>
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-lg items-start">
+<div class="xl:col-span-7 flex flex-col gap-space-md">
+<div class="flex items-center justify-between px-space-xs">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-outline text-[20px]">sort</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold uppercase tracking-wider">Active Community Supply Requests</span>
+<span class="text-outline font-label-sm text-label-sm">(Sorted by Hazard Proximity)</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="font-label-sm text-label-sm text-secondary-fixed flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span> Auto-Triage Active
+            </span>
+</div>
+</div>
+<div class="flex flex-col gap-space-sm" id="request-queue">
+<div class="request-card active bg-surface-container-high rounded-xl p-space-md shadow-lg transition-all cursor-pointer relative overflow-hidden" data-id="REQ-8821">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-primary-container"></div>
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm flex-wrap">
+<span class="bg-tertiary-container/20 text-tertiary px-space-sm py-0.5 rounded font-label-sm text-label-sm font-bold tracking-wider">CRITICAL P1</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">REQ-8821</span>
+<span class="text-outline font-label-sm text-label-sm">Sector 4 Waterfront</span>
+</div>
+<div class="flex items-center gap-1 bg-surface-container-lowest px-space-sm py-0.5 rounded-full">
+<span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-tertiary font-medium">Pending Match</span>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-space-xs">
+<div>
+<h3 class="font-headline-md text-headline-md font-semibold text-on-surface">St. Jude Community Center</h3>
+<p class="font-body-md text-body-md text-primary font-medium mt-0.5">500 MRE Rations &amp; Infant Formula + 1,200L Potable Water</p>
+</div>
+<div class="text-left sm:text-right">
+<span class="font-label-md text-label-md text-on-surface font-bold">142 Households</span>
+<span class="font-label-sm text-label-sm text-outline block">580 individuals (44 infants)</span>
+</div>
+</div>
+<div class="pt-space-xs mt-space-xs flex flex-wrap items-center justify-between gap-space-sm font-label-sm text-label-sm text-outline bg-surface-container-low/60 p-space-xs rounded-lg">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-tertiary">my_location</span>
+<span>29°43'12.4"N 95°21'48.2"W</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-primary">tsunami</span>
+<span>Surge Depth: +1.42m</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-secondary">schedule</span>
+<span>Request Age: 18m ago</span>
+</div>
+</div>
+</div>
+</div>
+<div class="request-card bg-surface-container-low hover:bg-surface-container rounded-xl p-space-md shadow-md transition-all cursor-pointer relative overflow-hidden" data-id="REQ-8819">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-tertiary-container"></div>
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm flex-wrap">
+<span class="bg-tertiary-container/20 text-tertiary px-space-sm py-0.5 rounded font-label-sm text-label-sm font-bold tracking-wider">CRITICAL P1</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">REQ-8819</span>
+<span class="text-outline font-label-sm text-label-sm">Bayou Crossing Elementary</span>
+</div>
+<div class="flex items-center gap-1 bg-surface-container-lowest px-space-sm py-0.5 rounded-full">
+<span class="w-2 h-2 rounded-full bg-secondary-fixed animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-secondary font-medium">In Transit (TRUCK-08)</span>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-space-xs">
+<div>
+<h3 class="font-headline-md text-headline-md font-semibold text-on-surface">Bayou Senior Care Annex</h3>
+<p class="font-body-md text-body-md text-tertiary font-medium mt-0.5">Elderly Oxygen Resupply x4, Emergency Insulin &amp; Generator Fuel</p>
+</div>
+<div class="text-left sm:text-right">
+<span class="font-label-md text-label-md text-on-surface font-bold">38 Households</span>
+<span class="font-label-sm text-label-sm text-outline block">62 high-dependency seniors</span>
+</div>
+</div>
+<div class="pt-space-xs mt-space-xs flex flex-wrap items-center justify-between gap-space-sm font-label-sm text-label-sm text-outline bg-surface-container-lowest/60 p-space-xs rounded-lg">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-tertiary">my_location</span>
+<span>29°42'55.1"N 95°20'19.0"W</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-primary">directions_boat</span>
+<span>Amphibious escort attached</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-secondary">timer</span>
+<span>ETA: 9 min</span>
+</div>
+</div>
+</div>
+</div>
+<div class="request-card bg-surface-container-low hover:bg-surface-container rounded-xl p-space-md shadow-md transition-all cursor-pointer relative overflow-hidden" data-id="REQ-8814">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-primary"></div>
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm flex-wrap">
+<span class="bg-primary/20 text-primary-fixed-dim px-space-sm py-0.5 rounded font-label-sm text-label-sm font-bold tracking-wider">URGENT P2</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">REQ-8814</span>
+<span class="text-outline font-label-sm text-label-sm">Highland High Gymnasium</span>
+</div>
+<div class="flex items-center gap-1 bg-surface-container-lowest px-space-sm py-0.5 rounded-full">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span class="font-label-sm text-label-sm text-primary font-medium">Staged (Depot Beta)</span>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-space-xs">
+<div>
+<h3 class="font-headline-md text-headline-md font-semibold text-on-surface">Municipal Ward 9 Refuge</h3>
+<p class="font-body-md text-body-md text-on-surface-variant font-medium mt-0.5">2,500L Potable Water + Water Purification Units x3</p>
+</div>
+<div class="text-left sm:text-right">
+<span class="font-label-md text-label-md text-on-surface font-bold">310 Households</span>
+<span class="font-label-sm text-label-sm text-outline block">1,120 occupants</span>
+</div>
+</div>
+<div class="pt-space-xs mt-space-xs flex flex-wrap items-center justify-between gap-space-sm font-label-sm text-label-sm text-outline bg-surface-container-lowest/60 p-space-xs rounded-lg">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px]">my_location</span>
+<span>29°41'02.8"N 95°23'11.3"W</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-secondary">alt_route</span>
+<span>Dry Viaduct Corridor Clear</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+<span>Request Age: 42m ago</span>
+</div>
+</div>
+</div>
+</div>
+<div class="request-card bg-surface-container-low hover:bg-surface-container rounded-xl p-space-md shadow-md transition-all cursor-pointer relative overflow-hidden" data-id="REQ-8809">
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-primary"></div>
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm flex-wrap">
+<span class="bg-primary/20 text-primary-fixed-dim px-space-sm py-0.5 rounded font-label-sm text-label-sm font-bold tracking-wider">URGENT P2</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">REQ-8809</span>
+<span class="text-outline font-label-sm text-label-sm">Northline Parish Hall</span>
+</div>
+<div class="flex items-center gap-1 bg-surface-container-lowest px-space-sm py-0.5 rounded-full">
+<span class="w-2 h-2 rounded-full bg-outline"></span>
+<span class="font-label-sm text-label-sm text-outline font-medium">Pending Match</span>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-space-xs">
+<div>
+<h3 class="font-headline-md text-headline-md font-semibold text-on-surface">Northline Isolated Pod 2</h3>
+<p class="font-body-md text-body-md text-on-surface-variant font-medium mt-0.5">300 MRE Meals, Blankets x120, Sanitation Packs</p>
+</div>
+<div class="text-left sm:text-right">
+<span class="font-label-md text-label-md text-on-surface font-bold">76 Households</span>
+<span class="font-label-sm text-label-sm text-outline block">220 individuals</span>
+</div>
+</div>
+<div class="pt-space-xs mt-space-xs flex flex-wrap items-center justify-between gap-space-sm font-label-sm text-label-sm text-outline bg-surface-container-lowest/60 p-space-xs rounded-lg">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px]">my_location</span>
+<span>29°45'18.2"N 95°22'04.6"W</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-tertiary">flood</span>
+<span>Road Cresting 0.35m</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px]">schedule</span>
+<span>Request Age: 1h 05m</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between p-space-sm bg-surface-container-lowest rounded-xl font-label-sm text-label-sm text-outline">
+<span>Showing 4 of 1,420 simulated requests</span>
+<div class="flex items-center gap-space-xs">
+<button class="px-space-sm py-1 rounded bg-surface-container hover:text-on-surface">Previous</button>
+<span class="px-space-xs text-on-surface font-bold">Page 1 of 355</span>
+<button class="px-space-sm py-1 rounded bg-surface-container hover:text-on-surface">Next</button>
+</div>
+</div>
+</div>
+<div class="xl:col-span-5 flex flex-col gap-space-md sticky top-32">
+<div class="bg-surface-container-low rounded-xl p-space-lg shadow-xl relative overflow-hidden">
+<div class="absolute -top-12 -right-12 w-48 h-48 rounded-full bg-primary-container/10 blur-2xl pointer-events-none"></div>
+<div class="flex items-center justify-between pb-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary-container text-[22px]">smart_toy</span>
+<div>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-wider block">Intelligent Resource Allocation Drawer</span>
+<span class="font-headline-md text-headline-md font-bold text-on-surface">Selected Request #REQ-8821</span>
+</div>
+</div>
+<span class="bg-primary-container/20 text-primary px-space-sm py-0.5 rounded font-label-sm text-label-sm font-semibold">AI Match 98.4%</span>
+</div>
+<div class="mt-space-md p-space-md rounded-xl bg-surface-container-lowest">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[18px]">location_on</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-outline block">TARGET EVACUATION HUB</span>
+<span class="font-body-md text-body-md font-bold text-on-surface">St. Jude Community Center</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm bg-tertiary-container/20 text-tertiary px-space-xs py-0.5 rounded font-mono">SECTOR 4 WF</span>
+</div>
+<div class="mt-space-md pt-space-sm grid grid-cols-3 gap-space-xs text-center font-label-sm text-label-sm">
+<div class="bg-surface-container p-space-xs rounded-lg">
+<span class="text-outline block">POPULATION</span>
+<span class="text-on-surface font-bold font-body-md">580 Pax</span>
+</div>
+<div class="bg-surface-container p-space-xs rounded-lg">
+<span class="text-outline block">WATER REMAINING</span>
+<span class="text-tertiary font-bold font-body-md">&lt; 3 Hours</span>
+</div>
+<div class="bg-surface-container p-space-xs rounded-lg">
+<span class="text-outline block">INFANT CARE</span>
+<span class="text-tertiary font-bold font-body-md">44 Infants</span>
+</div>
+</div>
+</div>
+<div class="mt-space-md p-space-md rounded-xl bg-surface-container flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-secondary-container/20 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[18px]">warehouse</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-secondary uppercase font-semibold">AI Optimal Hub Match</span>
+<span class="font-body-md text-body-md font-bold text-on-surface">Central Staging Depot Alpha</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-mono">DIST: 4.2 KM</span>
+</div>
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-on-surface-variant bg-surface-container-lowest p-space-xs rounded-lg">
+<span class="material-symbols-outlined text-secondary text-[16px]">alt_route</span>
+<span>Primary Routing: <span class="text-on-surface font-medium">Bypass Viaduct 07</span> (Zero submersion, dry bridge passage)</span>
+</div>
+<div class="mt-space-xs flex flex-col gap-space-xs">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-outline">Inventory Availability: Ready Stock</span>
+<span class="text-secondary font-bold">100% Fully Stocked</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-lowest overflow-hidden flex">
+<div class="h-full bg-secondary w-full rounded-full"></div>
+</div>
+<div class="grid grid-cols-2 gap-space-xs mt-space-xs font-label-sm text-label-sm">
+<span class="text-on-surface flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-secondary">check</span> 500/500 MRE Rations
+                </span>
+<span class="text-on-surface flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-secondary">check</span> 1,200L / 1,200L Potable Water
+                </span>
+<span class="text-on-surface flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-secondary">check</span> Infant Formula Stage 1/2
+                </span>
+<span class="text-on-surface flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-secondary">check</span> 4x Water Filter Kits
+                </span>
+</div>
+</div>
+</div>
+<div class="mt-space-md p-space-md rounded-xl bg-surface-container-lowest flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-primary-container/20 flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[18px]">rv_hookup</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm text-outline">RECOMMENDED ASSET</span>
+<span class="font-body-md text-body-md font-bold text-on-surface">Carrier TRUCK-12 (High Clearance 6x6)</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-secondary bg-secondary-container/20 px-space-xs py-0.5 rounded">IDLE @ DEPOT</span>
+</div>
+<div class="flex flex-col gap-space-xs mt-space-xs">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-outline">Payload Capacity Utilization</span>
+<span class="text-primary font-bold">85% Utilized (4.25 / 5.0 Tons)</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container overflow-hidden flex">
+<div class="h-full bg-primary-container w-[85%] rounded-full"></div>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-outline mt-0.5">
+<span>Driver: Sgt. R. Alvarez (Amphibious Cert.)</span>
+<span>Wading Depth: 1.2m Max</span>
+</div>
+</div>
+</div>
+<div class="mt-space-lg flex flex-col gap-space-sm">
+<button class="w-full py-space-md px-space-lg rounded-full bg-primary-container hover:bg-primary-fixed-dim text-on-primary-container font-headline-md text-headline-md font-bold transition-all flex items-center justify-center gap-space-sm shadow-[0_0_20px_rgba(255,107,34,0.35)] active:scale-[0.99]" id="dispatch-btn">
+<span class="material-symbols-outlined text-[24px]">local_shipping</span>
+<span>Confirm &amp; Dispatch Allocation</span>
+</button>
+<div class="flex items-center gap-space-sm">
+<button class="flex-1 py-space-xs px-space-md rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface transition-all font-label-md text-label-md flex items-center justify-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-outline">alt_route</span>
+<span>Flag Alternative Shelter Depot</span>
+</button>
+<button class="py-space-xs px-space-md rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface transition-all font-label-md text-label-md flex items-center justify-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-outline">print</span>
+<span>Manifest</span>
+</button>
+</div>
+</div>
+<div class="hidden mt-space-md p-space-sm rounded-lg bg-secondary-container/20 text-secondary font-label-sm text-label-sm flex items-center gap-space-sm" id="dispatch-alert">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span>DISPATCH TRANSMITTED: Carrier TRUCK-12 deployed via Bypass Viaduct 07. Real-time telemetry locked.</span>
+</div>
+</div>
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-md">
+<div class="flex items-center justify-between pb-space-xs">
+<span class="font-label-sm text-label-sm text-outline uppercase font-semibold">Staging Depot Real-time Levels (Simulated)</span>
+<span class="font-label-sm text-label-sm text-secondary font-mono">Live Sync</span>
+</div>
+<div class="flex flex-col gap-space-xs mt-space-xs">
+<div class="flex items-center justify-between font-label-sm text-label-sm p-space-xs bg-surface-container rounded-lg">
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="text-on-surface font-medium">Depot Alpha (North Harbor)</span>
+</div>
+<span class="text-outline">MRE: 12,400 | Water: 84,000L | O2: 94</span>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm p-space-xs bg-surface-container rounded-lg">
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span class="text-on-surface font-medium">Depot Beta (Aviation Hangar)</span>
+</div>
+<span class="text-outline">MRE: 4,120 | Water: 22,000L | O2: 12</span>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm p-space-xs bg-surface-container rounded-lg">
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span class="text-on-surface font-medium">Depot Gamma (South Rail Yard)</span>
+</div>
+<span class="text-tertiary">MRE: 420 (Low) | Water: 8,000L</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const filterPills = document.querySelectorAll('.filter-pill');
+      filterPills.forEach(pill => {
+        pill.addEventListener('click', () => {
+          filterPills.forEach(p => {
+            p.classList.remove('bg-surface-container-high', 'text-on-surface', 'shadow-sm');
+            p.classList.add('text-on-surface-variant');
+          });
+          pill.classList.remove('text-on-surface-variant');
+          pill.classList.add('bg-surface-container-high', 'text-on-surface', 'shadow-sm');
+        });
+      });
+
+      const cards = document.querySelectorAll('.request-card');
+      cards.forEach(card => {
+        card.addEventListener('click', () => {
+          cards.forEach(c => {
+            c.classList.remove('bg-surface-container-high', 'shadow-lg');
+            c.classList.add('bg-surface-container-low');
+          });
+          card.classList.remove('bg-surface-container-low');
+          card.classList.add('bg-surface-container-high', 'shadow-lg');
+        });
+      });
+
+      const dispatchBtn = document.getElementById('dispatch-btn');
+      const dispatchAlert = document.getElementById('dispatch-alert');
+      if (dispatchBtn && dispatchAlert) {
+        dispatchBtn.addEventListener('click', () => {
+          dispatchBtn.classList.add('opacity-75');
+          dispatchBtn.innerHTML = '<span class="material-symbols-outlined animate-spin text-[24px]">progress_activity</span><span>Broadcasting to Fleet...</span>';
+          setTimeout(() => {
+            dispatchBtn.classList.remove('opacity-75');
+            dispatchBtn.innerHTML = '<span class="material-symbols-outlined text-[24px]">check</span><span>Allocation Dispatched</span>';
+            dispatchAlert.classList.remove('hidden');
+          }, 600);
+        });
+      }
+    });
+  </script>
+</div></main><footer class="w-full bg-surface-container-lowest py-space-lg"><div class="w-full px-margin flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">FLOODROUTE ENTERPRISE DISPATCH HUD // BUILD 2.4.9-SEC</span><span class="h-3 w-px bg-surface-container-highest"></span><span class="font-label-sm text-label-sm text-secondary flex items-center gap-space-xs"><span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>TELEMETRY SYNCED</span></div><div class="flex items-center gap-space-lg"><a class="font-label-sm text-label-sm text-outline hover:text-on-surface transition-colors" href="#">Emergency Protocols</a><a class="font-label-sm text-label-sm text-outline hover:text-on-surface transition-colors" href="#">GIS Sensor Feeds</a><a class="font-label-sm text-label-sm text-outline hover:text-on-surface transition-colors" href="#">Relief Node Mesh</a><span class="font-label-sm text-label-sm text-outline">© 2025 Civil Defense Mobility Grid.</span></div></div></footer></body></html>
