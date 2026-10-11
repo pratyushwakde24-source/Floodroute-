@@ -4,35 +4,7 @@
 
 FloodRoute is an enterprise disaster mobility management platform engineered to keep **ambulances, rescue vehicles, and relief supply trucks moving** when urban flooding renders street networks impassable. It dynamically reroutes emergency fleets using real municipal GIS data, deterministic Dijkstra pathfinding, and AI-powered operational briefings via Amazon Bedrock.
 
-Built for the **AWS Environmental Hacks Hackathon** — addressing the urban flood mobility crisis across Indian metropolitan areas.
-
----
-
-## Table of Contents
-
-1. [Problem Statement](#1-problem-statement)
-2. [Solution Overview](#2-solution-overview)
-3. [Key Features](#3-key-features)
-4. [System Architecture](#4-system-architecture)
-5. [Technology Stack](#5-technology-stack)
-6. [Repository Structure](#6-repository-structure)
-7. [Local Installation](#7-local-installation)
-8. [Environment Configuration](#8-environment-configuration)
-9. [Running the Application](#9-running-the-application)
-10. [AWS & Amazon Bedrock Setup](#10-aws--amazon-bedrock-setup)
-11. [Simulation Mode & Deterministic Fallback](#11-simulation-mode--deterministic-fallback)
-12. [Flood Simulation Demo](#12-flood-simulation-demo)
-13. [Testing](#13-testing)
-14. [Data Sources & Governance](#14-data-sources--governance)
-15. [Security Practices](#15-security-practices)
-16. [Implementation Status](#16-implementation-status)
-17. [Troubleshooting](#17-troubleshooting)
-18. [Hackathon Context](#18-hackathon-context)
-19. [Roadmap](#19-roadmap)
-20. [Contributing](#20-contributing)
-
----
-
+Built for the **AWS Environmental Hacks Hackathon** — addressing the urban flood mobility crisis across Indian metropolitan areas 
 ## 1. Problem Statement
 
 Urban flooding in Indian cities disrupts emergency response at the most critical moment. During acute flood events in Mumbai, Chennai, Bengaluru, Guwahati, Hyderabad, and Delhi:
